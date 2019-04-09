@@ -13,6 +13,7 @@ const types = {
     "M -15 -2  Q -7.5 -10, 0 -2  S 7.5 6, 15 -2",
   water: "M -17.5 -5 C -17.5 0, -7.5 0, -7.5 -5 C -7.5 0, 2.5 0, 2.5 -5 C 2.5 0, 12.5 0, 12.5 -5" +
     "M -12.5 -12.5 C -12.5 -7.5, -2.5 -7.5, -2.5 -12.5 C -2.5 -7.5, 7.5 -7.5, 7.5 -12.5 C 7.5 -7.5, 17.5 -7.5, 17.5 -12.5 ",
+  track: "M -15 0 L 15 0 M -10 -5 L -5 -5 M 5 -5 L 10 -5 M -15 -10 L 15 -10",
 };
 const width = 2;
 
@@ -37,6 +38,9 @@ const Terrain = ({ type, size, cost, color, fontSize }) => {
     case "mountain":
     case "water":
       color = type;
+      break;
+    case "track":
+      color = "black";
       break;
     default:
       color = "mountain";
