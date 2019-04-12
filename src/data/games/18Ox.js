@@ -1174,6 +1174,10 @@ const game = {
         labels: [
           { label: "C", angle: 0, percent: 0.8 }
         ],
+        borders: [
+          { side: 4, color: "black"},
+          { side: 5, color: "black"}
+        ],
         hexes: ["H1"]
       },
       {
@@ -1334,7 +1338,8 @@ const game = {
           }
         ],
         borders: [
-          { side: 1, color: "water" }
+          { side: 1, color: "water" },
+          { side: 4, color: "mountain" }
         ],
         hexes: ["H21"]
       },
@@ -1349,7 +1354,8 @@ const game = {
           }
         ],
         borders: [
-          { side: 2, color: "water" }
+          { side: 2, color: "water" },
+          { side: 5, color: "mountain" }
         ],
         hexes: ["F5"]
       },
@@ -1410,9 +1416,6 @@ const game = {
         labels: [
           { label: "2", percent: 0.75 }
         ],
-        borders: [
-          { side: 2, color: "mountain" }
-        ],
         hexes: ["I8"]
       },
       {
@@ -1424,7 +1427,8 @@ const game = {
           { label: "3", percent: 0.75 }
         ],
         borders: [
-          { side: 2, color: "water" }
+          { side: 2, color: "water" },
+          { side: 6, color: "mountain" }
         ],
         hexes: ["K12"]
       },
@@ -1462,7 +1466,6 @@ const game = {
           { name: { name: "Marlborough" } }
         ],
         borders: [
-          { side: 2, color: "mountain" },
           { side: 3, color: "mountain" },
           { side: 5, color: "mountain" },
           { side: 6, color: "mountain" }
@@ -1583,6 +1586,7 @@ const game = {
         ],
         borders: [
           { side: 2, color: "mountain" },
+          { side: 3, color: "mountain" },
           { side: 6, color: "mountain" }
         ],
         hexes: ["C22"]
@@ -2258,43 +2262,68 @@ const game = {
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
-        borders: [ { side: 5, color: "mountain" } ],
+        borders: [
+          { side: 5, color: "mountain" }
+        ],
         hexes: ["C32"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
-        borders: [ { side: 3, color: "water" } ],
+        borders: [
+          { side: 3, color: "water" },
+          { side: 5, color: "black" }
+        ],
         hexes: ["F3"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 4, color: "black" },
+          { side: 5, color: "black" }
+        ],
         hexes: ["G2"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 2, color: "black"}
+        ],
         hexes: ["I2"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 3, color: "black"}
+        ],
         hexes: ["J3"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 3, color: "black"}
+        ],
         hexes: ["K6"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 2, color: "black"},
+          { side: 3, color: "mountain"}
+        ],
         hexes: ["K8"]
       },
       {
         color: "plain",
         terrain: [{ type: "track", cost: "£40" }],
+        borders: [
+          { side: 4, color: "mountain"}
+        ],
         hexes: ["N11"]
       },
       {
@@ -2325,14 +2354,14 @@ const game = {
         borders: [
           { side: 4, color: "mountain" }
         ],
-        hexes: ["F25"]
+        hexes: ["F25", "M30"]
       },
       {
         color: "plain",
         borders: [
           { side: 5, color: "mountain" }
         ],
-        hexes: ["B21", "K14", "M30"]
+        hexes: ["B21", "K14"]
       },
       {
         color: "plain",
@@ -2354,7 +2383,7 @@ const game = {
         color: "plain",
         borders: [
           { side: 1, color: "mountain" },
-          { side: 5, color: "mountain" }
+          { side: 6, color: "mountain" }
         ],
         hexes: ["L13"]
       },
@@ -2380,15 +2409,7 @@ const game = {
           { side: 2, color: "mountain" },
           { side: 4, color: "mountain" }
         ],
-        hexes: ["C24", "E20", "N23"]
-      },
-      {
-        color: "plain",
-        borders: [
-          { side: 2, color: "mountain" },
-          { side: 5, color: "mountain" }
-        ],
-        hexes: ["M12"]
+        hexes: ["E20", "N23"]
       },
       {
         color: "plain",
@@ -2401,20 +2422,21 @@ const game = {
       {
         color: "plain",
         borders: [
-          { side: 4, color: "mountain" },
-          { side: 5, color: "mountain" }
-        ],
-        hexes: ["L11"]
-      },
-      {
-        color: "plain",
-        borders: [
           { side: 5, color: "mountain" },
           { side: 6, color: "mountain" }
         ],
         hexes: ["F15", "K16"]
       },
 // 3 mountains
+      {
+        color: "plain",
+        borders: [
+          { side: 1, color: "mountain" },
+          { side: 2, color: "mountain" },
+          { side: 4, color: "mountain" }
+        ],
+        hexes: ["H9"]
+      },
       {
         color: "plain",
         borders: [
@@ -2431,7 +2453,7 @@ const game = {
           { side: 3, color: "mountain" },
           { side: 4, color: "mountain" }
         ],
-        hexes: ["E14", "H9"]
+        hexes: ["E14", "G10"]
       },
       {
         color: "plain",
@@ -2449,7 +2471,16 @@ const game = {
           { side: 3, color: "mountain" },
           { side: 4, color: "mountain" }
         ],
-        hexes: ["I34"]
+        hexes: ["C24", "I34"]
+      },
+      {
+        color: "plain",
+        borders: [
+          { side: 2, color: "mountain" },
+          { side: 3, color: "mountain" },
+          { side: 5, color: "mountain" }
+        ],
+        hexes: ["M12"]
       },
      {
         color: "plain",
@@ -2507,7 +2538,7 @@ const game = {
           { side: 4, color: "mountain" },
           { side: 6, color: "mountain" }
         ],
-        hexes: ["G6", "G10", "H11", "M18"]
+        hexes: ["H7", "H11", "M18"]
       },
       {
         color: "plain",
@@ -2560,7 +2591,7 @@ const game = {
           { side: 5, color: "mountain" },
           { side: 6, color: "mountain" }
         ],
-        hexes: ["D15", "H7"]
+        hexes: ["D15"]
       },
       {
         color: "plain",
@@ -2582,7 +2613,7 @@ const game = {
           { side: 4, color: "mountain" },
           { side: 6, color: "mountain" }
         ],
-        hexes: ["E12", "G8"]
+        hexes: ["G6", "E12"]
       },
 // 6 mountains
       {
@@ -2604,12 +2635,12 @@ const game = {
           "D9", "D11", "D33",
           "E8", "E10",
           "F29", "F33",
-          "G12", "G34",
+          "G8", "G12", "G34",
           "H13",
           "J27",
           "K24", "K26",
           "N13", "N15",
-          "L19"
+          "L11", "L19"
         ]
       },
 // 1 river
@@ -2623,7 +2654,8 @@ const game = {
       {
         color: "plain",
         borders: [
-          { side: 3,  color: "water" }
+          { side: 3,  color: "water" },
+          { side: 5,  color: "mountain" }
         ],
         hexes: ["K10"]
       },
