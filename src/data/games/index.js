@@ -20,7 +20,7 @@ import game_18Mex from "./18Mex";
 import game_FourthAge from "./FourthAge";
 import game_Harzbahn from "./Harzbahn";
 
-let games = {
+let all_games = {
   "18Ox": game_18Ox,
   "1800": game_1800,
   "1830": game_1830,
