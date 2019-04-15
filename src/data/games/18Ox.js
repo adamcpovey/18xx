@@ -1587,7 +1587,6 @@ const game = {
         borders: [
           { side: 2, color: "mountain" },
           { side: 3, color: "mountain" },
-          { side: 4, color: "water" },
           { side: 6, color: "mountain" }
         ],
         hexes: ["K22"]
@@ -1946,7 +1945,6 @@ const game = {
           { name: { name: "Beaconsfield" } }
         ],
         borders: [
-          { side: 1, color: "water" },
           { side: 3, color: "mountain" },
           { side: 5, color: "mountain" },
           { side: 6, color: "mountain" }
