@@ -7,6 +7,9 @@ const colors = {
 
   // Map
   plain: "#FCEFDE",
+  oxon: "#FCEFDE",
+  bucks: "#F5F5DC",
+  berks: "#EDE3D5",
   offboard: "#EC2126",
   mountain: "#D1AE85",
   water: "#67A7C4",
