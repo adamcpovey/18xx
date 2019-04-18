@@ -7,14 +7,15 @@ const game = {
     width: 150,
     color_10: "orange",
     titleX: 50,
+    extraTokens: 2,
     hexCoords: true,
-    extraMinors: 0,
+    extraMinors: 1,
     currency: "GBP"
   },
 
   ipo: false,
 
-  tokens: ["Round"],
+  tokens: ["Round", "CV\n£30", "Mine +£10", "Bypass"],
 
   bank: "£12,000",
 
@@ -40,7 +41,7 @@ const game = {
   companies: [
     {
       name: "Great Western",
-      abbrec: "GWR",
+      abbrev: "GWR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "green",
       shares: [
@@ -59,7 +60,7 @@ const game = {
     },
     {
       name: "Midland",
-      abbrec: "MR",
+      abbrev: "MR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "red",
       shares: [
@@ -78,7 +79,7 @@ const game = {
     },
     {
       name: "Great Central",
-      abbrec: "GCR",
+      abbrev: "GCR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "blue",
       shares: [
@@ -97,7 +98,7 @@ const game = {
     },
     {
       name: "South Wales",
-      abbrec: "SWR",
+      abbrev: "SWR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "gray",
       shares: [
@@ -116,7 +117,7 @@ const game = {
     },
     {
       name: "Metropolitan",
-      abbrec: "MetR",
+      abbrev: "MetR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "purple",
       shares: [
@@ -135,7 +136,7 @@ const game = {
     },
     {
       name: "Chiltern",
-      abbrec: "CR",
+      abbrev: "CR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "cyan",
       shares: [
@@ -154,7 +155,7 @@ const game = {
     },
     {
       name: "London and North Western",
-      abbrec: "LNWR",
+      abbrev: "LNWR",
       tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
       color: "black",
       shares: [
@@ -173,7 +174,7 @@ const game = {
     },
     {
       name: "Midland and South Western Junction",
-      abbrec: "A",
+      abbrev: "A",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -192,7 +193,7 @@ const game = {
     },
     {
       name: "Metropolitan and Great Central Junction",
-      abbrec: "B",
+      abbrev: "B",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -211,7 +212,7 @@ const game = {
     },
     {
       name: "Cheltenham and Great Western Junction",
-      abbrec: "C",
+      abbrev: "C",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -230,7 +231,7 @@ const game = {
     },
     {
       name: "Great Western and Great Central Junction",
-      abbrec: "D",
+      abbrev: "D",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -249,7 +250,7 @@ const game = {
     },
     {
       name: "Banbury and Cheltenham",
-      abbrec: "E",
+      abbrev: "E",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -268,7 +269,7 @@ const game = {
     },
     {
       name: "Oxford, Worcester and Wolverhampton",
-      abbrec: "F",
+      abbrev: "F",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -287,7 +288,7 @@ const game = {
     },
     {
       name: "Oxford and Rugby",
-      abbrec: "G",
+      abbrev: "G",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -306,7 +307,7 @@ const game = {
     },
     {
       name: "Buckingham and Brackley Junction",
-      abbrec: "H",
+      abbrev: "H",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -325,7 +326,7 @@ const game = {
     },
     {
       name: "Oxford and Bletchley Junction",
-      abbrec: "I",
+      abbrev: "I",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -344,7 +345,7 @@ const game = {
     },
     {
       name: "Swindon, Marlborough and Andover",
-      abbrec: "J",
+      abbrev: "J",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -363,7 +364,7 @@ const game = {
     },
     {
       name: "Royal Army Logistics",
-      abbrec: "K",
+      abbrev: "K",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -382,7 +383,7 @@ const game = {
     },
     {
       name: "Oxford, Witney and Fairford",
-      abbrec: "L",
+      abbrev: "L",
       tokens: ["Free", "Free"],
       color: "brown",
       shares: [
@@ -1117,6 +1118,15 @@ const game = {
         offBoardTrack: [
           { side: 5 }
         ],
+        cities: [
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "CR", color: "cyan" }
+            ]
+          }
+        ],
         hexes: ["A10"]
       },
       {
@@ -1132,6 +1142,15 @@ const game = {
         },
         offBoardTrack: [
           { side: 5 }
+        ],
+        cities: [
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "GCR", color: "blue" }
+            ]
+          }
         ],
         hexes: ["A18"]
       },
@@ -1149,6 +1168,15 @@ const game = {
         offBoardTrack: [
           { side: 5 }
         ],
+        cities: [
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "MR", color: "red" }
+            ]
+          }
+        ],
         hexes: ["C4"]
       },
       {
@@ -1164,6 +1192,15 @@ const game = {
         },
         offBoardTrack: [
           { side: 1 }
+        ],
+        cities: [
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "LNWR", color: "black" }
+            ]
+          }
         ],
         hexes: ["C24"]
       },
@@ -1181,6 +1218,15 @@ const game = {
         offBoardTrack: [
           { side: 4}
         ],
+        cities: [
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "SWR", color: "gray" }
+            ]
+          }
+        ],
         hexes: ["F1"]
       },
       {
@@ -1197,6 +1243,15 @@ const game = {
         offBoardTrack: [
           { side: 4 }
         ],
+        cities: [
+          {
+            angle: 0,
+            percent: 0.8,
+            companies: [
+              { label: "MR", color: "red" }
+            ]
+          }
+        ],
         hexes: ["L1"]
       },
       {
@@ -1212,6 +1267,15 @@ const game = {
         },
         offBoardTrack: [
           { side: 4 }
+        ],
+        cities: [
+          {
+            angle: 0,
+            percent: 0.8,
+            companies: [
+              { label: "GWR", color: "green" }
+            ]
+          }
         ],
         hexes: ["O2"]
       },
@@ -1231,6 +1295,15 @@ const game = {
         ],
         border: [
           { side: 2, color: "black" }
+        ],
+        cities: [
+          {
+            angle: 0,
+            percent: 0.8,
+            companies: [
+              { label: "MetR", color: "purple" }
+            ]
+          }
         ],
         hexes: ["O16"]
       },
@@ -1257,6 +1330,22 @@ const game = {
           { side: 1 },
           { side: 2 },
         ],
+        cities: [
+          {
+            angle: 0,
+            percent: 0.8,
+            companies: [
+              { label: "GCR", color: "blue" }
+            ]
+          },
+          {
+            angle: 300,
+            percent: 0.8,
+            companies: [
+              { label: "CR", color: "cyan" }
+            ]
+          }
+        ],
         hexes: ["K28"]
       },
       {
@@ -1269,6 +1358,15 @@ const game = {
           { side: 1 },
           { side: 2 },
           { side: 6 }
+        ],
+        cities: [
+          {
+            angle: 300,
+            percent: 0.8,
+            companies: [
+              { label: "GWR", color: "green" }
+            ]
+          }
         ],
         hexes: ["L27"]
       },
@@ -1294,6 +1392,20 @@ const game = {
         cities: [
           {
             name : { name: "Oxford" }
+          },
+          {
+            angle: 240,
+            percent: 0.8,
+            companies: [
+              { label: "LNWR", color: "black" }
+            ]
+          },
+          {
+            angle: 120,
+            percent: 0.8,
+            companies: [
+              { label: "SWR", color: "gray" }
+            ]
           }
         ],
         borders: [
