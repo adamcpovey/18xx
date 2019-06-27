@@ -1109,8 +1109,8 @@ const game = {
             name: "LEAMINGTON SPA"
           },
           revenues: [
-            { color: "yellow", cost: "10" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "20" },
+            { color: "green", cost: "30" },
             { color: "brown", cost: "30" },
             { color: "gray", cost: "40" }
           ]
@@ -1134,10 +1134,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "RUGBY" },
           revenues: [
-            { color: "yellow", cost: "0" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "30" },
+            { color: "green", cost: "40" },
             { color: "brown", cost: "40" },
-            { color: "gray", cost: "60" }
+            { color: "gray", cost: "50" }
           ]
         },
         offBoardTrack: [
@@ -1159,10 +1159,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "WORCESTER" },
           revenues: [
-            { color: "yellow", cost: "0" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "30" },
+            { color: "green", cost: "40" },
             { color: "brown", cost: "40" },
-            { color: "gray", cost: "60" },
+            { color: "gray", cost: "50" },
           ]
         },
         offBoardTrack: [
@@ -1184,10 +1184,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "CAMBRIDGE" },
           revenues: [
-            { color: "yellow", cost: "0" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "30" },
+            { color: "green", cost: "40" },
             { color: "brown", cost: "40" },
-            { color: "gray", cost: "60" },
+            { color: "gray", cost: "50" },
           ]
         },
         offBoardTrack: [
@@ -1209,8 +1209,8 @@ const game = {
         offBoardRevenue: {
           name: { name: "GLOUCESTER" },
           revenues: [
-            { color: "yellow", cost: "10" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "20" },
+            { color: "green", cost: "30" },
             { color: "brown", cost: "30" },
             { color: "gray", cost: "40" },
           ]
@@ -1234,10 +1234,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "BRISTOL" },
           revenues: [
-            { color: "yellow", cost: "10" },
-            { color: "green", cost: "30" },
+            { color: "yellow", cost: "40" },
+            { color: "green", cost: "50" },
             { color: "brown", cost: "50" },
-            { color: "gray", cost: "70" },
+            { color: "gray", cost: "60" },
           ]
         },
         offBoardTrack: [
@@ -1259,10 +1259,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "BOURNEMOUTH" },
           revenues: [
-            { color: "yellow", cost: "10" },
-            { color: "green", cost: "30" },
+            { color: "yellow", cost: "40" },
+            { color: "green", cost: "50" },
             { color: "brown", cost: "50" },
-            { color: "gray", cost: "70" },
+            { color: "gray", cost: "60" },
           ]
         },
         offBoardTrack: [
@@ -1284,8 +1284,8 @@ const game = {
         offBoardRevenue: {
           name: { name: "SOUTHAMPTON" },
           revenues: [
-            { color: "yellow", cost: "10" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "20" },
+            { color: "green", cost: "30" },
             { color: "brown", cost: "30" },
             { color: "gray", cost: "40" },
           ]
@@ -1301,7 +1301,7 @@ const game = {
             angle: 0,
             percent: 0.8,
             companies: [
-              { label: "MetR", color: "purple" }
+              { label: "LSWR", color: "orange" }
             ]
           }
         ],
@@ -1312,12 +1312,42 @@ const game = {
         offBoardRevenue: {
           name: { name: "LONDON" },
           revenues: [
-            { color: "yellow", cost: "0" },
-            { color: "green", cost: "20" },
+            { color: "yellow", cost: "20" },
+            { color: "green", cost: "30" },
             { color: "brown", cost: "40" },
             { color: "gray", cost: "60" },
           ]
         },
+        cities: [
+          {
+            angle: 300,
+            percent: 0.8,
+            companies: [
+              { label: "GWR", color: "green" }
+            ]
+          },
+          {
+            angle: 240,
+            percent: 0.8,
+            companies: [
+              { label: "GCR", color: "blue" }
+            ]
+          },
+          {
+            angle: 180,
+            percent: 0.8,
+            companies: [
+              { label: "CR", color: "cyan" }
+            ]
+          },
+          {
+            angle: 0,
+            percent: 0.8,
+            companies: [
+              { label: "MetR", color: "purple" }
+            ]
+          }
+        ],
         hexes: ["L29"]
       },
       {
@@ -1329,22 +1359,6 @@ const game = {
         offBoardTrack: [
           { side: 1 },
           { side: 2 },
-        ],
-        cities: [
-          {
-            angle: 0,
-            percent: 0.8,
-            companies: [
-              { label: "GCR", color: "blue" }
-            ]
-          },
-          {
-            angle: 300,
-            percent: 0.8,
-            companies: [
-              { label: "CR", color: "cyan" }
-            ]
-          }
         ],
         hexes: ["K28"]
       },
@@ -1358,15 +1372,6 @@ const game = {
           { side: 1 },
           { side: 2 },
           { side: 6 }
-        ],
-        cities: [
-          {
-            angle: 300,
-            percent: 0.8,
-            companies: [
-              { label: "GWR", color: "green" }
-            ]
-          }
         ],
         hexes: ["L27"]
       },
@@ -1406,10 +1411,23 @@ const game = {
             companies: [
               { label: "SWR", color: "gray" }
             ]
-          }
+          },
+          {
+            angle: 60,
+            percent: 0.8,
+            companies: [
+              { label: "MetR", color: "purple" }
+            ]
+          },
+          {
+            angle: 300,
+            percent: 0.8,
+            companies: [
+              { label: "LSWR", color: "orange" }
+            ]
+          },
         ],
         borders: [
-          { side: 1, color: "land" },
           { side: 4, color: "land" }
         ],
         hexes: ["H13"]
@@ -1434,7 +1452,6 @@ const game = {
         ],
         borders: [
           { side: 1, color: "water" },
-          { side: 4, color: "water" },
           { side: 5, color: "water" },
           { side: 6, color: "water" }
         ],
@@ -1449,7 +1466,6 @@ const game = {
           { name: { name: "Bourton-on-the-Water" } }
         ],
         borders: [
-          { side: 2, color: "land" },
           { side: 6, color: "land" }
         ],
         labels: [
@@ -1463,10 +1479,8 @@ const game = {
           { name: { name: "Marlborough" } }
         ],
         borders: [
-          { side: 1, color: "land" },
           { side: 3, color: "land" },
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
+          { side: 4, color: "land" }
         ],
         labels: [
           { label: "K5", percent: 0.75 }
@@ -1480,7 +1494,6 @@ const game = {
         ],
         borders: [
           { side: 1, color: "land" },
-          { side: 2, color: "land" },
           { side: 4, color: "land" }
         ],
         labels: [
@@ -1495,8 +1508,7 @@ const game = {
         ],
         borders: [
           { side: 4, color: "water" },
-          { side: 5, color: "water" },
-          { side: 6, color: "water" }
+          { side: 5, color: "water" }
         ],
         labels: [
           { label: "O6", percent: 0.75 }
@@ -1557,10 +1569,6 @@ const game = {
         labels: [
           { label: "K6", percent: 0.75 }
         ],
-        borders: [
-          { side: 5, color: "land" },
-          { side: 6, color: "land" }
-        ],
         hexes: ["N11"]
       },
       {
@@ -1570,9 +1578,6 @@ const game = {
         ],
         labels: [
           { label: "K1", percent: 0.75 }
-        ],
-        borders: [
-          { side: 3, color: "water" }
         ],
         hexes: ["J13"]
       },
@@ -1585,7 +1590,6 @@ const game = {
           { label: "O1", percent: 0.75 }
         ],
         borders: [
-          { side: 1, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["C12"]
@@ -1670,9 +1674,6 @@ const game = {
         labels: [
           { label: "K7", percent: 0.75 }
         ],
-        borders: [
-          { side: 3, color: "water" }
-        ],
         hexes: ["M18"]
       },
       {
@@ -1725,8 +1726,6 @@ const game = {
           { label: "B4", percent: 0.75 }
         ],
         borders: [
-          { side: 3, color: "land" },
-          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["G24"]
@@ -1756,9 +1755,7 @@ const game = {
           { label: "K8", percent: 0.75 }
         ],
         borders: [
-          { side: 3, color: "land" },
-          { side: 5, color: "land" },
-          { side: 6, color: "land" }
+          { side: 3, color: "land" }
         ],
         hexes: ["N23"]
       },
@@ -1769,9 +1766,6 @@ const game = {
         color: "oxon",
         centerTowns: [
           { name: { name: "Andoversford" } }
-        ],
-        borders: [
-          { side: 3, color: "land" }
         ],
         hexes: ["F3"]
       },
@@ -1804,8 +1798,7 @@ const game = {
         borders: [
           { side: 1, color: "land" },
           { side: 2, color: "land" },
-          { side: 3, color: "land" },
-          { side: 5, color: "water" }
+          { side: 3, color: "land" }
         ],
         hexes: ["H7"]
       },
@@ -1815,9 +1808,7 @@ const game = {
           { name: { name: "Hungerford" } }
         ],
         borders: [
-          { side: 3, color: "land" },
-          { side: 5, color: "land" },
-          { side: 6, color: "land" }
+          { side: 3, color: "land" }
         ],
         hexes: ["N9"]
       },
@@ -1863,7 +1854,6 @@ const game = {
           { name: { name: "Islip" } }
         ],
         borders: [
-          { side: 4, color: "water" },
           { side: 5, color: "land" }
         ],
         hexes: ["G14"]
@@ -1872,11 +1862,6 @@ const game = {
         color: "berks",
         centerTowns: [
           { name: { name: "Abingdon" } }
-        ],
-        borders: [
-          { side: 1, color: "water" },
-          { side: 2, color: "land" },
-          { side: 4, color: "water" }
         ],
         hexes: ["I12"]
       },
@@ -1910,7 +1895,6 @@ const game = {
           { name: { name: "Brackley" } }
         ],
         borders: [
-          { side: 3, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["C14"]
@@ -1931,16 +1915,10 @@ const game = {
       },
       {
         color: "oxon",
-        centerTowns: [
-          { name: { name: "Culham" } }
-        ],
-        borders: [
+        terrain: [ { type: "river", cost: "£60" } ],
+         borders: [
           { side: 3, color: "land" },
-          { side: 1, color: "water" },
-          { side: 4, color: "water" },
-          { side: 5, color: "water" },
-          { side: 6, color: "water" }
-         ],
+        ],
         hexes: ["I14"]
       },
       {
@@ -1949,7 +1927,6 @@ const game = {
           { name: { name: "Wallingford" } }
         ],
         borders: [
-          { side: 2, color: "water" },
           { side: 5, color: "land" }
         ],
         hexes: ["J15"]
@@ -1975,7 +1952,7 @@ const game = {
          borders: [
           { side: 1, color: "land" },
           { side: 2, color: "land" },
-          { side: 6, color: "water" }
+          { side: 4, color: "land" }
         ],
         hexes: ["L19"]
       },
@@ -1985,8 +1962,7 @@ const game = {
           { name: { name: "Twyford" } }
         ],
         borders: [
-          { side: 4, color: "land" },
-          { side: 5, color: "water" }
+          { side: 4, color: "land" }
         ],
         hexes: ["M20"]
       },
@@ -1994,11 +1970,6 @@ const game = {
         color: "berks",
         centerTowns: [
           { name: { name: "Wokingham" } }
-        ],
-        borders: [
-          { side: 2, color: "water" },
-          { side: 5, color: "land" },
-          { side: 6, color: "land" }
         ],
         hexes: ["N21"]
       },
@@ -2008,9 +1979,8 @@ const game = {
           { name: { name: "Windsor" } }
         ],
         borders: [
-          { side: 2, color: "water" },
+          { side: 3, color: "water" },
           { side: 1, color: "land" },
-          { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["M24"]
@@ -2033,7 +2003,8 @@ const game = {
          borders: [
           { side: 2, color: "land" },
           { side: 3, color: "land" },
-          { side: 5, color: "water" }
+          { side: 5, color: "water" },
+          { side: 6, color: "water" }
         ],
        hexes: ["L25"]
       },
@@ -2043,8 +2014,7 @@ const game = {
           { name: { name: "Maidenhead" } }
         ],
         borders: [
-          { side: 3, color: "land" },
-          { side: 5, color: "water" }
+          { side: 3, color: "land" }
         ],
         hexes: ["L23"]
       },
@@ -2079,8 +2049,6 @@ const game = {
         ],
         borders: [
           { side: 1, color: "land" },
-          { side: 3, color: "land" },
-          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["H25"]
@@ -2124,7 +2092,6 @@ const game = {
           { name: { name: "Chinor" } }
         ],
         borders: [
-          { side: 1, color: "land" },
           { side: 5, color: "land" }
         ],
         hexes: ["I18"]
@@ -2135,7 +2102,6 @@ const game = {
           { name: { name: "Leighton Buzzard" } }
         ],
         borders: [
-          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["E22"]
@@ -2153,44 +2119,17 @@ const game = {
       {
         color: "bucks",
         terrain: [{ type: "track", cost: "£40" }],
-        hexes: ["B19"]
-      },
-      {
-        color: "bucks",
-        terrain: [{ type: "track", cost: "£40" }],
-        hexes: ["C22"]
+        hexes: ["B19", "C22"]
       },
       {
         color: "oxon",
         terrain: [{ type: "track", cost: "£40" }],
-        borders: [
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
-        ],
         hexes: ["D5"]
       },
       {
         color: "berks",
         terrain: [{ type: "track", cost: "£40" }],
-        hexes: ["L3"]
-      },
-      {
-        color: "berks",
-        terrain: [{ type: "track", cost: "£40" }],
-        hexes: ["K4"]
-      },
-      {
-        color: "berks",
-        terrain: [{ type: "track", cost: "£40" }],
-        borders: [
-          { side: 3, color: "land"}
-        ],
-        hexes: ["N5"]
-      },
-      {
-        color: "berks",
-        terrain: [{ type: "track", cost: "£40" }],
-        hexes: ["O4"]
+        hexes: ["L3", "L5", "K4", "N5", "O4"]
       },
 // -------------------------------------------------
 // Terrain
@@ -2221,20 +2160,6 @@ const game = {
         ],
         hexes: ["F17"]
       },
-      {
-        color: "berks",
-        borders: [
-          { side: 5, color: "land" }
-        ],
-        hexes: ["N19"]
-      },
-      {
-        color: "oxon",
-        borders: [
-          { side: 6, color: "land" }
-        ],
-        hexes: ["B11"]
-      },
 // 2 lands
       {
         color: "berks",
@@ -2263,6 +2188,7 @@ const game = {
       {
         color: "berks",
         borders: [
+          { side: 1, color: "land" },
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
@@ -2271,15 +2197,13 @@ const game = {
       {
         color: "berks",
         borders: [
-          { side: 2, color: "land" },
-          { side: 6, color: "land" }
+          { side: 2, color: "land" }
         ],
-        hexes: ["N13", "N25"]
+        hexes: ["N13"]
       },
       {
         color: "bucks",
         borders: [
-          { side: 2, color: "land" },
           { side: 4, color: "land" }
         ],
         hexes: ["C16"]
@@ -2301,19 +2225,20 @@ const game = {
         hexes: ["G4", "H5"]
       },
       {
-        color: "bucks",
-        borders: [
-          { side: 4, color: "land" }
-        ],
-        hexes: ["B13"]
-      },
-      {
         color: "berks",
         borders: [
           { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["K12"]
+      },
+      {
+        color: "bucks",
+        borders: [
+          { side: 1, color: "land" },
+          { side: 6, color: "land" }
+        ],
+        hexes: ["F23"]
       },
       {
         color: "bucks",
@@ -2361,8 +2286,6 @@ const game = {
       {
         color: "oxon",
         borders: [
-          { side: 1, color: "land" },
-          { side: 3, color: "land" },
           { side: 4, color: "land" }
         ],
         hexes: ["E6"]
@@ -2371,16 +2294,14 @@ const game = {
         color: "bucks",
         borders: [
           { side: 1, color: "land" },
-          { side: 3, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["I26"]
       },
       {
         color: "oxon",
+        terrain: [ { type: "river", cost: "£30" } ],
         borders: [
-          { side: 1, color: "water" },
-          { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["G16"]
@@ -2391,7 +2312,7 @@ const game = {
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
-        hexes: ["M16", "N7"]
+        hexes: ["M16"]
       },
       {
         color: "bucks",
@@ -2401,15 +2322,6 @@ const game = {
           { side: 6, color: "land" }
         ],
         hexes: ["G22"]
-      },
-      {
-        color: "oxon",
-        borders: [
-          { side: 2, color: "land" },
-          { side: 3, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["H17"]
       },
       {
         color: "bucks",
@@ -2424,8 +2336,7 @@ const game = {
         color: "bucks",
         borders: [
           { side: 3, color: "land" },
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
+          { side: 4, color: "land" }
         ],
         hexes: ["G18"]
       },
@@ -2433,8 +2344,7 @@ const game = {
         color: "berks",
         borders: [
           { side: 3, color: "land" },
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
+          { side: 4, color: "land" }
         ],
         hexes: ["L7"]
       },
@@ -2442,7 +2352,6 @@ const game = {
       {
         color: "oxon",
         borders: [
-          { side: 2, color: "land" },
           { side: 3, color: "land" },
           { side: 5, color: "land" },
           { side: 6, color: "land" }
@@ -2477,14 +2386,13 @@ const game = {
           { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["F19", "F23", "I24"]
+        hexes: ["F19", "I24"]
       },
       {
         color: "berks",
         borders: [
           { side: 1, color: "land" },
           { side: 3, color: "land" },
-          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["M10"]
@@ -2502,7 +2410,6 @@ const game = {
       {
         color: "berks",
         borders: [
-          { side: 1, color: "land" },
           { side: 2, color: "land" },
           { side: 4, color: "land" },
           { side: 5, color: "land" }
@@ -2512,9 +2419,6 @@ const game = {
       {
         color: "oxon",
         borders: [
-          { side: 1, color: "land" },
-          { side: 2, color: "land" },
-          { side: 3, color: "land" },
           { side: 5, color: "land" }
         ],
         hexes: ["D9"]
@@ -2565,7 +2469,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["C8", "C10", "D7", "E4", "J19", "K16", "K18"]
+        hexes: ["J19", "K16", "K18"]
       },
       {
         color: "bucks",
@@ -2580,7 +2484,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["B15", "E24", "F21", "F25", "G26", "H27", "I22"]
+        hexes: ["F21", "I22"]
       },
       {
         color: "berks",
@@ -2595,40 +2499,37 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["L11", "M6", "O8", "O10", "O12", "O20", "O22", "O24"]
+        hexes: ["L11"]
       },
 // 1 river
       {
         color: "berks",
         borders: [
-          { side: 2,  color: "water" }
-        ],
-        hexes: ["J11"]
-      },
-// 2 rivers
-      {
-        color: "berks",
-        borders: [
-          { side: 2, color: "water" },
-          { side: 3, color: "water" }
+          { side: 2, color: "water" }
         ],
         hexes: ["J9"]
       },
-// 6 rivers
+// 3 rivers
       {
-        color: "berks",
-        terrain: [
-          { type: "river", cost: "" }
-        ],
+        color: "oxon",
+        terrain: [ { type: "river", cost: "£30" } ],
         borders: [
-          { side: 1,  color: "water" },
-          { side: 2,  color: "water" },
-          { side: 3,  color: "water" },
           { side: 4,  color: "water" },
           { side: 5,  color: "water" },
           { side: 6,  color: "water" }
         ],
-        hexes: ["I8", "I10"]
+        hexes: ["I8"]
+      },
+      {
+        color: "berks",
+        terrain: [
+          { type: "river", cost: "£60" }
+        ],
+        borders: [
+          { side: 1,  color: "water" },
+          { side: 2,  color: "water" }
+        ],
+        hexes: ["I10"]
       },
 // Varied
       {
@@ -2643,26 +2544,20 @@ const game = {
       {
         color: "berks",
         terrain: [
-          { type: "river", angle: 120, percent: 0.35, cost: "" },
-          { type: "mountain", angle: 300, percent: 0.35, cost: "" }
+          { type: "river", cost: "£120" }
         ],
         borders: [
-          { side: 6,  color: "water" },
           { side: 1,  color: "water" },
           { side: 2,  color: "water" },
-          { side: 3,  color: "water" },
-          { side: 4,  color: "land" },
-          { side: 5,  color: "land" }
+          { side: 3,  color: "water" }
         ],
         hexes: ["H11"]
       },
       {
         color: "oxon",
+        terrain: [ { type: "river", cost: "£30" } ],
         borders: [
-          { side: 1,  color: "water" },
-          { side: 2,  color: "land" },
-          { side: 3,  color: "land" },
-          { side: 4,  color: "land" }
+          { side: 2,  color: "land" }
         ],
         hexes: ["I16"]
       },
@@ -2676,11 +2571,21 @@ const game = {
 // Nothing
       {
         color: "gray",
-        hexes: ["B9", "B17", "C6", "D23", "L5", "N15", "O6", "O14", "O18"]
+        hexes: ["C10", "D7", "D23", "E4", "E24", "F25", "G26",
+                "M4", "M6", "N15", "O6", "O8", "O10",
+                "O12", "O14", "O18", "O20", "O22", "O24"]
+      },
+      {
+        color: "oxon",
+        hexes: ["B11", "H17"]
+      },
+      {
+        color: "berks",
+        hexes: ["J11", "N7", "N19", "N25"]
       },
       {
         color: "bucks",
-        hexes: ["C20", "E16"]
+        hexes: ["B13", "C20", "E16"]
       }
     ]
   }
