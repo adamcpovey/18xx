@@ -1479,6 +1479,7 @@ const game = {
           { name: { name: "Marlborough" } }
         ],
         borders: [
+          { side: 1, color: "land" },
           { side: 3, color: "land" },
           { side: 4, color: "land" }
         ],
@@ -2151,7 +2152,10 @@ const game = {
       },
       {
         color: "berks",
-        hexes: ["N17"]
+        borders: [
+          { side: 2, color: "land" }
+        ],
+        hexes: ["N7"]
       },
       {
         color: "bucks",
@@ -2333,6 +2337,15 @@ const game = {
         hexes: ["H21"]
       },
       {
+        color: "berks",
+        borders: [
+          { side: 3, color: "land" },
+          { side: 4, color: "land" },
+          { side: 5, color: "land" }
+        ],
+        hexes: ["M6"]
+      },
+      {
         color: "bucks",
         borders: [
           { side: 3, color: "land" },
@@ -2344,7 +2357,8 @@ const game = {
         color: "berks",
         borders: [
           { side: 3, color: "land" },
-          { side: 4, color: "land" }
+          { side: 4, color: "land" },
+          { side: 6, color: "land" }
         ],
         hexes: ["L7"]
       },
@@ -2572,7 +2586,7 @@ const game = {
       {
         color: "gray",
         hexes: ["C10", "D7", "D23", "E4", "E24", "F25", "G26",
-                "M4", "M6", "N15", "O6", "O8", "O10",
+                "M4", "N15", "O6", "O8", "O10",
                 "O12", "O14", "O18", "O20", "O22", "O24"]
       },
       {
@@ -2581,7 +2595,7 @@ const game = {
       },
       {
         color: "berks",
-        hexes: ["J11", "N7", "N19", "N25"]
+        hexes: ["J11", "N17", "N19", "N25"]
       },
       {
         color: "bucks",
