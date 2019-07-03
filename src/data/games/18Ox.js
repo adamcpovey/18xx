@@ -9,40 +9,40 @@ const game = {
     titleX: 50,
     extraTokens: 2,
     hexCoords: true,
-    extraMinors: 1,
+    extraMinors: 2,
     currency: "GBP"
   },
 
   ipo: false,
 
-  tokens: ["Round", "CV\n£30", "Mine +£10", "Bypass"],
+  tokens: ["Round", "C.Village", "Mine +£10", "Bypass"],
 
-  bank: "£12,000",
+  bank: "£8,000",
 
   players: [
     {
       number: 3,
-      certLimit: 15,
-      capital: "£800"
+      certLimit: 17,
+      capital: "£400"
     },
     {
       number: 4,
-      certLimit: 11,
-      capital: "£600"
+      certLimit: 13,
+      capital: "£300"
     },
     {
       number: 5,
-      certLimit: 9,
-      capital: "£480"
+      certLimit: 10,
+      capital: "£250"
     }
   ],
 
   // Railway Companies
   companies: [
     {
-      name: "Great Western",
+      name: "Great Western Railway",
       abbrev: "GWR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
+      tokens: ["£50", "£50", "£50", "£50"],
       color: "green",
       shares: [
         {
@@ -59,104 +59,9 @@ const game = {
       ]
     },
     {
-      name: "Midland",
-      abbrev: "MR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
-      color: "red",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 20,
-          shares: 2
-        },
-        {
-          quantity: 8,
-          percent: 10,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Great Central",
-      abbrev: "GCR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
-      color: "blue",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 20,
-          shares: 2
-        },
-        {
-          quantity: 8,
-          percent: 10,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "South Wales",
-      abbrev: "SWR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
-      color: "gray",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 20,
-          shares: 2
-        },
-        {
-          quantity: 8,
-          percent: 10,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Metropolitan",
-      abbrev: "MetR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
-      color: "purple",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 20,
-          shares: 2
-        },
-        {
-          quantity: 8,
-          percent: 10,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Chiltern",
-      abbrev: "CR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
-      color: "cyan",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 20,
-          shares: 2
-        },
-        {
-          quantity: 8,
-          percent: 10,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "London and North Western",
+      name: "London and North Western Railway",
       abbrev: "LNWR",
-      tokens: ["Free", "£100", "£100", "£100", "Exchange", "Exchange", "Exchange", "Exchange"],
+      tokens: ["£50", "£50", "£50", "£50"],
       color: "black",
       shares: [
         {
@@ -173,229 +78,115 @@ const game = {
       ]
     },
     {
-      name: "Midland and South Western Junction",
-      abbrev: "A",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "Midland Railway",
+      abbrev: "MR",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "red",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
     },
     {
-      name: "Metropolitan and Great Central Junction",
-      abbrev: "B",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "Great Central Railway",
+      abbrev: "GCR",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "blue",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
     },
     {
-      name: "Cheltenham and Great Western Junction",
-      abbrev: "C",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "South Wales Railway",
+      abbrev: "SWR",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "gray",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
     },
     {
-      name: "Great Western and Great Central Junction",
-      abbrev: "D",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "Metropolitan Railway",
+      abbrev: "MetR",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "purple",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
     },
     {
-      name: "Banbury and Cheltenham",
-      abbrev: "E",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "Chiltern Railway",
+      abbrev: "ChR",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "cyan",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
     },
     {
-      name: "Oxford, Worcester and Wolverhampton",
-      abbrev: "F",
-      tokens: ["Free", "Free"],
-      color: "brown",
+      name: "London and South Western Railway",
+      abbrev: "LSW",
+      tokens: ["£50", "£50", "£50", "£50"],
+      color: "orange",
       shares: [
         {
           quantity: 1,
           label: "Director's certificate",
-          percent: 40,
+          percent: 20,
           shares: 2
         },
         {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Oxford and Rugby",
-      abbrev: "G",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Buckingham and Brackley Junction",
-      abbrev: "H",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Oxford and Bletchley Junction",
-      abbrev: "I",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Swindon, Marlborough and Andover",
-      abbrev: "J",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Royal Army Logistics",
-      abbrev: "K",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
-          shares: 1
-        }
-      ]
-    },
-    {
-      name: "Oxford, Witney and Fairford",
-      abbrev: "L",
-      tokens: ["Free", "Free"],
-      color: "brown",
-      shares: [
-        {
-          quantity: 1,
-          label: "Director's certificate",
-          percent: 40,
-          shares: 2
-        },
-        {
-          quantity: 3,
-          percent: 20,
+          quantity: 8,
+          percent: 10,
           shares: 1
         }
       ]
@@ -404,165 +195,165 @@ const game = {
 
   minorCompanies: [
     {
-      name: "Western",
+      name: "Western Railway",
       abbrev: "K2",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "East Gloucestershire",
+      name: "East Gloucestershire Railway",
       abbrev: "O7",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Bourton-on-the-Water",
+      name: "Bourton-on-the-Water Railway",
       abbrev: "O3",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Marlborough",
+      name: "Marlborough Railway",
       abbrev: "K5",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Chipping Norton",
+      name: "Chipping Norton Railway",
       abbrev: "O2",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Witney",
+      name: "Witney Railway",
       abbrev: "O6",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Lambourne Valley",
+      name: "Lambourne Valley Railway",
       abbrev: "K4",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
       name: "Wantage Tramway",
       abbrev: "K3",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Woodstock",
+      name: "Woodstock Railway",
       abbrev: "O4",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Berks and Hants",
+      name: "Berks and Hants Railway",
       abbrev: "K6",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Didcot, Newbury and Southampton",
+      name: "Didcot, Newbury and Southampton Railway",
       abbrev: "K1",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Quarry Tramway",
+      name: "Ironstone Quarry Tramway",
       abbrev: "O1",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Bicester Military",
+      name: "Bicester Military Railway",
       abbrev: "O5",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Wallingford and Watlington",
+      name: "Wallingford and Watlington Railway",
       abbrev: "O8",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Chinor and Princes Risborough",
+      name: "Chinor and Princes Risborough Railway",
       abbrev: "B5",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Buckinghamshire",
+      name: "Buckinghamshire Railway",
       abbrev: "B1",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Aylesbury and Buckingham",
+      name: "Aylesbury and Buckingham Railway",
       abbrev: "B3",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
       name: "Reading, Guilford and Reigate Railway",
       abbrev: "K7",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Great Marlow",
+      name: "Great Marlow Railway",
       abbrev: "B8",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "London and Birmingham",
+      name: "London and Birmingham Railway",
       abbrev: "B2",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Wycombe",
+      name: "Wycombe Railway",
       abbrev: "B6",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Aylesbury",
+      name: "Aylesbury Railway",
       abbrev: "B4",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Chesham",
+      name: "Chesham Railway",
       abbrev: "B7",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
     {
-      name: "Wokingham and Staines",
+      name: "Wokingham and Staines Railway",
       abbrev: "K8",
-      tokens: ["Free"],
+      tokens: [],
       color: "yellow"
     },
   ],
 
   trains: [
     {
-      name: "1+1",
-      quantity: 16,
+      name: "L",
+      quantity: 14,
       price: "£60",
       color: "yellow",
       info: [
         { note: "Upgrade for £60" },
-        { color: "green", note: "Rusted by 3" }
+        { color: "green", note: "Rusted by 4" }
       ]
     },
     {
       name: "2",
-      quantity: 16,
+      quantity: 14,
       price: "£100",
       color: "yellow",
       info: [
@@ -570,19 +361,9 @@ const game = {
       ]
     },
     {
-      name: "2+1",
-      quantity: 9,
-      price: "£140",
-      color: "yellow",
-      info: [
-        { note: "Upgrade for £60" },
-        { color: "green", note: "Rusted by 4" }
-      ]
-    },
-    {
       name: "3",
-      quantity: 9,
-      price: "£180",
+      quantity: 7,
+      price: "£160",
       color: "green",
       info: [
         { color: "brown", note: "Rusted by 6" }
@@ -590,7 +371,7 @@ const game = {
     },
     {
       name: "4",
-      quantity: 6,
+      quantity: 4,
       price: "£300",
       color: "green",
       info: [
@@ -600,8 +381,8 @@ const game = {
     {
       name: "5",
       quantity: 3,
-      price: "£480",
-      color: "yellow",
+      price: "£500",
+      color: "brown",
       info: [
         { note: "Permanent" }
       ]
@@ -610,56 +391,164 @@ const game = {
       name: "6",
       quantity: 2,
       price: "£600",
-      color: "yellow",
+      color: "brown",
       info: [
         { note: "Permanent" }
+      ]
+    },
+    {
+      name: "7",
+      quantity: 10,
+      price: "£750",
+      color: "gray",
+      info: [
+        { note: "Permanent" }
+      ]
+    },
+    {
+      name: "E",
+      quantity: 10,
+      price: "£1000",
+      color: "gray",
+      info: [
+        { note: "Permanent. Does not use track." }
       ]
     }
   ],
 
   privates: [
     {
-      name: "Schuylkill Valley",
-      price: "$20",
-      revenue: "$5",
-      description: ""
-    }
+      name: "Swinford Toll Bridge",
+      price: "£20",
+      revenue: "£5",
+      description: "Retire this company to receive a discount of £40 when you next build a bridge this turn."
+    },
+    {
+      name: "Horspath Engineering",
+      price: "£20",
+      revenue: "£5",
+      description: "Retire this company to receive a discount of £40 when you next build a cutting this turn."
+    },
+    {
+      name: "Sonning Engineering",
+      price: "£20",
+      revenue: "£5",
+      description: "Retire this company to receive a discount of £40 when you next build a cutting this turn."
+    },
+    {
+      name: "Brunel Engineering",
+      price: "£20",
+      revenue: "£5",
+      description: "Retire this company to take an additional Build Track action this round. (This may be before or after any other build actions.)"
+    },
+    {
+      name: "Clark Engineering",
+      price: "£20",
+      revenue: "£5",
+      description: "Retire this company to take an additional Build Track action this round. (This may be before or after any other build actions.)"
+    },
+    {
+      name: "Cowley Engineering",
+      price: "£40",
+      revenue: "£10",
+      description: "Retire this company to take an additional Upgrade Track action this round. (This may be before or after any other build actions.)"
+    },
+    {
+      name: "Chester Village",
+      price: "£50",
+      revenue: "£10",
+      description: "When acquired, place the Chester Village token on a vacant track segment to which you can trace a route on a hex that already contains a town. Chester Village earns £10/20/30/50 and counts as a town."
+    },
+    {
+      name: "Merton St. Construction",
+      price: "£40",
+      revenue: "£10",
+      description: "Retire this company to move a town to a vacant track segment on the same tile. You must be able to trace a route to both locations."
+    },
+    {
+      name: "Beeching Accountancy",
+      price: "£40",
+      revenue: "£10",
+      description: "Retire this company to remove a town from the map. You must be able to trace a route to the town. You may not select the home town of a Minor Company nor the Chester Village token."
+    },
+    {
+      name: "Christ Church Engineering",
+      price: "£50",
+      revenue: "£0",
+      description: "Retire this company to replace a basic city tile with an equivalent major city tile. This counts as your Upgrade Track action for the turn. Remove the Mine token, if present there."
+    },
+    {
+      name: "Scott Engineering",
+      price: "£50",
+      revenue: "£0",
+      description: "Retire this company to replace a basic city tile with an equivalent major city tile. This counts as your Upgrade Track action for the turn. Remove the Mine token, if present there."
+    },
+    {
+      name: "Hudson Accountancy",
+      price: "£40",
+      revenue: "£10",
+      description: "After calculating revenue, you may retire this company to add any multiple of £10 from your treasury to this turn’s revenue. (You may not add more cash than is available at that time.)"
+    },
+    {
+      name: "Ironstone Mining Company",
+      price: "£50",
+      revenue: "£0",
+      description: "When acquired, place the Mine token on a basic city to which you can trace a route. Your trains earn an additional £10 when stopping at the city with the Mine token."
+    },
+    {
+      name: "Parkway Construction",
+      price: "£40",
+      revenue: "£10",
+      description: "When acquired, place the Bypass token on a city. Your trains may ignore the city with the Bypass token when choosing a route. (It does not count as a stop and generates no revenue.)"
+    },
+    {
+      name: "Swindon Works",
+      price: "£40",
+      revenue: "£10",
+      description: "Company revenue of £0/20/40/60."
+    },
+    {
+      name: "Park End Construction",
+      price: "£40",
+      revenue: "£10",
+      description: "Retire this company to receive a discount of £50 when you next place a station token this turn."
+    },
   ],
 
   phases: [
     {
       name: "3",
       limit: "4",
-      number: "9",
+      number: "7",
       tiles: "green",
-      notes: "Minor companies can merge into Unions"
+      notes: "Minor companies can merge into Majors"
     },
     {
       name: "4",
-      rust: "1+1,2",
+      rust: "L, 2",
       limit: "3",
-      number: "6",
-      tiles: "green",
-      notes: "Unions can merge into Majors"
+      number: "4",
+      tiles: "green"
     },
     {
       name: "5",
-      limit: "2",
+      limit: "3",
       number: "3",
       tiles: "brown",
-      notes: "Majors added to bank"
+      notes: "Majors may split shares"
     },
     {
       name: "6",
       limit: "2",
       number: "2",
-      rust: "2+1,3",
-      tiles: "brown"
+      rust: "3",
+      tiles: "brown",
+      notes: "E-trains available"
     },
     {
-      name: "7",
-      limit: "2",
-      number: "6",
+      name: "7/E",
+      limit: "1 or 2",
+      number: "∞",
       rust: "4",
       tiles: "gray"
     }
@@ -669,28 +558,29 @@ const game = {
     {
       name: "1",
       limit: "2",
-      number: "16",
+      number: "14",
       tiles: "yellow",
-      notes: "Companies only start at £50"
+      notes: "Only start at £50"
     },
     {
       name: "2",
       limit: "2",
-      number: "16",
+      number: "14",
       tiles: "yellow",
-      notes: "Companies start at any grey value"
+      notes: "May acquire Privates"
     },
     {
       name: "3",
       limit: "1",
-      number: "9",
-      tiles: "green"
+      number: "7",
+      tiles: "green",
+      notes: "May merge or be incorporated"
     },
     {
       name: "4",
-      rust: "1+1,2",
+      rust: "L,2",
       limit: "1",
-      number: "6",
+      number: "4",
       tiles: "green"
     },
     {
@@ -703,13 +593,14 @@ const game = {
       name: "6",
       limit: "1",
       number: "2",
-      rust: "2+1,3",
-      tiles: "brown"
+      rust: "3",
+      tiles: "brown",
+      notes: "E-trains available"
     },
     {
-      name: "7",
+      name: "7/E",
       limit: "0",
-      number: "6",
+      number: "∞",
       rust: "4",
       tiles: "gray"
     }
@@ -731,17 +622,17 @@ const game = {
 
   rounds: [
     {
-      name: "OR2",
-      color: "green"
+      name: "SR",
+      color: "gray"
     },
     {
       name: "OR1",
       color: "yellow"
     },
     {
-      name: "SR",
-      color: "gray"
-    }
+      name: "OR2",
+      color: "yellow"
+    },
   ],
 
   turns: [
@@ -749,27 +640,28 @@ const game = {
       name: "Stock Round",
       steps: [
         "Sell any number of shares",
-        "Buy one share or certificate",
+        "Buy one certificate",
       ],
       ordered: true
     },
     {
       name: "Operating Round",
       steps: [
+        "Buy or sell shares",
         "Acquire private companies",
-        "Lay or upgrade track",
-        "Place a station token",
+        "Build or upgrade track",
+        "Place one station token",
         "Run trains",
-        "Pay or withhold revenue",
-        "Merge",
-        "Purchase trains"
+        "Pay or withhold dividends",
+        "Buy trains",
+        "Merge, incorporate, or split"
       ],
       ordered: true
     }
   ],
 
   stock: {
-    type: "2D",
+    type: "1Diag",
     movement: {
       up: ["Fully owned"],
       down: ["Shares in bank"],
@@ -777,271 +669,71 @@ const game = {
       right: ["Paid dividends"]
     },
     market: [
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        { value: 355, label: 355, arrow: "down" },
-        420,
-        { value: 500, label: 500, legend: 1 }
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        { value: 200, label: 200, arrow: "down" },
-        220,
-        245,
-        275,
-        315,
-        365,
-        { value: 430, label: 430, arrow: "up" }
-      ],
-      [
-        null,
-        null,
-        { value: 100, label: 100, arrow: "down" },
-        109,
-        122,
-        136,
-        150,
-        165,
-        180,
-        200,
-        220,
-        245,
-        275,
-        315,
-        { value: 365, label: 365, arrow: "up" }
-      ],
-      [
-        { value: 70, label: 70, arrow: "down" },
-        79,
-        89,
-        { value: 100, label: 100, par: true },
-        109,
-        122,
-        136,
-        150,
-        165,
-        180,
-        200,
-        220,
-        245,
-        275,
-        { value: 315, label: 315, arrow: "up" }
-      ],
-      [
-        { value: 60, label: 60, arrow: "down" },
-        67,
-        76,
-        { value: 86, label: 86, par: true },
-        97,
-        109,
-        122,
-        136,
-        150,
-        165,
-        180,
-        200,
-        220,
-        245,
-        { value: 275, label: 275, arrow: "up" }
-      ],
-      [
-        { value: 54, label: 54, arrow: "down" },
-        59,
-        66,
-        { value: 75, label: 75, par: true },
-        85,
-        96,
-        108,
-        121,
-        135,
-        150,
-        165,
-        180,
-        200,
-        220,
-        { value: 245, label: 245, arrow: "up" }
-      ],
-      [
-        { value: 50, label: 50, arrow: "down" },
-        54,
-        59,
-        { value: 66, label: 66, par: true },
-        75,
-        85,
-        96,
-        108,
-        121,
-        135,
-        150,
-        165,
-        180,
-        195,
-        { value: 215, label: 215, arrow: "up" }
-      ],
-      [
-        { value: 46, label: 46, arrow: "down" },
-        50,
-        54,
-        { value: 59, label: 59, par: true },
-        66,
-        75,
-        85,
-        96,
-        107,
-        119,
-        133,
-        { value: 147, label: 147, arrow: "up" },
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 43, label: 43, legend: 0, arrow: "down" },
-        46,
-        50,
-        { value: 54, label: 54, par: true },
-        59,
-        66,
-        75,
-        85,
-        96,
-        { value: 107, label: 107, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 39, label: 39, legend: 0, arrow: "down" },
-        { value: 43, label: 43, legend: 0 },
-        46,
-        { value: 50, label: 50, par: true, color: "yellow" },
-        54,
-        59,
-        65,
-        74,
-        { value: 84, label: 48, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 34, label: 34, legend: 0, arrow: "down" },
-        { value: 39, label: 39, legend: 0 },
-        { value: 43, label: 43, legend: 0 },
-        46,
-        50,
-        54,
-        59,
-        { value: 65, label: 65, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 28, label: 28, legend: 0, arrow: "down" },
-        { value: 34, label: 34, legend: 0 },
-        { value: 39, label: 39, legend: 0 },
-        { value: 43, label: 43, legend: 0 },
-        { value: 46, label: 46, legend: 0 },
-        { value: 50, label: 50, legend: 0 },
-        { value: 54, label: 54, legend: 0, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 21, label: 21, legend: 0, arrow: "down" },
-        { value: 28, label: 28, legend: 0 },
-        { value: 34, label: 34, legend: 0 },
-        { value: 39, label: 39, legend: 0 },
-        { value: 43, label: 43, legend: 0 },
-        { value: 46, label: 46, legend: 0, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 12, label: 12, legend: 0, arrow: "down" },
-        { value: 21, label: 21, legend: 0 },
-        { value: 28, label: 28, legend: 0 },
-        { value: 34, label: 34, legend: 0 },
-        { value: 39, label: 39, legend: 0, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        { value: 1, label: 1, legend: 0 },
-        { value: 12, label: 12, legend: 0 },
-        { value: 21, label: 21, legend: 0 },
-        { value: 28, label: 28, legend: 0, arrow: "up" },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
+      { label: "0", legend: 0 },
+      15,
+      23,
+      30,
+      36,
+      41,
+      { label: 45, legend: 1 },
+      { label: 48, legend: 1 },
+      { label: 50, legend: 1 },
+      { label: 53, legend: 1 },
+      { label: 57, legend: 1 },
+      { label: 62, legend: 1 },
+      { label: 68, legend: 1 },
+      { label: 75, legend: 1 },
+      { label: 83, legend: 2 },
+      { label: 92, legend: 2 },
+      { label: 102, legend: 2 },
+      { label: 113, legend: 2 },
+      { label: 125, legend: 2 },
+      { label: 140, legend: 2 },
+      { label: 155, legend: 2 },
+      170,
+      185,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      325,
+      350,
+      375,
+      400,
+      430,
+      460,
+      490,
+      520,
+      560,
+      600,
+      640,
+      680,
+      780,
+      830,
+      880,
+      940,
+      { label: 1000, legend: 3 }
     ],
     legend: [
       {
-        color: "orange",
-        description:
-        "Certificates do not count towards limit",
+        color: "black",
+        description: "Close company",
         icon: "certificate"
       },
       {
-        color: "offboard",
+        color: "yellow",
+        description: "Initial price",
+        icon: "money-bill-wave"
+      },
+      {
+        color: "green",
+        description: "Initial price from Phase 3",
+        icon: "money-bill-wave"
+      },
+      {
+        color: "water",
         description: "Game end",
         icon: "flag-checkered"
       }
@@ -1049,52 +741,40 @@ const game = {
   },
 
   tiles: {
-    "1": 1,
-    "2": 1,
-    "3": 2,
-    "4": 2,
-    "7": 4,
-    "8": 8,
-    "9": 7,
-    "55": 1,
-    "56": 1,
-    "57": 4,
-    "58": 2,
-    "69": 1,
-    "14": 3,
-    "15": 2,
-    "16": 1,
-    "18": 1,
-    "19": 1,
-    "20": 1,
-    "23": 3,
-    "24": 3,
-    "25": 1,
-    "26": 1,
-    "27": 1,
-    "28": 1,
-    "29": 1,
-    "53": 2,
-    "54": 1,
-    "59": 2,
-    "39": 1,
-    "40": 1,
-    "41": 2,
-    "42": 2,
-    "43": 2,
-    "44": 1,
-    "45": 2,
-    "46": 2,
-    "47": 1,
-    "61": 2,
-    "62": 1,
-    "63": 3,
-    "64": 1,
-    "65": 1,
-    "66": 1,
-    "67": 1,
-    "68": 1,
-    "70": 1
+    "5": 6,
+    "6": 6,
+    "57": 6,
+    "7": 10,
+    "8": 20,
+    "9": 20,
+    "14": 4,
+    "15": 4,
+    "619": 4,
+    "80": 3,
+    "81": 3,
+    "82": 6,
+    "83": 6,
+    "H14": 1,
+    "H15": 1,
+    "H619": 1,
+    "544": 3,
+    "545": 3,
+    "546": 3,
+    "611": 4,
+    "H611": 2,
+    "455": 2,
+    "H455": 1,
+    "60": 2,
+    "O1": 1,
+    "O2": 1,
+    "O3": 1,
+    "O4": 1,
+    "O5": 1,
+    "O6": 1,
+    "O7": 1,
+    "O8": 1,
+    "O9": 1,
+    "O10": 1
   },
 
   map: {
@@ -1960,17 +1640,10 @@ const game = {
       {
         color: "berks",
         centerTowns: [
-          { name: { name: "Twyford" } }
+          { name: { name: "Wokingham" } }
         ],
         borders: [
-          { side: 4, color: "land" }
-        ],
-        hexes: ["M20"]
-      },
-      {
-        color: "berks",
-        centerTowns: [
-          { name: { name: "Wokingham" } }
+          { side: 2, color: "land" }
         ],
         hexes: ["N21"]
       },
@@ -2155,14 +1828,28 @@ const game = {
         borders: [
           { side: 2, color: "land" }
         ],
-        hexes: ["N7"]
+        hexes: ["N7", "N13"]
       },
       {
         color: "bucks",
         borders: [
           { side: 4, color: "land" }
         ],
-        hexes: ["F17"]
+        hexes: ["C16", "F17"]
+      },
+      {
+        color: "oxon",
+        borders: [
+          { side: 4, color: "land" }
+        ],
+        hexes: ["E6"]
+      },
+      {
+        color: "oxon",
+        borders: [
+          { side: 5, color: "land" }
+        ],
+        hexes: ["D9"]
       },
 // 2 lands
       {
@@ -2179,7 +1866,7 @@ const game = {
           { side: 1, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["C18"]
+        hexes: ["C18", "F23", "I26"]
       },
       {
         color: "oxon",
@@ -2192,25 +1879,10 @@ const game = {
       {
         color: "berks",
         borders: [
-          { side: 1, color: "land" },
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
-        hexes: ["L21"]
-      },
-      {
-        color: "berks",
-        borders: [
-          { side: 2, color: "land" }
-        ],
-        hexes: ["N13"]
-      },
-      {
-        color: "bucks",
-        borders: [
-          { side: 4, color: "land" }
-        ],
-        hexes: ["C16"]
+        hexes: ["M16"]
       },
       {
         color: "oxon",
@@ -2219,6 +1891,14 @@ const game = {
           { side: 4, color: "land" }
         ],
         hexes: ["E12"]
+      },
+      {
+        color: "bucks",
+        borders: [
+          { side: 3, color: "land" },
+          { side: 4, color: "land" }
+        ],
+        hexes: ["G18"]
       },
       {
         color: "oxon",
@@ -2232,17 +1912,17 @@ const game = {
         color: "berks",
         borders: [
           { side: 4, color: "land" },
+          { side: 5, color: "land" }
+        ],
+        hexes: ["M20"]
+      },
+      {
+        color: "berks",
+        borders: [
+          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["K12"]
-      },
-      {
-        color: "bucks",
-        borders: [
-          { side: 1, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["F23"]
       },
       {
         color: "bucks",
@@ -2276,7 +1956,16 @@ const game = {
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
-        hexes: ["M14"]
+        hexes: ["L21", "M14"]
+      },
+      {
+        color: "berks",
+        borders: [
+          { side: 1, color: "land" },
+          { side: 3, color: "land" },
+          { side: 6, color: "land" }
+        ],
+        hexes: ["M10"]
       },
       {
         color: "berks",
@@ -2288,37 +1977,6 @@ const game = {
         hexes: ["K14"]
       },
       {
-        color: "oxon",
-        borders: [
-          { side: 4, color: "land" }
-        ],
-        hexes: ["E6"]
-      },
-      {
-        color: "bucks",
-        borders: [
-          { side: 1, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["I26"]
-      },
-      {
-        color: "oxon",
-        terrain: [ { type: "river", cost: "£30" } ],
-        borders: [
-          { side: 6, color: "land" }
-        ],
-        hexes: ["G16"]
-      },
-      {
-        color: "berks",
-        borders: [
-          { side: 2, color: "land" },
-          { side: 3, color: "land" }
-        ],
-        hexes: ["M16"]
-      },
-      {
         color: "bucks",
         borders: [
           { side: 2, color: "land" },
@@ -2326,6 +1984,15 @@ const game = {
           { side: 6, color: "land" }
         ],
         hexes: ["G22"]
+      },
+      {
+        color: "berks",
+        borders: [
+          { side: 2, color: "land" },
+          { side: 4, color: "land" },
+          { side: 5, color: "land" }
+        ],
+        hexes: ["M12"]
       },
       {
         color: "bucks",
@@ -2346,14 +2013,6 @@ const game = {
         hexes: ["M6"]
       },
       {
-        color: "bucks",
-        borders: [
-          { side: 3, color: "land" },
-          { side: 4, color: "land" }
-        ],
-        hexes: ["G18"]
-      },
-      {
         color: "berks",
         borders: [
           { side: 3, color: "land" },
@@ -2362,7 +2021,6 @@ const game = {
         ],
         hexes: ["L7"]
       },
-// 4 lands
       {
         color: "oxon",
         borders: [
@@ -2372,26 +2030,7 @@ const game = {
         ],
         hexes: ["D11"]
       },
-      {
-        color: "oxon",
-        borders: [
-          { side: 2, color: "land" },
-          { side: 3, color: "land" },
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["G8"]
-      },
-      {
-        color: "berks",
-        borders: [
-          { side: 2, color: "land" },
-          { side: 3, color: "land" },
-          { side: 4, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["L17"]
-      },
+// 4 lands
       {
         color: "bucks",
         borders: [
@@ -2403,13 +2042,24 @@ const game = {
         hexes: ["F19", "I24"]
       },
       {
-        color: "berks",
+        color: "bucks",
         borders: [
           { side: 1, color: "land" },
+          { side: 2, color: "land" },
           { side: 3, color: "land" },
+          { side: 5, color: "land" }
+        ],
+        hexes: ["K20"]
+      },
+      {
+        color: "oxon",
+        borders: [
+          { side: 2, color: "land" },
+          { side: 3, color: "land" },
+          { side: 4, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["M10"]
+        hexes: ["G8"]
       },
       {
         color: "oxon",
@@ -2425,27 +2075,11 @@ const game = {
         color: "berks",
         borders: [
           { side: 2, color: "land" },
-          { side: 4, color: "land" },
-          { side: 5, color: "land" }
-        ],
-        hexes: ["M12"]
-      },
-      {
-        color: "oxon",
-        borders: [
-          { side: 5, color: "land" }
-        ],
-        hexes: ["D9"]
-      },
-      {
-        color: "bucks",
-        borders: [
-          { side: 1, color: "land" },
-          { side: 2, color: "land" },
           { side: 3, color: "land" },
-          { side: 5, color: "land" }
+          { side: 4, color: "land" },
+          { side: 6, color: "land" }
         ],
-        hexes: ["K20"]
+        hexes: ["L17"]
       },
       {
         color: "oxon",
@@ -2515,24 +2149,13 @@ const game = {
         ],
         hexes: ["L11"]
       },
-// 1 river
+// rivers
       {
         color: "berks",
         borders: [
           { side: 2, color: "water" }
         ],
         hexes: ["J9"]
-      },
-// 3 rivers
-      {
-        color: "oxon",
-        terrain: [ { type: "river", cost: "£30" } ],
-        borders: [
-          { side: 4,  color: "water" },
-          { side: 5,  color: "water" },
-          { side: 6,  color: "water" }
-        ],
-        hexes: ["I8"]
       },
       {
         color: "berks",
@@ -2545,7 +2168,17 @@ const game = {
         ],
         hexes: ["I10"]
       },
-// Varied
+      {
+        color: "oxon",
+        terrain: [ { type: "river", cost: "£30" } ],
+        borders: [
+          { side: 4,  color: "water" },
+          { side: 5,  color: "water" },
+          { side: 6,  color: "water" }
+        ],
+        hexes: ["I8"]
+      },
+// Land and sea
       {
         color: "oxon",
         borders: [
@@ -2554,6 +2187,15 @@ const game = {
           { side: 5, color: "water" }
         ],
         hexes: ["G10"]
+      },
+// Terrain costs
+      {
+        color: "oxon",
+        terrain: [ { type: "river", cost: "£30" } ],
+        borders: [
+          { side: 6, color: "land" }
+        ],
+        hexes: ["G16"]
       },
       {
         color: "berks",
