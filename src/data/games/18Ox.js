@@ -343,7 +343,7 @@ const game = {
   trains: [
     {
       name: "L",
-      quantity: 14,
+      quantity: 13,
       price: "£60",
       color: "yellow",
       info: [
@@ -791,8 +791,8 @@ const game = {
           revenues: [
             { color: "yellow", cost: "20" },
             { color: "green", cost: "30" },
-            { color: "brown", cost: "30" },
-            { color: "gray", cost: "40" }
+            { color: "brown", cost: "40" },
+            { color: "gray", cost: "50" }
           ]
         },
         offBoardTrack: [
@@ -803,7 +803,7 @@ const game = {
             angle: 180,
             percent: 0.8,
             companies: [
-              { label: "CR", color: "cyan" }
+              { label: "ChR", color: "cyan" }
             ]
           }
         ],
@@ -891,8 +891,8 @@ const game = {
           revenues: [
             { color: "yellow", cost: "20" },
             { color: "green", cost: "30" },
-            { color: "brown", cost: "30" },
-            { color: "gray", cost: "40" },
+            { color: "brown", cost: "40" },
+            { color: "gray", cost: "50" },
           ]
         },
         offBoardTrack: [
@@ -916,8 +916,8 @@ const game = {
           revenues: [
             { color: "yellow", cost: "40" },
             { color: "green", cost: "50" },
-            { color: "brown", cost: "50" },
-            { color: "gray", cost: "60" },
+            { color: "brown", cost: "60" },
+            { color: "gray", cost: "70" },
           ]
         },
         offBoardTrack: [
@@ -941,8 +941,8 @@ const game = {
           revenues: [
             { color: "yellow", cost: "40" },
             { color: "green", cost: "50" },
-            { color: "brown", cost: "50" },
-            { color: "gray", cost: "60" },
+            { color: "brown", cost: "60" },
+            { color: "gray", cost: "70" },
           ]
         },
         offBoardTrack: [
@@ -966,8 +966,8 @@ const game = {
           revenues: [
             { color: "yellow", cost: "20" },
             { color: "green", cost: "30" },
-            { color: "brown", cost: "30" },
-            { color: "gray", cost: "40" },
+            { color: "brown", cost: "40" },
+            { color: "gray", cost: "50" },
           ]
         },
         offBoardTrack: [
@@ -989,12 +989,15 @@ const game = {
       },
       {
         color: "offboard",
+        labels : [
+          { label: "L", angle: 120, percent: 0.75 }
+        ],
         offBoardRevenue: {
           name: { name: "LONDON" },
           revenues: [
-            { color: "yellow", cost: "20" },
-            { color: "green", cost: "30" },
-            { color: "brown", cost: "40" },
+            { color: "yellow", cost: "30" },
+            { color: "green", cost: "40" },
+            { color: "brown", cost: "50" },
             { color: "gray", cost: "60" },
           ]
         },
@@ -1017,7 +1020,7 @@ const game = {
             angle: 180,
             percent: 0.8,
             companies: [
-              { label: "CR", color: "cyan" }
+              { label: "ChR", color: "cyan" }
             ]
           },
           {
@@ -2091,9 +2094,19 @@ const game = {
         ],
         hexes: ["E10"]
       },
-// 5 lands
       {
         color: "bucks",
+        borders: [
+          { side: 2, color: "land" },
+          { side: 3, color: "land" },
+          { side: 5, color: "land" },
+          { side: 6, color: "land" }
+        ],
+        hexes: ["J21"]
+      },
+// 5 lands
+      {
+        color: "oxon",
         borders: [
           { side: 1, color: "land" },
           { side: 2, color: "land" },
@@ -2101,7 +2114,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["J21"]
+        hexes: ["J19"]
       },
 // 6 lands
       {
@@ -2117,7 +2130,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["J19", "K16", "K18"]
+        hexes: ["K16", "K18"]
       },
       {
         color: "bucks",
