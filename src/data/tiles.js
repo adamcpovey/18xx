@@ -3482,42 +3482,42 @@ const tiles = {
   },
   "O5": {
     color: "brown",
-    values: [{ angle: 210, percent: 0.8, value: 50 }],
+    values: [{ angle: 210, percent: 0.8, value: 60 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 1 }],
     track: [{ side: 3 }, { side: 5 }, { side: 6 }]
   },
   "O6": {
     color: "brown",
-    values: [{ angle: 210, percent: 0.8, value: 50 }],
+    values: [{ angle: 210, percent: 0.8, value: 60 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 1 }],
     track: [{ side: 1 }, { side: 3 }, { side: 6 }]
   },
   "O7": {
     color: "brown",
-    values: [{ angle: 210, percent: 0.8, value: 50 }],
+    values: [{ angle: 210, percent: 0.8, value: 60 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 3 }, { side: 5 }]
   },
   "O8": {
     color: "gray",
-    values: [{ angle: 210, percent: 0.8, value: 70 }],
+    values: [{ angle: 210, percent: 0.8, value: 80 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 2 }, { side: 4 }, { side: 6 }]
   },
   "O9": {
     color: "gray",
-    values: [{ angle: 210, percent: 0.8, value: 70 }],
+    values: [{ angle: 210, percent: 0.8, value: 80 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 2 }, { side: 5 }, { side: 6 }]
   },
   "O10": {
     color: "gray",
-    values: [{ angle: 210, percent: 0.8, value: 70 }],
+    values: [{ angle: 210, percent: 0.8, value: 80 }],
     labels: { label: "O", angle: 155, percent: 0.8 },
     cities: [{ size: 2 }],
     track: [{ side: 2 }, { side: 3 }, { side: 5 }, { side: 6 }]
@@ -3527,21 +3527,21 @@ const tiles = {
     rotations: 3,
     values: [{ angle: 210, percent: 0.8, value: 40 }],
     labels: { label: "H", angle: 155, percent: 0.75 },
-    cities: [{ size: 1 }],
+    cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 2 }, { side: 4 }, { side: 5 }]
   },
   "H15": {
     color: "green",
     values: [{ angle: 210, percent: 0.8, value: 40 }],
     labels: { label: "H", angle: 155, percent: 0.75 },
-    cities: [{ size: 1 }],
+    cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 2 }, { side: 3 }, { side: 6 }]
   },
   "H619": {
     color: "green",
     values: [{ angle: 210, percent: 0.8, value: 40 }],
     labels: { label: "H", angle: 155, percent: 0.75 },
-    cities: [{ size: 1 }],
+    cities: [{ size: 2 }],
     track: [{ side: 1 }, { side: 2 }, { side: 4 }, { side: 6 }]
   },
   "H611": {
