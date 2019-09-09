@@ -971,7 +971,7 @@ const game = {
           ]
         },
         offBoardTrack: [
-          { side: 3 }
+          { side: 2 }
         ],
         border: [
           { side: 2, color: "black" }
@@ -1287,7 +1287,7 @@ const game = {
           { label: "O5", percent: 0.75 }
         ],
         borders: [
-          { side: 1, color: "land" }
+          { side: 1, color: "water" }
         ],
         hexes: ["F15"]
       },
@@ -1371,7 +1371,8 @@ const game = {
         borders: [
           { side: 2, color: "land" },
           { side: 3, color: "land" },
-          { side: 6, color: "land" }
+          { side: 5, color: "water" },
+          { side: 6, color: "water" }
         ],
         hexes: ["K22"]
       },
@@ -1527,8 +1528,8 @@ const game = {
           { name: { name: "Shipton-on-Cherwell" } }
         ],
         borders: [
-          { side: 3, color: "land" },
-          { side: 4, color: "land" }
+          { side: 3, color: "water" },
+          { side: 4, color: "water" }
         ],
         hexes: ["F13"]
       },
@@ -1592,14 +1593,13 @@ const game = {
           { side: 1, color: "land" },
           { side: 2, color: "land" },
           { side: 3, color: "land" },
-          { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
         hexes: ["H15"]
       },
       {
         color: "oxon",
-        terrain: [ { type: "river", cost: "£60" } ],
+        terrain: [ { type: "river", cost: "£30" } ],
          borders: [
           { side: 3, color: "land" },
         ],
@@ -1636,7 +1636,7 @@ const game = {
          borders: [
           { side: 1, color: "land" },
           { side: 2, color: "land" },
-          { side: 4, color: "land" }
+          { side: 4, color: "water" }
         ],
         hexes: ["L19"]
       },
@@ -1674,12 +1674,10 @@ const game = {
       },
       {
         color: "bucks",
-        centerTowns: [
-          { name: { name: "Slough" } }
-        ],
-         borders: [
+        borders: [
           { side: 2, color: "land" },
           { side: 3, color: "land" },
+          { side: 1, color: "water" },
           { side: 5, color: "water" },
           { side: 6, color: "water" }
         ],
@@ -1691,7 +1689,9 @@ const game = {
           { name: { name: "Maidenhead" } }
         ],
         borders: [
-          { side: 3, color: "land" }
+          { side: 2, color: "water" },
+          { side: 3, color: "water" },
+          { side: 4, color: "water" }
         ],
         hexes: ["L23"]
       },
@@ -1703,7 +1703,7 @@ const game = {
         borders: [
           { side: 3, color: "land" },
           { side: 5, color: "land" },
-          { side: 6, color: "land" }
+          { side: 6, color: "water" }
         ],
         hexes: ["K24"]
       },
@@ -1831,7 +1831,7 @@ const game = {
         borders: [
           { side: 2, color: "land" }
         ],
-        hexes: ["N7", "N13"]
+        hexes: ["N7", "N15"]
       },
       {
         color: "bucks",
@@ -1846,13 +1846,6 @@ const game = {
           { side: 4, color: "land" }
         ],
         hexes: ["E6"]
-      },
-      {
-        color: "oxon",
-        borders: [
-          { side: 5, color: "land" }
-        ],
-        hexes: ["D9"]
       },
 // 2 lands
       {
@@ -1874,8 +1867,8 @@ const game = {
       {
         color: "oxon",
         borders: [
-          { side: 1, color: "land" },
-          { side: 6, color: "land" }
+          { side: 1, color: "water" },
+          { side: 6, color: "water" }
         ],
         hexes: ["E14"]
       },
@@ -1885,15 +1878,23 @@ const game = {
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
-        hexes: ["M16"]
+        hexes: ["N13"]
       },
       {
         color: "oxon",
         borders: [
           { side: 2, color: "land" },
-          { side: 4, color: "land" }
+          { side: 4, color: "water" }
         ],
         hexes: ["E12"]
+      },
+      {
+        color: "oxon",
+        borders: [
+          { side: 3, color: "land" },
+          { side: 5, color: "land" }
+        ],
+        hexes: ["D9"]
       },
       {
         color: "bucks",
@@ -1941,7 +1942,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["F7"]
+        hexes: ["C10", "F7"]
       },
       {
         color: "berks",
@@ -1959,7 +1960,7 @@ const game = {
           { side: 2, color: "land" },
           { side: 3, color: "land" }
         ],
-        hexes: ["L21", "M14"]
+        hexes: ["M16"]
       },
       {
         color: "berks",
@@ -2024,15 +2025,6 @@ const game = {
         ],
         hexes: ["L7"]
       },
-      {
-        color: "oxon",
-        borders: [
-          { side: 3, color: "land" },
-          { side: 5, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["D11"]
-      },
 // 4 lands
       {
         color: "bucks",
@@ -2045,14 +2037,34 @@ const game = {
         hexes: ["F19", "I24"]
       },
       {
+        color: "oxon",
+        borders: [
+          { side: 1, color: "land" },
+          { side: 2, color: "land" },
+          { side: 3, color: "land" },
+          { side: 6, color: "land" }
+        ],
+        hexes: ["E10"]
+      },
+      {
         color: "bucks",
         borders: [
           { side: 1, color: "land" },
           { side: 2, color: "land" },
           { side: 3, color: "land" },
-          { side: 5, color: "land" }
+          { side: 5, color: "water" }
         ],
         hexes: ["K20"]
+      },
+      {
+        color: "oxon",
+        borders: [
+          { side: 2, color: "land" },
+          { side: 3, color: "land" },
+          { side: 5, color: "land" },
+          { side: 6, color: "land" }
+        ],
+        hexes: ["D11"]
       },
       {
         color: "oxon",
@@ -2083,16 +2095,6 @@ const game = {
           { side: 6, color: "land" }
         ],
         hexes: ["L17"]
-      },
-      {
-        color: "oxon",
-        borders: [
-          { side: 1, color: "land" },
-          { side: 2, color: "land" },
-          { side: 3, color: "land" },
-          { side: 6, color: "land" }
-        ],
-        hexes: ["E10"]
       },
       {
         color: "bucks",
@@ -2160,7 +2162,7 @@ const game = {
           { side: 5, color: "land" },
           { side: 6, color: "land" }
         ],
-        hexes: ["L11"]
+        hexes: ["L11", "M14"]
       },
 // rivers
       {
@@ -2172,8 +2174,17 @@ const game = {
       },
       {
         color: "berks",
+        borders: [
+          { side: 1, color: "water" },
+          { side: 2, color: "water" },
+          { side: 3, color: "water" }
+        ],
+        hexes: ["L21"]
+      },
+      {
+        color: "berks",
         terrain: [
-          { type: "river", cost: "£60" }
+          { type: "river", cost: "£30" }
         ],
         borders: [
           { side: 1,  color: "water" },
@@ -2212,8 +2223,13 @@ const game = {
       },
       {
         color: "berks",
+        terrain: [ { type: "river", cost: "£30" } ],
+        hexes: ["N17"]
+      },
+      {
+        color: "berks",
         terrain: [
-          { type: "river", cost: "£120" }
+          { type: "river", cost: "£60" }
         ],
         borders: [
           { side: 1,  color: "water" },
@@ -2225,9 +2241,6 @@ const game = {
       {
         color: "oxon",
         terrain: [ { type: "river", cost: "£30" } ],
-        borders: [
-          { side: 2,  color: "land" }
-        ],
         hexes: ["I16"]
       },
       {
@@ -2240,8 +2253,8 @@ const game = {
 // Nothing
       {
         color: "gray",
-        hexes: ["C10", "D7", "D23", "E4", "E24", "F25", "G26",
-                "M4", "N15", "O6", "O8", "O10",
+        hexes: ["D7", "D23", "E4", "E24", "F25", "G26",
+                "O6", "O8", "O10",
                 "O12", "O14", "O18", "O20", "O22", "O24"]
       },
       {
@@ -2250,7 +2263,7 @@ const game = {
       },
       {
         color: "berks",
-        hexes: ["J11", "N17", "N19", "N25"]
+        hexes: ["J11", "N19", "N25"]
       },
       {
         color: "bucks",
