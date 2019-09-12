@@ -995,10 +995,10 @@ const game = {
         offBoardRevenue: {
           name: { name: "LONDON" },
           revenues: [
-            { color: "yellow", cost: "30" },
-            { color: "green", cost: "40" },
-            { color: "brown", cost: "50" },
-            { color: "gray", cost: "60" },
+            { color: "yellow", cost: "40" },
+            { color: "green", cost: "50" },
+            { color: "brown", cost: "60" },
+            { color: "gray", cost: "70" },
           ]
         },
         cities: [
