@@ -6,6 +6,7 @@ import ColorContext from "./context/ColorContext";
 
 import Token from "./Token";
 import Svg from "./Svg";
+import PageSetup from "./PageSetup";
 
 require("./IPO.css");
 
@@ -25,7 +26,7 @@ const IPO = ({ match }) => {
                   <div className="ipo__token">
                     <ColorContext.Provider value="companies">
                       <Svg viewBox="-25 -25 50 50">
-                        <Token label={company.abbrev} color={company.color} />
+                        <Token company={company.abbrev} />
                       </Svg>
                     </ColorContext.Provider>
                   </div>
@@ -34,7 +35,7 @@ const IPO = ({ match }) => {
               companies
             )}
           </div>
-          <style>{`@media print {@page {size: 11in 8.5in;}}`}</style>
+          <PageSetup landscape={true}/>
         </div>
       )}
     </Color>

@@ -2,8 +2,8 @@ import React from "react";
 
 import Color from "../data/Color";
 
-import addIndex from "ramda/es/addIndex";
-import map from "ramda/es/map";
+import addIndex from "ramda/src/addIndex";
+import map from "ramda/src/map";
 
 const Train = ({ train }) => {
   let { name, price, color, info, description, players } = train;
@@ -39,14 +39,16 @@ const Train = ({ train }) => {
     <div className="cutlines">
       <div className="card train">
         <Color>
-          {c => (
-            <div className="train__hr" style={{ backgroundColor: c(color) }} />
+          {(c,t) => (
+            <React.Fragment>
+              <div className="train__hr" style={{ backgroundColor: c(color) }} />
+              <div className="train__price" style={{ color: t(c(color)) }}>{price}</div>
+              <div className="train__description">{description}</div>
+              <div className="train__notes">{notes}</div>
+              <div className="train__name" style={{ color: t(c(color)) }}>{name}</div>
+            </React.Fragment>
           )}
         </Color>
-        <div className="train__price">{price}</div>
-        <div className="train__description">{description}</div>
-        <div className="train__notes">{notes}</div>
-        <div className="train__name">{name}</div>
       </div>
     </div>
   );

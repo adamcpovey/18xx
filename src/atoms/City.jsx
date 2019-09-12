@@ -1,17 +1,18 @@
 import React from "react";
+import { connect } from "react-redux";
 import Color from "../data/Color";
 
 import Name from "./Name";
 
-import find from "ramda/es/find";
-import is from "ramda/es/is";
-import propEq from "ramda/es/propEq";
+import find from "ramda/src/find";
+import is from "ramda/src/is";
+import propEq from "ramda/src/propEq";
 import Token from "../Token";
 
 import Config from "../data/Config";
 import ColorContext from "../context/ColorContext";
 
-const City = ({ size, companies, border, name, extend, rotation }) => {
+const City = ({ straightCityNames, size, companies, border, name, extend, rotation, bgColor }) => {
   if (size === undefined) {
     size = 1;
   }
@@ -26,7 +27,15 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
       if(is(Object, companies[num])) {
         return (
           <ColorContext.Provider value="companies">
-            <Token label={companies[num].label} token={companies[num].token || companies[num].color}/>;
+            <Config>
+              {(config, game) => {
+                if(config.plainMapHomes) {
+                  return <Token label={companies[num].label} token="white"/>;
+                } else {
+                  return <Token label={companies[num].label} token={companies[num].token || companies[num].color}/>;
+                }
+              }}
+            </Config>
           </ColorContext.Provider>
         );
       } else {
@@ -57,13 +66,15 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
   let nameNode = null;
 
   if (name) {
-    let path = `city${size > 1 ? size : ""}Path`;
-    if(name.reverse) {
+    let path = straightCityNames ? null : `city${size > 1 ? size : ""}Path`;
+    if(path && name.reverse) {
       path = path + "Reverse";
     }
-    nameNode = <Name {...name}
-                                                                                    y={name.y || (name.reverse ? 7 : 0)}
-                                                                                    path={path} />;
+    let y = name.y || (name.reverse ? 7 : 0);
+    if (straightCityNames) {
+      y -= name.reverse ? -24 : 32;
+    }
+    nameNode = <Name bgColor={bgColor} {...name} y={y} path={path} />;
   }
 
   if (size === 1) {
@@ -82,6 +93,18 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
             {c => (
               <circle
                 fill={c(companyColor(0) || "city")}
+                stroke="none"
+                cx="0"
+                cy="0"
+                r="25"
+              />
+            )}
+          </Color>
+          {companyLabel(0)}
+          <Color context="companies">
+            {c => (
+              <circle
+                fill="none"
                 stroke={c("track")}
                 strokeWidth="2"
                 cx="0"
@@ -90,7 +113,6 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
               />
             )}
           </Color>
-          {companyLabel(0)}
           {nameNode}
         </g>
       );
@@ -127,20 +149,30 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
               <g transform="translate(-25 0)">
                 <circle
                   fill={c(companyColor(0) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(0)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(0)}
               </g>
               <g transform="translate(25 0)">
                 <circle
                   fill={c(companyColor(1) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(1)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(1)}
               </g>
               {nameNode}
             </g>
@@ -178,29 +210,44 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
               <g transform="translate(0 -29)">
                 <circle
                   fill={c(companyColor(0) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(0)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(0)}
               </g>
               <g transform="translate(-25 15)">
                 <circle
                   fill={c(companyColor(1) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(1)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(1)}
               </g>
               <g transform="translate(25 15)">
                 <circle
                   fill={c(companyColor(2) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(2)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(2)}
               </g>
               {nameNode}
             </g>
@@ -238,38 +285,58 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
               <g transform="translate(-25 -25)">
                 <circle
                   fill={c(companyColor(0) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(0)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(0)}
               </g>
               <g transform="translate(25 -25)">
                 <circle
                   fill={c(companyColor(1) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(1)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(1)}
               </g>
               <g transform="translate(25 25)">
                 <circle
                   fill={c(companyColor(3) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(3)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(3)}
               </g>
               <g transform="translate(-25 25)">
                 <circle
                   fill={c(companyColor(2) || "city")}
+                  stroke="none"
+                  r="25"
+                />
+                {companyLabel(2)}
+                <circle
+                  fill="none"
                   stroke={c("track")}
                   strokeWidth="2"
                   r="25"
                 />
-                {companyLabel(2)}
               </g>
             </g>
           )}
@@ -281,4 +348,8 @@ const City = ({ size, companies, border, name, extend, rotation }) => {
   }
 };
 
-export default City;
+const mapStateToProps = state => ({
+  straightCityNames: state.config.straightCityNames
+});
+
+export default connect(mapStateToProps)(City);
