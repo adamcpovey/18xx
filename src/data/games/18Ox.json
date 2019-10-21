@@ -870,7 +870,7 @@
             ]
           }
         ],
-        "hexes": ["A10"]
+        "hexes": ["A9"]
       },
       {
         "color": "offboard",
@@ -879,7 +879,7 @@
           "revenues": [
             { "color": "yellow", "cost": "30" },
             { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "40" },
+            { "color": "brown", "cost": "50" },
             { "color": "gray", "cost": "50" }
           ]
         },
@@ -895,7 +895,7 @@
             ]
           }
         ],
-        "hexes": ["A18"]
+        "hexes": ["A17"]
       },
       {
         "color": "offboard",
@@ -904,7 +904,7 @@
           "revenues": [
             { "color": "yellow", "cost": "30" },
             { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "40" },
+            { "color": "brown", "cost": "50" },
             { "color": "gray", "cost": "50" }
           ]
         },
@@ -920,7 +920,7 @@
             ]
           }
         ],
-        "hexes": ["C4"]
+        "hexes": ["C3"]
       },
       {
         "color": "offboard",
@@ -929,7 +929,7 @@
           "revenues": [
             { "color": "yellow", "cost": "30" },
             { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "40" },
+            { "color": "brown", "cost": "50" },
             { "color": "gray", "cost": "50" }
           ]
         },
@@ -945,7 +945,7 @@
             ]
           }
         ],
-        "hexes": ["C24"]
+        "hexes": ["C23"]
       },
       {
         "color": "offboard",
@@ -959,7 +959,7 @@
           ]
         },
         "offBoardTrack": [
-          { "side": 4}
+          { "side": 5 }
         ],
         "cities": [
           {
@@ -970,7 +970,7 @@
             ]
           }
         ],
-        "hexes": ["F1"]
+        "hexes": ["E1"]
       },
       {
         "color": "offboard",
@@ -984,7 +984,7 @@
           ]
         },
         "offBoardTrack": [
-          { "side": 4 }
+          { "side": 3 }, { "side": 4 }
         ],
         "cities": [
           {
@@ -995,21 +995,21 @@
             ]
           }
         ],
-        "hexes": ["L1"]
+        "hexes": ["L2"]
       },
       {
         "color": "offboard",
         "offBoardRevenue": {
           "name": { "name": "BOURNEMOUTH" },
           "revenues": [
-            { "color": "yellow", "cost": "40" },
-            { "color": "green", "cost": "50" },
-            { "color": "brown", "cost": "60" },
-            { "color": "gray", "cost": "70" }
+            { "color": "yellow", "cost": "20" },
+            { "color": "green", "cost": "30" },
+            { "color": "brown", "cost": "40" },
+            { "color": "gray", "cost": "50" }
           ]
         },
         "offBoardTrack": [
-          { "side": 4 }
+          { "side": 3 }
         ],
         "cities": [
           {
@@ -1020,7 +1020,7 @@
             ]
           }
         ],
-        "hexes": ["O2"]
+        "hexes": ["O5"]
       },
       {
         "color": "offboard",
@@ -1048,11 +1048,11 @@
             ]
           }
         ],
-        "hexes": ["O16"]
+        "hexes": ["O15"]
       },
       {
         "color": "offboard",
-        "labels ": [
+        "labels": [
           { "label": "L", "angle": 120, "percent": 0.75 }
         ],
         "offBoardRevenue": {
@@ -1094,7 +1094,7 @@
             ]
           }
         ],
-        "hexes": ["L29"]
+        "hexes": ["L28"]
       },
       {
         "color": "offboard",
@@ -1106,7 +1106,7 @@
           { "side": 1 },
           { "side": 2 }
         ],
-        "hexes": ["K28"]
+        "hexes": ["K27"]
       },
       {
         "color": "offboard",
@@ -1119,7 +1119,7 @@
           { "side": 2 },
           { "side": 6 }
         ],
-        "hexes": ["L27"]
+        "hexes": ["L26"]
       },
       {
         "color": "offboard",
@@ -1130,7 +1130,7 @@
         "offBoardTrack": [
           { "side": 1 }
         ],
-        "hexes": ["M28"]
+        "hexes": ["M27"]
       },
       {
         "color": "oxon",
@@ -1139,7 +1139,7 @@
         ],
         "cities": [
           {
-            "name ": { "name": "Oxford" }
+            "name": { "name": "Oxford" }
           },
           {
             "angle": 240,
@@ -1173,7 +1173,7 @@
         "borders": [
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["H13"]
+        "hexes": ["H12"]
       },
       {
         "color": "berks",
@@ -1183,7 +1183,7 @@
         "labels": [
           { "label": "K2", "percent": 0.75 }
         ],
-        "hexes": ["K6"]
+        "hexes": ["K5"]
       },
       {
         "color": "oxon",
@@ -1198,7 +1198,7 @@
         "labels": [
           { "label": "O7", "percent": 0.75 }
         ],
-        "hexes": ["I6"]
+        "hexes": ["I5"]
       },
       {
         "color": "oxon",
@@ -1211,7 +1211,7 @@
         "labels": [
           { "label": "O3", "percent": 0.75 }
         ],
-        "hexes": ["F5"]
+        "hexes": ["F4"]
       },
       {
         "color": "berks",
@@ -1226,7 +1226,7 @@
         "labels": [
           { "label": "K5", "percent": 0.75 }
         ],
-        "hexes": ["M8"]
+        "hexes": ["M7"]
       },
       {
         "color": "oxon",
@@ -1240,7 +1240,7 @@
         "labels": [
           { "label": "O2", "percent": 0.75 }
         ],
-        "hexes": ["E8"]
+        "hexes": ["E7"]
       },
       {
         "color": "oxon",
@@ -1254,7 +1254,7 @@
         "labels": [
           { "label": "O6", "percent": 0.75 }
         ],
-        "hexes": ["H9"]
+        "hexes": ["H8"]
       },
       {
         "color": "berks",
@@ -1271,7 +1271,7 @@
         "labels": [
           { "label": "K4", "percent": 0.75 }
         ],
-        "hexes": ["L9"]
+        "hexes": ["L8"]
       },
       {
         "color": "berks",
@@ -1285,7 +1285,7 @@
         "labels": [
           { "label": "K3", "percent": 0.75 }
         ],
-        "hexes": ["K10"]
+        "hexes": ["K9"]
       },
       {
         "color": "oxon",
@@ -1300,7 +1300,7 @@
         "labels": [
           { "label": "O4", "percent": 0.75 }
         ],
-        "hexes": ["F11"]
+        "hexes": ["F10"]
       },
       {
         "color": "berks",
@@ -1310,7 +1310,7 @@
         "labels": [
           { "label": "K6", "percent": 0.75 }
         ],
-        "hexes": ["N11"]
+        "hexes": ["N10"]
       },
       {
         "color": "berks",
@@ -1320,12 +1320,12 @@
         "labels": [
           { "label": "K1", "percent": 0.75 }
         ],
-        "hexes": ["J13"]
+        "hexes": ["J12"]
       },
       {
         "color": "oxon",
         "centerTowns": [
-          { "name ": { "name": "Banbury" } }
+          { "name": { "name": "Banbury" } }
         ],
         "labels": [
           { "label": "O1", "percent": 0.75 }
@@ -1333,7 +1333,7 @@
         "borders": [
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["C12"]
+        "hexes": ["C11"]
       },
      {
         "color": "oxon",
@@ -1346,7 +1346,7 @@
         "borders": [
           { "side": 1, "color": "water" }
         ],
-        "hexes": ["F15"]
+        "hexes": ["F14"]
       },
       {
         "color": "oxon",
@@ -1361,7 +1361,7 @@
         "labels": [
           { "label": "O8", "percent": 0.75 }
         ],
-        "hexes": ["J17"]
+        "hexes": ["J16"]
       },
       {
         "color": "bucks",
@@ -1376,7 +1376,7 @@
         "labels": [
           { "label": "B5", "percent": 0.75 }
         ],
-        "hexes": ["I20"]
+        "hexes": ["I19"]
       },
       {
         "color": "bucks",
@@ -1390,7 +1390,7 @@
         "labels": [
           { "label": "B1", "percent": 0.75 }
         ],
-        "hexes": ["D17"]
+        "hexes": ["D16"]
       },
       {
         "color": "bucks",
@@ -1405,17 +1405,17 @@
           { "side": 3, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G20"]
+        "hexes": ["G19"]
       },
       {
         "color": "berks",
         "centerTowns": [
-          { "name ": { "name": "Reading" } }
+          { "name": { "name": "Reading" } }
         ],
         "labels": [
           { "label": "K7", "percent": 0.75 }
         ],
-        "hexes": ["M18"]
+        "hexes": ["M17"]
       },
       {
         "color": "bucks",
@@ -1431,7 +1431,7 @@
           { "side": 5, "color": "water" },
           { "side": 6, "color": "water" }
         ],
-        "hexes": ["K22"]
+        "hexes": ["K21"]
       },
       {
         "color": "bucks",
@@ -1441,7 +1441,7 @@
         "labels": [
           { "label": "B2", "percent": 0.75 }
         ],
-        "hexes": ["D21"]
+        "hexes": ["D20"]
       },
       {
         "color": "bucks",
@@ -1457,7 +1457,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["J23"]
+        "hexes": ["J22"]
       },
       {
         "color": "bucks",
@@ -1470,7 +1470,7 @@
         "borders": [
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G24"]
+        "hexes": ["G23"]
       },
       {
         "color": "bucks",
@@ -1486,7 +1486,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["J25"]
+        "hexes": ["J24"]
       },
       {
         "color": "berks",
@@ -1499,14 +1499,14 @@
         "borders": [
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["N23"]
+        "hexes": ["N22"]
       },
       {
         "color": "oxon",
         "centerTowns": [
           { "name": { "name": "Andoversford" } }
         ],
-        "hexes": ["F3"]
+        "hexes": ["F2"]
       },
       {
         "color": "oxon",
@@ -1516,7 +1516,7 @@
         "borders": [
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["I4"]
+        "hexes": ["I3"]
       },
       {
         "color": "berks",
@@ -1527,7 +1527,7 @@
           { "side": 2, "color": "water"},
           { "side": 3, "color": "water"}
         ],
-        "hexes": ["J7"]
+        "hexes": ["J6"]
       },
       {
         "color": "oxon",
@@ -1539,7 +1539,7 @@
           { "side": 2, "color": "land" },
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["H7"]
+        "hexes": ["H6"]
       },
       {
         "color": "berks",
@@ -1549,7 +1549,7 @@
         "borders": [
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["N9"]
+        "hexes": ["N8"]
       },
       {
         "color": "oxon",
@@ -1561,7 +1561,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["F9"]
+        "hexes": ["F8"]
       },
       {
         "color": "oxon",
@@ -1574,7 +1574,7 @@
           { "side": 2, "color": "land" },
           { "side": 6, "color": "water" }
         ],
-        "hexes": ["G12"]
+        "hexes": ["G11"]
       },
       {
         "color": "oxon",
@@ -1585,7 +1585,7 @@
           { "side": 3, "color": "water" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["F13"]
+        "hexes": ["F12"]
       },
       {
         "color": "oxon",
@@ -1595,14 +1595,14 @@
         "borders": [
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["G14"]
+        "hexes": ["G13"]
       },
       {
         "color": "berks",
         "centerTowns": [
           { "name": { "name": "Abingdon" } }
         ],
-        "hexes": ["I12"]
+        "hexes": ["I11"]
       },
       {
         "color": "berks",
@@ -1615,7 +1615,7 @@
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["L13"]
+        "hexes": ["L12"]
       },
       {
         "color": "oxon",
@@ -1626,7 +1626,7 @@
           { "side": 3, "color": "land" },
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["D13"]
+        "hexes": ["D12"]
       },
       {
         "color": "bucks",
@@ -1636,7 +1636,7 @@
         "borders": [
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["C14"]
+        "hexes": ["C13"]
       },
       {
         "color": "oxon",
@@ -1649,7 +1649,7 @@
           { "side": 3, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["H15"]
+        "hexes": ["H14"]
       },
       {
         "color": "oxon",
@@ -1657,7 +1657,7 @@
         "borders": [
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["I14"]
+        "hexes": ["I13"]
       },
       {
         "color": "berks",
@@ -1667,7 +1667,7 @@
         "borders": [
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["J15"]
+        "hexes": ["J14"]
       },
       {
         "color": "berks",
@@ -1680,7 +1680,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["L15"]
+        "hexes": ["L14"]
       },
       {
         "color": "oxon",
@@ -1692,7 +1692,7 @@
           { "side": 2, "color": "land" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["L19"]
+        "hexes": ["L18"]
       },
       {
         "color": "berks",
@@ -1702,7 +1702,7 @@
         "borders": [
           { "side": 2, "color": "land" }
         ],
-        "hexes": ["N21"]
+        "hexes": ["N20"]
       },
       {
         "color": "berks",
@@ -1714,7 +1714,7 @@
           { "side": 1, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["M24"]
+        "hexes": ["M23"]
       },
       {
         "color": "berks",
@@ -1724,7 +1724,7 @@
          "borders": [
           { "side": 2, "color": "water" }
         ],
-       "hexes": ["M26"]
+       "hexes": ["M25"]
       },
       {
         "color": "bucks",
@@ -1735,7 +1735,7 @@
           { "side": 5, "color": "water" },
           { "side": 6, "color": "water" }
         ],
-       "hexes": ["L25"]
+       "hexes": ["L24"]
       },
       {
         "color": "berks",
@@ -1747,7 +1747,7 @@
           { "side": 3, "color": "water" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["L23"]
+        "hexes": ["L22"]
       },
       {
         "color": "bucks",
@@ -1759,19 +1759,16 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "water" }
         ],
-        "hexes": ["K24"]
+        "hexes": ["K23"]
       },
       {
         "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Gerrard's Cross" } }
-        ],
         "borders": [
           { "side": 3, "color": "water" },
           { "side": 2, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["K26"]
+        "hexes": ["K25"]
       },
       {
         "color": "bucks",
@@ -1782,7 +1779,7 @@
           { "side": 1, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["H25"]
+        "hexes": ["H24"]
       },
       {
         "color": "bucks",
@@ -1792,7 +1789,7 @@
         "borders": [
           { "side": 6, "color": "water" }
         ],
-        "hexes": ["J27"]
+        "hexes": ["J26"]
       },
       {
         "color": "bucks",
@@ -1805,7 +1802,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["H23"]
+        "hexes": ["H22"]
       },
       {
         "color": "oxon",
@@ -1815,7 +1812,7 @@
         "borders": [
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["H19"]
+        "hexes": ["H18"]
       },
       {
         "color": "oxon",
@@ -1825,7 +1822,7 @@
         "borders": [
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["I18"]
+        "hexes": ["I17"]
       },
       {
         "color": "bucks",
@@ -1835,64 +1832,64 @@
         "borders": [
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["E22"]
+        "hexes": ["E21"]
       },
       {
         "color": "bucks",
         "centerTowns": [
           { "name": { "name": "Verney Junction" } }
         ],
-        "hexes": ["E18"]
+        "hexes": ["E17"]
       },
       {
         "color": "bucks",
         "terrain": [{ "type": "track", "cost": "£40" }],
-        "hexes": ["B19", "C22"]
+        "hexes": ["B18", "C21"]
       },
       {
         "color": "oxon",
         "terrain": [{ "type": "track", "cost": "£40" }],
-        "hexes": ["D5"]
+        "hexes": ["D4"]
       },
       {
         "color": "berks",
-        "terrain": [{ "type": "track", "cost": "£40" }],
-        "hexes": ["L3", "L5", "K4", "N5", "O4"]
+        "terrain": [{ "type": "track", "cost": "£80" }],
+        "hexes": ["L4", "K3"]
       },
       {
         "color": "bucks",
         "borders": [
           { "side": 1, "color": "land" }
         ],
-        "hexes": ["D15"]
+        "hexes": ["D14"]
       },
       {
         "color": "bucks",
         "borders": [
           { "side": 1, "color": "land" }
         ],
-        "hexes": ["D19"]
+        "hexes": ["D18"]
       },
       {
         "color": "berks",
         "borders": [
           { "side": 2, "color": "land" }
         ],
-        "hexes": ["N7", "N15"]
+        "hexes": ["N6", "N14"]
       },
       {
         "color": "bucks",
         "borders": [
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["C16", "F17"]
+        "hexes": ["C15", "F16"]
       },
       {
         "color": "oxon",
         "borders": [
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["E6"]
+        "hexes": ["E5"]
       },
       {
         "color": "berks",
@@ -1900,7 +1897,7 @@
           { "side": 1, "color": "land" },
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["M22"]
+        "hexes": ["M21"]
       },
       {
         "color": "bucks",
@@ -1908,7 +1905,7 @@
           { "side": 1, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["C18", "F23", "I26"]
+        "hexes": ["C17", "F22", "I25"]
       },
       {
         "color": "oxon",
@@ -1916,7 +1913,7 @@
           { "side": 1, "color": "water" },
           { "side": 6, "color": "water" }
         ],
-        "hexes": ["E14"]
+        "hexes": ["E13"]
       },
       {
         "color": "berks",
@@ -1924,7 +1921,7 @@
           { "side": 2, "color": "land" },
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["N13"]
+        "hexes": ["N12"]
       },
       {
         "color": "oxon",
@@ -1932,7 +1929,7 @@
           { "side": 2, "color": "land" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["E12"]
+        "hexes": ["E11"]
       },
       {
         "color": "oxon",
@@ -1940,7 +1937,7 @@
           { "side": 3, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["D9"]
+        "hexes": ["D8"]
       },
       {
         "color": "bucks",
@@ -1948,7 +1945,7 @@
           { "side": 3, "color": "land" },
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["G18"]
+        "hexes": ["G17"]
       },
       {
         "color": "oxon",
@@ -1956,7 +1953,7 @@
           { "side": 3, "color": "land" },
           { "side": 4, "color": "land" }
         ],
-        "hexes": ["G4", "H5"]
+        "hexes": ["G3", "H4"]
       },
       {
         "color": "berks",
@@ -1964,7 +1961,7 @@
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["M20"]
+        "hexes": ["M19"]
       },
       {
         "color": "berks",
@@ -1972,7 +1969,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["K12"]
+        "hexes": ["K11"]
       },
       {
         "color": "bucks",
@@ -1980,7 +1977,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["E20"]
+        "hexes": ["E19"]
       },
       {
         "color": "oxon",
@@ -1988,7 +1985,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["C10", "F7"]
+        "hexes": ["C9", "F6"]
       },
       {
         "color": "berks",
@@ -1996,7 +1993,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["K8"]
+        "hexes": ["K7"]
       },
       {
         "color": "berks",
@@ -2005,7 +2002,7 @@
           { "side": 2, "color": "land" },
           { "side": 3, "color": "land" }
         ],
-        "hexes": ["M16"]
+        "hexes": ["M15"]
       },
       {
         "color": "berks",
@@ -2014,7 +2011,7 @@
           { "side": 3, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["M10"]
+        "hexes": ["M9"]
       },
       {
         "color": "berks",
@@ -2023,7 +2020,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["K14"]
+        "hexes": ["K13"]
       },
       {
         "color": "bucks",
@@ -2032,7 +2029,7 @@
           { "side": 3, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G22"]
+        "hexes": ["G21"]
       },
       {
         "color": "berks",
@@ -2041,7 +2038,7 @@
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["M12"]
+        "hexes": ["M11"]
       },
       {
         "color": "bucks",
@@ -2050,25 +2047,23 @@
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["H21"]
+        "hexes": ["H20"]
       },
       {
         "color": "berks",
         "borders": [
-          { "side": 3, "color": "land" },
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
-        "hexes": ["M6"]
+        "hexes": ["M5"]
       },
       {
         "color": "berks",
         "borders": [
           { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
+          { "side": 4, "color": "land" }
         ],
-        "hexes": ["L7"]
+        "hexes": ["L6"]
       },
       {
         "color": "bucks",
@@ -2078,7 +2073,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["F19", "I24"]
+        "hexes": ["F18", "I23"]
       },
       {
         "color": "oxon",
@@ -2088,7 +2083,7 @@
           { "side": 3, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["E10"]
+        "hexes": ["E9"]
       },
       {
         "color": "bucks",
@@ -2098,7 +2093,7 @@
           { "side": 3, "color": "land" },
           { "side": 5, "color": "water" }
         ],
-        "hexes": ["K20"]
+        "hexes": ["K19"]
       },
       {
         "color": "oxon",
@@ -2108,7 +2103,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["D11"]
+        "hexes": ["D10"]
       },
       {
         "color": "oxon",
@@ -2118,7 +2113,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G8"]
+        "hexes": ["G7"]
       },
       {
         "color": "oxon",
@@ -2128,7 +2123,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G6"]
+        "hexes": ["G5"]
       },
       {
         "color": "berks",
@@ -2138,7 +2133,7 @@
           { "side": 4, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["L17"]
+        "hexes": ["L16"]
       },
       {
         "color": "bucks",
@@ -2148,7 +2143,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["J21"]
+        "hexes": ["J20"]
       },
       {
         "color": "oxon",
@@ -2159,7 +2154,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["J19"]
+        "hexes": ["J18"]
       },
       {
         "color": "oxon",
@@ -2174,7 +2169,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["K16", "K18"]
+        "hexes": ["K15", "K17"]
       },
       {
         "color": "bucks",
@@ -2189,7 +2184,7 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["F21", "I22"]
+        "hexes": ["F20", "I21"]
       },
       {
         "color": "berks",
@@ -2204,14 +2199,14 @@
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["L11", "M14"]
+        "hexes": ["L10", "M13"]
       },
       {
         "color": "berks",
         "borders": [
           { "side": 2, "color": "water" }
         ],
-        "hexes": ["J9"]
+        "hexes": ["J8"]
       },
       {
         "color": "berks",
@@ -2220,7 +2215,7 @@
           { "side": 2, "color": "water" },
           { "side": 3, "color": "water" }
         ],
-        "hexes": ["L21"]
+        "hexes": ["L20"]
       },
       {
         "color": "berks",
@@ -2231,7 +2226,7 @@
           { "side": 1,  "color": "water" },
           { "side": 2,  "color": "water" }
         ],
-        "hexes": ["I10"]
+        "hexes": ["I9"]
       },
       {
         "color": "oxon",
@@ -2241,7 +2236,7 @@
           { "side": 5,  "color": "water" },
           { "side": 6,  "color": "water" }
         ],
-        "hexes": ["I8"]
+        "hexes": ["I7"]
       },
       {
         "color": "oxon",
@@ -2250,7 +2245,7 @@
           { "side": 3, "color": "land" },
           { "side": 5, "color": "water" }
         ],
-        "hexes": ["G10"]
+        "hexes": ["G9"]
       },
       {
         "color": "oxon",
@@ -2258,12 +2253,12 @@
         "borders": [
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["G16"]
+        "hexes": ["G15"]
       },
       {
         "color": "berks",
         "terrain": [ { "type": "river", "cost": "£30" } ],
-        "hexes": ["N17"]
+        "hexes": ["N16"]
       },
       {
         "color": "berks",
@@ -2275,37 +2270,36 @@
           { "side": 2,  "color": "water" },
           { "side": 3,  "color": "water" }
         ],
-        "hexes": ["H11"]
+        "hexes": ["H10"]
       },
       {
         "color": "oxon",
         "terrain": [ { "type": "river", "cost": "£30" } ],
-        "hexes": ["I16"]
+        "hexes": ["I15"]
       },
       {
         "color": "berks",
         "borders": [
           { "side": 3,  "color": "water" }
         ],
-        "hexes": ["J5"]
+        "hexes": ["J4"]
       },
       {
         "color": "gray",
-        "hexes": ["D7", "D23", "E4", "E24", "F25", "G26",
-                "O6", "O8", "O10",
-                "O12", "O14", "O18", "O20", "O22", "O24"]
+        "hexes": ["D6", "D22", "E3", "E23", "F24", "G25",
+                  "O9", "O11", "O21", "O23"]
       },
       {
         "color": "oxon",
-        "hexes": ["B11", "H17"]
+        "hexes": ["B10", "H16"]
       },
       {
         "color": "berks",
-        "hexes": ["J11", "N19", "N25"]
+        "hexes": ["J10", "N18", "N24"]
       },
       {
         "color": "bucks",
-        "hexes": ["B13", "C20", "E16"]
+        "hexes": ["B12", "C19", "E15"]
       }
     ]
   }
