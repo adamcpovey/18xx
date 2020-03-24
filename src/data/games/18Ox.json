@@ -819,15 +819,15 @@
     "619": 4,
     "80": 3,
     "81": 3,
-    "82": 6,
-    "83": 6,
+    "82": 5,
+    "83": 5,
     "H14": 1,
     "H15": 1,
     "H619": 1,
-    "544": 3,
-    "545": 3,
-    "546": 3,
-    "611": 5,
+    "544": 2,
+    "545": 2,
+    "546": 2,
+    "611": 6,
     "H611": 2,
     "455": 2,
     "H455": 1,
@@ -1061,7 +1061,7 @@
             { "color": "yellow", "cost": "40" },
             { "color": "green", "cost": "50" },
             { "color": "brown", "cost": "60" },
-            { "color": "gray", "cost": "70" }
+            { "color": "gray", "cost": "80" }
           ]
         },
         "cities": [
@@ -1370,7 +1370,6 @@
         ],
         "borders": [
           { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
         ],
         "labels": [
@@ -1619,9 +1618,6 @@
       },
       {
         "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "King's Sutton" } }
-        ],
         "borders": [
           { "side": 3, "color": "land" },
           { "side": 4, "color": "land" }
@@ -1646,17 +1642,13 @@
          "borders": [
           { "side": 1, "color": "land" },
           { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 6, "color": "land" }
+          { "side": 3, "color": "land" }
         ],
         "hexes": ["H14"]
       },
       {
         "color": "oxon",
         "terrain": [ { "type": "river", "cost": "£30" } ],
-        "borders": [
-          { "side": 3, "color": "land" }
-        ],
         "hexes": ["I13"]
       },
       {
@@ -1764,7 +1756,6 @@
       {
         "color": "bucks",
         "borders": [
-          { "side": 3, "color": "water" },
           { "side": 2, "color": "land" },
           { "side": 6, "color": "land" }
         ],
@@ -1785,9 +1776,6 @@
         "color": "bucks",
         "centerTowns": [
           { "name": { "name": "Watford" } }
-        ],
-        "borders": [
-          { "side": 6, "color": "water" }
         ],
         "hexes": ["J26"]
       },
@@ -1861,7 +1849,7 @@
         "borders": [
           { "side": 1, "color": "land" }
         ],
-        "hexes": ["D14"]
+        "hexes": ["E15"]
       },
       {
         "color": "bucks",
@@ -1905,12 +1893,14 @@
           { "side": 1, "color": "land" },
           { "side": 6, "color": "land" }
         ],
-        "hexes": ["C17", "F22", "I25"]
+        "hexes": ["C17", "D14", "F22", "I25"]
       },
       {
         "color": "oxon",
         "borders": [
           { "side": 1, "color": "water" },
+          { "side": 3, "color": "land" },
+          { "side": 4, "color": "land" },
           { "side": 6, "color": "water" }
         ],
         "hexes": ["E13"]
@@ -2138,7 +2128,6 @@
       {
         "color": "bucks",
         "borders": [
-          { "side": 2, "color": "land" },
           { "side": 3, "color": "land" },
           { "side": 5, "color": "land" },
           { "side": 6, "color": "land" }
@@ -2299,7 +2288,7 @@
       },
       {
         "color": "bucks",
-        "hexes": ["B12", "C19", "E15"]
+        "hexes": ["B12", "C19"]
       }
     ]
   }
