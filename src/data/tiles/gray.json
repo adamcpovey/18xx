@@ -1916,7 +1916,7 @@
     "rotations": 1,
     "cities": [{ "size": 2, "rotate": 180 }],
     "labels": { "label": "H", "angle": 155, "percent": 0.75 },
-    "values": [{ "angle": 210, "percent": 0.75, "value": 60 }],
+    "values": [{ "angle": 210, "percent": 0.75, "value": 70 }],
     "track": [{ "side": 1 }, { "side": 2 }, { "side": 3 },
               { "side": 4 }, { "side": 5 }, { "side": 6 }]
   }

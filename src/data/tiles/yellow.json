@@ -1739,7 +1739,7 @@
   },
   "O1": {
     "color": "yellow",
-    "values": [{ "angle": 210, "percent": 0.8, "value": 30 }],
+    "values": [{ "angle": 210, "percent": 0.8, "value": 20 }],
     "labels": { "label": "O", "angle": 155, "percent": 0.75 },
     "cities": [{ "size": 1 }],
     "track": [{ "side": 1 }]

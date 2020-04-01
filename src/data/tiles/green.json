@@ -5608,21 +5608,21 @@
   "H14": {
     "color": "green",
     "rotations": 3,
-    "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+    "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
     "labels": { "label": "H", "angle": 155, "percent": 0.75 },
     "cities": [{ "size": 2 }],
     "track": [{ "side": 1 }, { "side": 2 }, { "side": 4 }, { "side": 5 }]
   },
   "H15": {
     "color": "green",
-    "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+    "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
     "labels": { "label": "H", "angle": 155, "percent": 0.75 },
     "cities": [{ "size": 2 }],
     "track": [{ "side": 1 }, { "side": 2 }, { "side": 3 }, { "side": 6 }]
   },
   "H619": {
     "color": "green",
-    "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+    "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
     "labels": { "label": "H", "angle": 155, "percent": 0.75 },
     "cities": [{ "size": 2 }],
     "track": [{ "side": 1 }, { "side": 2 }, { "side": 4 }, { "side": 6 }]

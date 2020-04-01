@@ -247,7 +247,7 @@
       "color": "yellow"
     },
     {
-      "name": "Bourton-on-the-Water Railway",
+      "name": "Banbury and Cheltenham Direct Railway",
       "minor": true,
       "abbrev": "O3",
       "tokens": [],
@@ -310,7 +310,7 @@
       "color": "yellow"
     },
     {
-      "name": "Ironstone Quarry Tramway",
+      "name": "Oxford and Rugby Railway",
       "minor": true,
       "abbrev": "O1",
       "tokens": [],
@@ -387,14 +387,14 @@
       "color": "yellow"
     },
     {
-      "name": "Chesham Railway",
+      "name": "Chesham Metropolitan Railway",
       "minor": true,
       "abbrev": "B7",
       "tokens": [],
       "color": "yellow"
     },
     {
-      "name": "Wokingham and Staines Railway",
+      "name": "Staines, Wokingham and Woking Railway",
       "minor": true,
       "abbrev": "K8",
       "tokens": [],
@@ -404,17 +404,18 @@
   "trains": [
     {
       "name": "L",
-      "quantity": 12,
+      "quantity": 13,
       "price": "£60",
       "color": "yellow",
       "info": [
         { "color": "black", "note": "Upgrade for £60" },
+        { "color": "green", "note": "Pays half at 3" },
         { "color": "green", "note": "Rusted by 4" }
       ]
     },
     {
       "name": "2",
-      "quantity": 12,
+      "quantity": 13,
       "price": "£100",
       "color": "yellow",
       "info": [
@@ -423,18 +424,18 @@
     },
     {
       "name": "3",
-      "quantity": 6,
+      "quantity": 7,
       "price": "£160",
       "color": "green",
       "info": [
-        { "color": "black", "note": "Upgrade for £90" },
+        { "color": "black", "note": "Upgrade for £60" },
         { "color": "brown", "note": "Rusted by 6" }
       ]
     },
     {
-      "name": "3/5",
+      "name": "3/4",
       "quantity": 6,
-      "price": "£220",
+      "price": "£200",
       "color": "green",
       "info": [
         { "color": "brown", "note": "Rusted by 6" }
@@ -446,35 +447,35 @@
       "price": "£300",
       "color": "green",
       "info": [
-        { "color": "black", "note": "Upgrade for £90" },
-        { "color": "gray", "note": "Rusted by 7/E" }
+        { "color": "black", "note": "Upgrade for £60" },
+        { "color": "gray", "note": "Rusted by 8" }
       ]
     },
     {
-      "name": "4/6",
+      "name": "4/5",
       "quantity": 4,
-      "price": "£360",
+      "price": "£340",
       "color": "green",
       "info": [
-        { "color": "gray", "note": "Rusted by 7/E" }
+        { "color": "gray", "note": "Rusted by 8" }
       ]
     },
     {
       "name": "5",
       "quantity": 2,
-      "price": "£500",
+      "price": "£480",
       "color": "brown",
       "info": [
         { "color": "red", "note": "Permanent" }
       ]
     },
     {
-      "name": "5/7",
+      "name": "5/6",
       "quantity": 2,
-      "price": "£560",
+      "price": "£540",
       "color": "brown",
       "info": [
-        { "color": "black", "note": "Upgrade for £150" },
+        { "color": "black", "note": "Upgrade for £90" },
         { "color": "red", "note": "Permanent" }
       ]
     },
@@ -484,11 +485,21 @@
       "price": "£600",
       "color": "brown",
       "info": [
+        { "color": "black", "note": "Upgrade for £90" },
         { "color": "red", "note": "Permanent" }
       ]
     },
     {
-      "name": "7",
+      "name": "6/7",
+      "quantity": 2,
+      "price": "£660",
+      "color": "brown",
+      "info": [
+        { "color": "red", "note": "Permanent" }
+      ]
+    },
+    {
+      "name": "8",
       "quantity": 10,
       "price": "£750",
       "color": "gray",
@@ -509,34 +520,28 @@
   ],
   "privates": [
     {
-      "name": "Christ Church Engineering",
+      "name": "Brunel Civil Engineering",
       "price": "£70",
       "revenue": "£15",
       "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
     },
     {
-      "name": "Scott Engineering",
+      "name": "Scott Civil Engineering",
       "price": "£70",
       "revenue": "£15",
       "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
     },
     {
-      "name": "Ironstone Mining Company",
+      "name": "Charles Early Mills",
       "price": "£70",
-      "revenue": "£5",
-      "description": "When acquired, place the Mine token on a basic city to which you can trace a route. The city with the Mine token is worth an additional £10 for your trains."
+      "revenue": "£15",
+      "description": "When acquired, place the Mill token on a basic city to which you can trace a route. The city with the Mill token is worth an additional £10 for your routes."
     },
     {
       "name": "Chester Village",
-      "price": "£50",
+      "price": "£40",
       "revenue": "£10",
-      "description": "When acquired, gain the Chester Village token. When upgrading a hex that contains a town, you may place the Chester Village token on a vacant track segment on that hex. Chester Village counts as a town with value £10/20/30. When your trains may visit Chester Village without it counting as a stop."
-    },
-    {
-      "name": "Royal Mail Contracting",
-      "price": "£50",
-      "revenue": "£10",
-      "description": "After Running Trains, pay your treasury £10 for each off-board area and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.)"
+      "description": "When acquired, gain the Chester Village token. When upgrading a hex that contains a town, you may place the Chester Village token on a vacant track segment on that hex. Chester Village counts as a town with value £10/20/30. When your trains visit Chester Village, they may make an additional stop on their route."
     },
     {
       "name": "Swindon Works",
@@ -545,37 +550,43 @@
       "description": "Company revenue of £10/20/40/80."
     },
     {
+      "name": "Royal Mail Contracting",
+      "price": "£50",
+      "revenue": "£10",
+      "description": "After Running Trains, pay your treasury £10 for each off-board area and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.)"
+    },
+    {
       "name": "Swinford Toll Bridge",
       "price": "£20",
       "revenue": "£5",
-      "description": "Retire this company to receive a discount of £40 when you next build a bridge or drain a marsh this turn."
+      "description": "Receive a discount of £20 when you build a bridge."
     },
     {
-      "name": "Horspath Engineering",
+      "name": "Horspath Tunneling",
       "price": "£20",
       "revenue": "£5",
       "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
     },
     {
-      "name": "Sonning Engineering",
+      "name": "Sonning Excavations",
       "price": "£20",
       "revenue": "£5",
       "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
     },
     {
-      "name": "Park End Construction",
+      "name": "Stafford Road Works",
       "price": "£20",
       "revenue": "£5",
-      "description": "Retire this company to receive a discount of £40 when you next place a station token this turn."
+      "description": "Retire this company to receive a discount of £40 when you next upgrade a numbered train this turn."
     },
     {
-      "name": "Brunel Engineering",
+      "name": "Clark Surveying",
       "price": "£20",
       "revenue": "£5",
       "description": "Retire this company to take an additional Build Track action this round. (This may be before or after any other build actions.)"
     },
     {
-      "name": "Cowley Engineering",
+      "name": "Fox Architecture",
       "price": "£40",
       "revenue": "£10",
       "description": "Retire this company to take an additional Upgrade Track action this round. (This may be before or after any other build actions.)"
@@ -819,8 +830,8 @@
     "619": 4,
     "80": 3,
     "81": 3,
-    "82": 5,
-    "83": 5,
+    "82": 6,
+    "83": 6,
     "H14": 1,
     "H15": 1,
     "H619": 1,
@@ -1474,7 +1485,7 @@
       {
         "color": "bucks",
         "centerTowns": [
-          { "name": { "name": "Amersham" } }
+          { "name": { "name": "Chesham" } }
         ],
         "labels": [
           { "label": "B7", "percent": 0.75 }
@@ -1578,13 +1589,13 @@
       {
         "color": "oxon",
         "centerTowns": [
-          { "name": { "name": "Shipton-on-Cherwell" } }
+          { "name": { "name": "Heyford" } }
         ],
         "borders": [
-          { "side": 3, "color": "water" },
+          { "side": 2, "color": "land" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["F12"]
+        "hexes": ["E11"]
       },
       {
         "color": "oxon",
@@ -1916,10 +1927,10 @@
       {
         "color": "oxon",
         "borders": [
-          { "side": 2, "color": "land" },
+          { "side": 3, "color": "water" },
           { "side": 4, "color": "water" }
         ],
-        "hexes": ["E11"]
+        "hexes": ["F12"]
       },
       {
         "color": "oxon",
@@ -1948,6 +1959,7 @@
       {
         "color": "berks",
         "borders": [
+          { "side": 3, "color": "land" },
           { "side": 4, "color": "land" },
           { "side": 5, "color": "land" }
         ],
@@ -2202,7 +2214,8 @@
         "borders": [
           { "side": 1, "color": "water" },
           { "side": 2, "color": "water" },
-          { "side": 3, "color": "water" }
+          { "side": 3, "color": "water" },
+          { "side": 6, "color": "land" }
         ],
         "hexes": ["L20"]
       },
