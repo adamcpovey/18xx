@@ -12,7 +12,7 @@
     "currency": "GBP"
   },
   "ipo": false,
-  "tokens": ["Round", "C.Village", "Mine +£10"],
+  "tokens": ["Round", "Export", "Village", "+£10"],
   "bank": "£8,000",
   "players": [
     {
@@ -33,60 +33,10 @@
   ],
   "companies": [
     {
-      "name": "Great Western Railway",
-      "abbrev": "GWR",
+      "name": "Chiltern Railway",
+      "abbrev": "ChR",
       "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "green",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 7,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "London and North Western Railway",
-      "abbrev": "LNWR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "black",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 7,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Midland Railway",
-      "abbrev": "MR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "red",
+      "color": "cyan",
       "shares": [
         {
           "quantity": 1,
@@ -133,60 +83,10 @@
       ]
     },
     {
-      "name": "South Wales Railway",
-      "abbrev": "SWR",
+      "name": "Great Western Railway",
+      "abbrev": "GWR",
       "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "gray",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 7,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Metropolitan Railway",
-      "abbrev": "MetR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "purple",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 7,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Chiltern Railway",
-      "abbrev": "ChR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "cyan",
+      "color": "green",
       "shares": [
         {
           "quantity": 1,
@@ -233,135 +133,109 @@
       ]
     },
     {
-      "name": "Western Railway",
-      "minor": true,
-      "abbrev": "K2",
-      "tokens": [],
-      "color": "yellow"
+      "name": "London and North Western Railway",
+      "abbrev": "LNWR",
+      "tokens": ["£50", "£50", "£50", "£50"],
+      "color": "black",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 30,
+          "shares": 3
+        },
+        {
+          "quantity": 1,
+          "label": "Provisional directorship",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 7,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
     },
     {
-      "name": "East Gloucestershire Railway",
-      "minor": true,
-      "abbrev": "O7",
-      "tokens": [],
-      "color": "yellow"
+      "name": "Metropolitan Railway",
+      "abbrev": "MetR",
+      "tokens": ["£50", "£50", "£50", "£50"],
+      "color": "purple",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 30,
+          "shares": 3
+        },
+        {
+          "quantity": 1,
+          "label": "Provisional directorship",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 7,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
     },
     {
-      "name": "Banbury and Cheltenham Direct Railway",
-      "minor": true,
-      "abbrev": "O3",
-      "tokens": [],
-      "color": "yellow"
+      "name": "Midland Railway",
+      "abbrev": "MR",
+      "tokens": ["£50", "£50", "£50", "£50"],
+      "color": "red",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 30,
+          "shares": 3
+        },
+        {
+          "quantity": 1,
+          "label": "Provisional directorship",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 7,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
     },
     {
-      "name": "Marlborough Railway",
-      "minor": true,
-      "abbrev": "K5",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Chipping Norton Railway",
-      "minor": true,
-      "abbrev": "O2",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Witney Railway",
-      "minor": true,
-      "abbrev": "O6",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Lambourne Valley Railway",
-      "minor": true,
-      "abbrev": "K4",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Wantage Tramway",
-      "minor": true,
-      "abbrev": "K3",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Woodstock Railway",
-      "minor": true,
-      "abbrev": "O4",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Berks and Hants Railway",
-      "minor": true,
-      "abbrev": "K6",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Didcot, Newbury and Southampton Railway",
-      "minor": true,
-      "abbrev": "K1",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Oxford and Rugby Railway",
-      "minor": true,
-      "abbrev": "O1",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Bicester Military Railway",
-      "minor": true,
-      "abbrev": "O5",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Wallingford and Watlington Railway",
-      "minor": true,
-      "abbrev": "O8",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Chinor and Princes Risborough Railway",
-      "minor": true,
-      "abbrev": "B5",
-      "tokens": [],
-      "color": "yellow"
+      "name": "South Wales Railway",
+      "abbrev": "SWR",
+      "tokens": ["£50", "£50", "£50", "£50"],
+      "color": "gray",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 30,
+          "shares": 3
+        },
+        {
+          "quantity": 1,
+          "label": "Provisional directorship",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 7,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
     },
     {
       "name": "Buckinghamshire Railway",
       "minor": true,
       "abbrev": "B1",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Aylesbury and Buckingham Railway",
-      "minor": true,
-      "abbrev": "B3",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Reading, Guilford and Reigate Railway",
-      "minor": true,
-      "abbrev": "K7",
-      "tokens": [],
-      "color": "yellow"
-    },
-    {
-      "name": "Great Marlow Railway",
-      "minor": true,
-      "abbrev": "B8",
       "tokens": [],
       "color": "yellow"
     },
@@ -373,9 +247,9 @@
       "color": "yellow"
     },
     {
-      "name": "Wycombe Railway",
+      "name": "Aylesbury and Buckingham Railway",
       "minor": true,
-      "abbrev": "B6",
+      "abbrev": "B3",
       "tokens": [],
       "color": "yellow"
     },
@@ -387,6 +261,20 @@
       "color": "yellow"
     },
     {
+      "name": "Chinor and Princes Risborough Railway",
+      "minor": true,
+      "abbrev": "B5",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Wycombe Railway",
+      "minor": true,
+      "abbrev": "B6",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
       "name": "Chesham Metropolitan Railway",
       "minor": true,
       "abbrev": "B7",
@@ -394,9 +282,121 @@
       "color": "yellow"
     },
     {
+      "name": "Great Marlow Railway",
+      "minor": true,
+      "abbrev": "B8",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Didcot, Newbury and Southampton Railway",
+      "minor": true,
+      "abbrev": "K1",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Western Railway",
+      "minor": true,
+      "abbrev": "K2",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Wantage Tramway",
+      "minor": true,
+      "abbrev": "K3",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Lambourne Valley Railway",
+      "minor": true,
+      "abbrev": "K4",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Marlborough Railway",
+      "minor": true,
+      "abbrev": "K5",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Berks and Hants Railway",
+      "minor": true,
+      "abbrev": "K6",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Reading, Guilford and Reigate Railway",
+      "minor": true,
+      "abbrev": "K7",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
       "name": "Staines, Wokingham and Woking Railway",
       "minor": true,
       "abbrev": "K8",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Oxford and Rugby Railway",
+      "minor": true,
+      "abbrev": "O1",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Chipping Norton Railway",
+      "minor": true,
+      "abbrev": "O2",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Banbury and Cheltenham Direct Railway",
+      "minor": true,
+      "abbrev": "O3",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Woodstock Railway",
+      "minor": true,
+      "abbrev": "O4",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Bicester Military Railway",
+      "minor": true,
+      "abbrev": "O5",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Witney Railway",
+      "minor": true,
+      "abbrev": "O6",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "East Gloucestershire Railway",
+      "minor": true,
+      "abbrev": "O7",
+      "tokens": [],
+      "color": "yellow"
+    },
+    {
+      "name": "Wallingford and Watlington Railway",
+      "minor": true,
+      "abbrev": "O8",
       "tokens": [],
       "color": "yellow"
     }
@@ -466,7 +466,8 @@
       "price": "£480",
       "color": "brown",
       "info": [
-        { "color": "red", "note": "Permanent" }
+        { "color": "black", "note": "Upgrade for £90" },
+        { "color": "gray", "note": "Permanent" }
       ]
     },
     {
@@ -475,8 +476,7 @@
       "price": "£540",
       "color": "brown",
       "info": [
-        { "color": "black", "note": "Upgrade for £90" },
-        { "color": "red", "note": "Permanent" }
+        { "color": "gray", "note": "Permanent" }
       ]
     },
     {
@@ -486,7 +486,7 @@
       "color": "brown",
       "info": [
         { "color": "black", "note": "Upgrade for £90" },
-        { "color": "red", "note": "Permanent" }
+        { "color": "gray", "note": "Permanent" }
       ]
     },
     {
@@ -495,26 +495,36 @@
       "price": "£660",
       "color": "brown",
       "info": [
-        { "color": "red", "note": "Permanent" }
+        { "color": "gray", "note": "Permanent" }
       ]
     },
     {
       "name": "8",
-      "quantity": 10,
+      "quantity": 5,
       "price": "£750",
       "color": "gray",
       "info": [
-        { "color": "red", "note": "Permanent" }
+        { "color": "gray", "note": "Permanent" }
       ]
     },
     {
-      "name": "E",
-      "quantity": 10,
-      "price": "£1000",
+      "name": "6P",
+      "quantity": 5,
+      "price": "£850",
       "color": "gray",
       "info": [
-        { "color": "black", "note": "Does not use track" },
-        { "color": "red", "note": "Permanent" }
+        { "color": "black", "note": "May stop at any # towns." },
+        { "color": "gray", "note": "Permanent" }
+      ]
+    },
+    {
+      "name": "4/5D",
+      "quantity": 5,
+      "price": "£900",
+      "color": "gray",
+      "info": [
+        { "color": "black", "note": "Pays double." },
+        { "color": "gray", "note": "Permanent" }
       ]
     }
   ],
@@ -559,7 +569,7 @@
       "name": "Swinford Toll Bridge",
       "price": "£20",
       "revenue": "£5",
-      "description": "Receive a discount of £20 when you build a bridge."
+      "description": "Receive a discount of £20 whenever you build a bridge."
     },
     {
       "name": "Horspath Tunneling",
@@ -603,7 +613,7 @@
     {
       "name": "3",
       "limit": "4",
-      "number": "6",
+      "number": "7",
       "tiles": "green",
       "notes": "L-train revenue halved"
     },
@@ -641,21 +651,21 @@
     {
       "name": "1",
       "limit": "2",
-      "number": "12",
+      "number": "13",
       "tiles": "yellow",
       "notes": "Initial share price = £50"
     },
     {
       "name": "2",
       "limit": "2",
-      "number": "12",
+      "number": "13",
       "tiles": "yellow",
       "notes": "May acquire private companies"
     },
     {
       "name": "3",
       "limit": "2",
-      "number": "6",
+      "number": "7",
       "tiles": "green",
       "notes": "May merge or be incorporated"
     },
@@ -759,41 +769,35 @@
       { "label": 40, "legend": 1 },
       { "label": 45, "legend": 1 },
       { "label": 50, "legend": 2 },
-      { "label": 51, "legend": 2 },
-      { "label": 52, "legend": 2 },
-      { "label": 54, "legend": 2 },
-      { "label": 56, "legend": 2 },
-      { "label": 59, "legend": 2 },
-      { "label": 62, "legend": 2 },
+      { "label": 55, "legend": 2 },
+      { "label": 60, "legend": 2 },
       { "label": 65, "legend": 2 },
-      { "label": 68, "legend": 2 },
       { "label": 72, "legend": 2 },
-      { "label": 76, "legend": 2 },
-      { "label": 81, "legend": 2 },
-      { "label": 86, "legend": 2 },
-      { "label": 92, "legend": 2 },
-      { "label": 98, "legend": 2 },
-      { "label": 105, "legend": 2 },
-      { "label": 112, "legend": 2 },
+      { "label": 80, "legend": 2 },
+      { "label": 90, "legend": 2 },
+      { "label": 100, "legend": 2 },
+      { "label": 110, "legend": 2 },
       { "label": 120, "legend": 2 },
-      { "label": 129, "legend": 2 },
-      { "label": 139, "legend": 2 },
+      { "label": 135, "legend": 2 },
       { "label": 150, "legend": 2 },
-      160,
-      170,
-      185,
+      175,
       200,
-      220,
-      240,
-      265,
-      290,
-      320,
-      350,
-      385,
+      225,
+      250,
+      275,
+      300,
+      330,
+      360,
+      390,
       420,
-      460,
-      500,
-      { "label": 600, "legend": 3 }
+      450,
+      490,
+      530,
+      570,
+      610,
+      650,
+      700,
+      { "label": 750, "legend": 3 }
     ],
     "legend": [
       {
@@ -803,7 +807,7 @@
       },
       {
         "color": "orange",
-        "description": "Don't count to limit",
+        "description": "Doesn't count to limit",
         "icon": "money-bill-wave"
       },
       {
