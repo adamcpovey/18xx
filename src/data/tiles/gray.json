@@ -1911,6 +1911,9 @@
     "cities": [{ "size": 2 }],
     "track": [{ "side": 2 }, { "side": 3 }, { "side": 5 }, { "side": 6 }]
   },
+  "B1": {
+    "color": "gray"
+  },
   "H455": {
     "color": "gray",
     "rotations": 1,

@@ -6,13 +6,13 @@
     "width": 150,
     "color_10": "orange",
     "titleX": 50,
-    "extraTokens": 2,
+    "extraTokens": 1,
     "hexCoords": true,
     "extraMinors": 0,
     "currency": "GBP"
   },
   "ipo": false,
-  "tokens": ["Round", "Export", "Village", "+£10"],
+  "tokens": ["Sale", "No sale", "Village", "Mill"],
   "bank": "£8,000",
   "players": [
     {
@@ -41,17 +41,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -61,22 +72,33 @@
       "name": "Great Central Railway",
       "abbrev": "GCR",
       "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "blue",
+      "color": "olive",
       "shares": [
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -85,23 +107,34 @@
     {
       "name": "Great Western Railway",
       "abbrev": "GWR",
-      "tokens": ["£50", "£50", "£50", "£50"],
+      "tokens": ["£50", "£50", "£50", "£50", "£50", "£50", "£50"],
       "color": "green",
       "shares": [
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -116,17 +149,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 20,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -141,17 +185,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -166,17 +221,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -191,17 +257,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -216,17 +293,28 @@
         {
           "quantity": 1,
           "label": "Director's certificate",
-          "percent": 30,
-          "shares": 3
+          "percent": 40,
+          "shares": 2
         },
         {
           "quantity": 1,
           "label": "Provisional directorship",
           "percent": 20,
-          "shares": 2
+          "shares": 1
         },
         {
-          "quantity": 7,
+          "quantity": 1,
+          "label": "Director's certificate",
+          "percent": 20,
+          "shares": 2
+        },
+         {
+          "quantity": 3,
+          "percent": 20,
+          "shares": 1
+        },
+        {
+          "quantity": 8,
           "percent": 10,
           "shares": 1
         }
@@ -237,168 +325,168 @@
       "minor": true,
       "abbrev": "B1",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "London and Birmingham Railway",
       "minor": true,
       "abbrev": "B2",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Aylesbury and Buckingham Railway",
       "minor": true,
       "abbrev": "B3",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Aylesbury Railway",
       "minor": true,
       "abbrev": "B4",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Chinor and Princes Risborough Railway",
       "minor": true,
       "abbrev": "B5",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Wycombe Railway",
       "minor": true,
       "abbrev": "B6",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Chesham Metropolitan Railway",
       "minor": true,
       "abbrev": "B7",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Great Marlow Railway",
       "minor": true,
       "abbrev": "B8",
       "tokens": [],
-      "color": "yellow"
+      "color": "bucks"
     },
     {
       "name": "Didcot, Newbury and Southampton Railway",
       "minor": true,
       "abbrev": "K1",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Western Railway",
       "minor": true,
       "abbrev": "K2",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Wantage Tramway",
       "minor": true,
       "abbrev": "K3",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Lambourne Valley Railway",
       "minor": true,
       "abbrev": "K4",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Marlborough Railway",
       "minor": true,
       "abbrev": "K5",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Berks and Hants Railway",
       "minor": true,
       "abbrev": "K6",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Reading, Guilford and Reigate Railway",
       "minor": true,
       "abbrev": "K7",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Staines, Wokingham and Woking Railway",
       "minor": true,
       "abbrev": "K8",
       "tokens": [],
-      "color": "yellow"
+      "color": "berks"
     },
     {
       "name": "Oxford and Rugby Railway",
       "minor": true,
       "abbrev": "O1",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Chipping Norton Railway",
       "minor": true,
       "abbrev": "O2",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Banbury and Cheltenham Direct Railway",
       "minor": true,
       "abbrev": "O3",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Woodstock Railway",
       "minor": true,
       "abbrev": "O4",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Bicester Military Railway",
       "minor": true,
       "abbrev": "O5",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Witney Railway",
       "minor": true,
       "abbrev": "O6",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "East Gloucestershire Railway",
       "minor": true,
       "abbrev": "O7",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     },
     {
       "name": "Wallingford and Watlington Railway",
       "minor": true,
       "abbrev": "O8",
       "tokens": [],
-      "color": "yellow"
+      "color": "oxon"
     }
   ],
   "trains": [
@@ -410,7 +498,7 @@
       "info": [
         { "color": "black", "note": "Upgrade for £60" },
         { "color": "green", "note": "Pays half at 3" },
-        { "color": "green", "note": "Rusted by 4" }
+        { "color": "green", "note": "Rusted at 4" }
       ]
     },
     {
@@ -419,7 +507,7 @@
       "price": "£100",
       "color": "yellow",
       "info": [
-        { "color": "green", "note": "Rusted by 4" }
+        { "color": "green", "note": "Rusted at 4" }
       ]
     },
     {
@@ -429,16 +517,16 @@
       "color": "green",
       "info": [
         { "color": "black", "note": "Upgrade for £60" },
-        { "color": "brown", "note": "Rusted by 6" }
+        { "color": "brown", "note": "Rusted at 6" }
       ]
     },
     {
       "name": "3/4",
-      "quantity": 6,
+      "quantity": 7,
       "price": "£200",
       "color": "green",
       "info": [
-        { "color": "brown", "note": "Rusted by 6" }
+        { "color": "brown", "note": "Rusted at 6" }
       ]
     },
     {
@@ -448,7 +536,7 @@
       "color": "green",
       "info": [
         { "color": "black", "note": "Upgrade for £60" },
-        { "color": "gray", "note": "Rusted by 8" }
+        { "color": "gray", "note": "Rusted at 7" }
       ]
     },
     {
@@ -457,7 +545,7 @@
       "price": "£340",
       "color": "green",
       "info": [
-        { "color": "gray", "note": "Rusted by 8" }
+        { "color": "gray", "note": "Rusted at 7" }
       ]
     },
     {
@@ -466,16 +554,17 @@
       "price": "£480",
       "color": "brown",
       "info": [
-        { "color": "black", "note": "Upgrade for £90" },
+        { "color": "black", "note": "Upgrade for £150" },
         { "color": "gray", "note": "Permanent" }
       ]
     },
     {
-      "name": "5/6",
+      "name": "5P",
       "quantity": 2,
-      "price": "£540",
+      "price": "£580",
       "color": "brown",
       "info": [
+        { "color": "black", "note": "Stop at any # towns" },
         { "color": "gray", "note": "Permanent" }
       ]
     },
@@ -485,21 +574,22 @@
       "price": "£600",
       "color": "brown",
       "info": [
-        { "color": "black", "note": "Upgrade for £90" },
+        { "color": "black", "note": "Upgrade for £150" },
         { "color": "gray", "note": "Permanent" }
       ]
     },
     {
-      "name": "6/7",
+      "name": "6P",
       "quantity": 2,
-      "price": "£660",
+      "price": "£700",
       "color": "brown",
       "info": [
+        { "color": "black", "note": "Stop at any # towns" },
         { "color": "gray", "note": "Permanent" }
       ]
     },
     {
-      "name": "8",
+      "name": "E",
       "quantity": 5,
       "price": "£750",
       "color": "gray",
@@ -508,22 +598,12 @@
       ]
     },
     {
-      "name": "6P",
-      "quantity": 5,
-      "price": "£850",
-      "color": "gray",
-      "info": [
-        { "color": "black", "note": "May stop at any # towns." },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "4/5D",
+      "name": "4/6D",
       "quantity": 5,
       "price": "£900",
       "color": "gray",
       "info": [
-        { "color": "black", "note": "Pays double." },
+        { "color": "black", "note": "Double revenue" },
         { "color": "gray", "note": "Permanent" }
       ]
     }
@@ -532,80 +612,74 @@
     {
       "name": "Brunel Civil Engineering",
       "price": "£70",
-      "revenue": "£15",
+      "revenue": "£10/10",
       "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
     },
     {
       "name": "Scott Civil Engineering",
       "price": "£70",
-      "revenue": "£15",
+      "revenue": "£10/10",
       "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
     },
     {
       "name": "Charles Early Mills",
-      "price": "£70",
-      "revenue": "£15",
-      "description": "When acquired, place the Mill token on a basic city to which you can trace a route. The city with the Mill token is worth an additional £10 for your routes."
+      "price": "£50",
+      "revenue": "£5/0",
+      "description": "When acquired, place the Mill token on a city. A basic city with the Mill token is worth an additional £10 for each of your routes."
     },
     {
       "name": "Chester Village",
       "price": "£40",
-      "revenue": "£10",
-      "description": "When acquired, gain the Chester Village token. When upgrading a hex that contains a town, you may place the Chester Village token on a vacant track segment on that hex. Chester Village counts as a town with value £10/20/30. When your trains visit Chester Village, they may make an additional stop on their route."
+      "revenue": "£10/0",
+      "description": "When acquired, gain the Chester Village token. When upgrading a tile that contains a town, you may place the Chester Village token on a vacant track segment on that tile. Chester Village counts as a town with value £10/20/30. Your trains may make an additional stop after visiting Chester Village."
     },
     {
       "name": "Swindon Works",
       "price": "£50",
-      "revenue": "£10",
+      "revenue": "£10/X",
       "description": "Company revenue of £10/20/40/80."
     },
     {
       "name": "Royal Mail Contracting",
       "price": "£50",
-      "revenue": "£10",
-      "description": "After Running Trains, pay your treasury £10 for each off-board area and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.)"
+      "revenue": "£10/0",
+      "description": "After Running Trains, pay your treasury £10 for each termini and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.)"
     },
     {
       "name": "Swinford Toll Bridge",
       "price": "£20",
-      "revenue": "£5",
+      "revenue": "£5/5",
       "description": "Receive a discount of £20 whenever you build a bridge."
     },
     {
       "name": "Horspath Tunneling",
       "price": "£20",
-      "revenue": "£5",
+      "revenue": "£5/5",
       "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
     },
     {
       "name": "Sonning Excavations",
       "price": "£20",
-      "revenue": "£5",
+      "revenue": "£5/5",
       "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
     },
     {
       "name": "Stafford Road Works",
       "price": "£20",
-      "revenue": "£5",
-      "description": "Retire this company to receive a discount of £40 when you next upgrade a numbered train this turn."
-    },
-    {
-      "name": "Clark Surveying",
-      "price": "£20",
-      "revenue": "£5",
-      "description": "Retire this company to take an additional Build Track action this round. (This may be before or after any other build actions.)"
+      "revenue": "£5/5",
+      "description": "Retire this company to receive a discount of £40 when you next upgrade a train this turn."
     },
     {
       "name": "Fox Architecture",
       "price": "£40",
-      "revenue": "£10",
-      "description": "Retire this company to take an additional Upgrade Track action this round. (This may be before or after any other build actions.)"
+      "revenue": "£10/5",
+      "description": "Retire this company to take an additional Build or Upgrade Track action this round. (This may be before or after any other build actions.)"
     },
     {
       "name": "Beeching Accountancy",
       "price": "£40",
-      "revenue": "£10",
-      "description": "Retire this company to remove a town from a track segment to which you can trace a route to the town. You may not select the home town of a Minor Railway nor the Chester Village token."
+      "revenue": "£10/5",
+      "description": "Retire this company to remove a town from a track segment to which you can trace a route. You may not select the home town of a Minor Railway nor the Chester Village token."
     }
   ],
 
@@ -622,14 +696,14 @@
       "rust": "L/2",
       "limit": "3",
       "number": "4",
-      "tiles": "green"
+      "tiles": "green",
+      "notes": "May split shares"
     },
     {
       "name": "5",
       "limit": "2",
       "number": "2",
-      "tiles": "brown",
-      "notes": "May merge or incorporate certificates"
+      "tiles": "brown"
     },
     {
       "name": "6",
@@ -736,8 +810,8 @@
     {
       "name": "Operating Round",
       "steps": [
+        "Buy, sell, or issue shares",
         "Acquire private companies",
-        "Buy or sell shares",
         "Opening ceremony",
         "Build or upgrade track",
         "Place one station token",
@@ -759,45 +833,44 @@
     },
     "market": [
       { "label": "0", "legend": 0 },
-      { "label": 5, "legend": 1 },
-      { "label": 10, "legend": 1 },
-      { "label": 15, "legend": 1 },
-      { "label": 20, "legend": 1 },
-      { "label": 25, "legend": 1 },
-      { "label": 30, "legend": 1 },
-      { "label": 35, "legend": 1 },
-      { "label": 40, "legend": 1 },
-      { "label": 45, "legend": 1 },
-      { "label": 50, "legend": 2 },
-      { "label": 55, "legend": 2 },
-      { "label": 60, "legend": 2 },
-      { "label": 65, "legend": 2 },
-      { "label": 72, "legend": 2 },
-      { "label": 80, "legend": 2 },
-      { "label": 90, "legend": 2 },
-      { "label": 100, "legend": 2 },
-      { "label": 110, "legend": 2 },
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      65,
+      { "label": 70, "legend": 1 },
+      { "label": 75, "legend": 1 },
+      { "label": 80, "legend": 1 },
+      { "label": 85, "legend": 1 },
+      { "label": 90, "legend": 1 },
+      { "label": 95, "legend": 1 },
+      { "label": 100, "legend": 1 },
+      { "label": 105, "legend": 1 },
+      { "label": 110, "legend": 1 },
+      { "label": 115, "legend": 2 },
       { "label": 120, "legend": 2 },
-      { "label": 135, "legend": 2 },
+      { "label": 125, "legend": 2 },
+      { "label": 130, "legend": 2 },
+      { "label": 140, "legend": 2 },
       { "label": 150, "legend": 2 },
-      175,
-      200,
-      225,
-      250,
-      275,
+      { "label": 160, "legend": 3 },
+      { "label": 170, "legend": 3 },
+      { "label": 180, "legend": 3 },
+      { "label": 195, "legend": 3 },
+      { "label": 210, "legend": 3 },
+      { "label": 225, "legend": 3 },
+      240,
+      260,
+      280,
       300,
-      330,
-      360,
-      390,
-      420,
-      450,
-      490,
-      530,
-      570,
-      610,
-      650,
-      700,
-      { "label": 750, "legend": 3 }
+      325,
+      350,
+      380,
+      415,
+      455,
+      { "label": 500, "legend": 4 }
     ],
     "legend": [
       {
@@ -806,12 +879,17 @@
         "icon": "certificate"
       },
       {
-        "color": "orange",
-        "description": "Doesn't count to limit",
+        "color": "green",
+        "description": "Initial price",
         "icon": "money-bill-wave"
       },
       {
-        "color": "green",
+        "color": "olive",
+        "description": "Initial price",
+        "icon": "money-bill-wave"
+      },
+      {
+        "color": "brown",
         "description": "Initial price",
         "icon": "money-bill-wave"
       },
@@ -856,7 +934,8 @@
     "O7": 1,
     "O8": 1,
     "O9": 1,
-    "O10": 1
+    "O10": 1,
+    "B1": 2
   },
   "map": {
     "hexes": [
