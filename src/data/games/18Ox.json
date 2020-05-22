@@ -1,2391 +1,2303 @@
 {
-  "info": {
-    "title": "18Ox",
-    "subtitle": "The Railways of Oxfordshire",
-    "designer": "Adam Povey",
-    "width": 150,
-    "color_10": "orange",
-    "titleX": 50,
-    "extraTokens": 1,
-    "hexCoords": true,
-    "extraMinors": 0,
-    "currency": "GBP"
-  },
-  "ipo": false,
-  "tokens": ["Sale", "No sale", "Village", "Mill"],
-  "bank": "£8,000",
-  "players": [
-    {
-      "number": 3,
-      "certLimit": 18,
-      "capital": "£420"
-    },
-    {
-      "number": 4,
-      "certLimit": 14,
-      "capital": "£320"
-    },
-    {
-      "number": 5,
-      "certLimit": 11,
-      "capital": "£270"
-    }
-  ],
-  "companies": [
-    {
-      "name": "Chiltern Railway",
-      "abbrev": "ChR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "cyan",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Great Central Railway",
-      "abbrev": "GCR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "olive",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Great Western Railway",
-      "abbrev": "GWR",
-      "tokens": ["£50", "£50", "£50", "£50", "£50", "£50", "£50"],
-      "color": "green",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "London and South Western Railway",
-      "abbrev": "LSW",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "orange",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "London and North Western Railway",
-      "abbrev": "LNWR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "black",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Metropolitan Railway",
-      "abbrev": "MetR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "purple",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Midland Railway",
-      "abbrev": "MR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "red",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "South Wales Railway",
-      "abbrev": "SWR",
-      "tokens": ["£50", "£50", "£50", "£50"],
-      "color": "gray",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 40,
-          "shares": 2
-        },
-        {
-          "quantity": 1,
-          "label": "Provisional directorship",
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 1,
-          "label": "Director's certificate",
-          "percent": 20,
-          "shares": 2
-        },
-         {
-          "quantity": 3,
-          "percent": 20,
-          "shares": 1
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Buckinghamshire Railway",
-      "minor": true,
-      "abbrev": "B1",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "London and Birmingham Railway",
-      "minor": true,
-      "abbrev": "B2",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Aylesbury and Buckingham Railway",
-      "minor": true,
-      "abbrev": "B3",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Aylesbury Railway",
-      "minor": true,
-      "abbrev": "B4",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Chinor and Princes Risborough Railway",
-      "minor": true,
-      "abbrev": "B5",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Wycombe Railway",
-      "minor": true,
-      "abbrev": "B6",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Chesham Metropolitan Railway",
-      "minor": true,
-      "abbrev": "B7",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Great Marlow Railway",
-      "minor": true,
-      "abbrev": "B8",
-      "tokens": [],
-      "color": "bucks"
-    },
-    {
-      "name": "Didcot, Newbury and Southampton Railway",
-      "minor": true,
-      "abbrev": "K1",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Western Railway",
-      "minor": true,
-      "abbrev": "K2",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Wantage Tramway",
-      "minor": true,
-      "abbrev": "K3",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Lambourne Valley Railway",
-      "minor": true,
-      "abbrev": "K4",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Marlborough Railway",
-      "minor": true,
-      "abbrev": "K5",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Berks and Hants Railway",
-      "minor": true,
-      "abbrev": "K6",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Reading, Guilford and Reigate Railway",
-      "minor": true,
-      "abbrev": "K7",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Staines, Wokingham and Woking Railway",
-      "minor": true,
-      "abbrev": "K8",
-      "tokens": [],
-      "color": "berks"
-    },
-    {
-      "name": "Oxford and Rugby Railway",
-      "minor": true,
-      "abbrev": "O1",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Chipping Norton Railway",
-      "minor": true,
-      "abbrev": "O2",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Banbury and Cheltenham Direct Railway",
-      "minor": true,
-      "abbrev": "O3",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Woodstock Railway",
-      "minor": true,
-      "abbrev": "O4",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Bicester Military Railway",
-      "minor": true,
-      "abbrev": "O5",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Witney Railway",
-      "minor": true,
-      "abbrev": "O6",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "East Gloucestershire Railway",
-      "minor": true,
-      "abbrev": "O7",
-      "tokens": [],
-      "color": "oxon"
-    },
-    {
-      "name": "Wallingford and Watlington Railway",
-      "minor": true,
-      "abbrev": "O8",
-      "tokens": [],
-      "color": "oxon"
-    }
-  ],
-  "trains": [
-    {
-      "name": "L",
-      "quantity": 13,
-      "price": "£60",
-      "color": "yellow",
-      "info": [
-        { "color": "black", "note": "Upgrade for £60" },
-        { "color": "green", "note": "Pays half at 3" },
-        { "color": "green", "note": "Rusted at 4" }
-      ]
-    },
-    {
-      "name": "2",
-      "quantity": 13,
-      "price": "£100",
-      "color": "yellow",
-      "info": [
-        { "color": "green", "note": "Rusted at 4" }
-      ]
-    },
-    {
-      "name": "3",
-      "quantity": 7,
-      "price": "£160",
-      "color": "green",
-      "info": [
-        { "color": "black", "note": "Upgrade for £60" },
-        { "color": "brown", "note": "Rusted at 6" }
-      ]
-    },
-    {
-      "name": "3/4",
-      "quantity": 7,
-      "price": "£200",
-      "color": "green",
-      "info": [
-        { "color": "brown", "note": "Rusted at 6" }
-      ]
-    },
-    {
-      "name": "4",
-      "quantity": 4,
-      "price": "£300",
-      "color": "green",
-      "info": [
-        { "color": "black", "note": "Upgrade for £60" },
-        { "color": "gray", "note": "Rusted at 7" }
-      ]
-    },
-    {
-      "name": "4/5",
-      "quantity": 4,
-      "price": "£340",
-      "color": "green",
-      "info": [
-        { "color": "gray", "note": "Rusted at 7" }
-      ]
-    },
-    {
-      "name": "5",
-      "quantity": 2,
-      "price": "£480",
-      "color": "brown",
-      "info": [
-        { "color": "black", "note": "Upgrade for £150" },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "5P",
-      "quantity": 2,
-      "price": "£580",
-      "color": "brown",
-      "info": [
-        { "color": "black", "note": "Stop at any # towns" },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "6",
-      "quantity": 2,
-      "price": "£600",
-      "color": "brown",
-      "info": [
-        { "color": "black", "note": "Upgrade for £150" },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "6P",
-      "quantity": 2,
-      "price": "£700",
-      "color": "brown",
-      "info": [
-        { "color": "black", "note": "Stop at any # towns" },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "E",
-      "quantity": 5,
-      "price": "£750",
-      "color": "gray",
-      "info": [
-        { "color": "gray", "note": "Permanent" }
-      ]
-    },
-    {
-      "name": "4/6D",
-      "quantity": 5,
-      "price": "£900",
-      "color": "gray",
-      "info": [
-        { "color": "black", "note": "Double revenue" },
-        { "color": "gray", "note": "Permanent" }
-      ]
-    }
-  ],
-  "privates": [
-    {
-      "name": "Brunel Civil Engineering",
-      "price": "£70",
-      "revenue": "£10/10",
-      "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
-    },
-    {
-      "name": "Scott Civil Engineering",
-      "price": "£70",
-      "revenue": "£10/10",
-      "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level."
-    },
-    {
-      "name": "Charles Early Mills",
-      "price": "£50",
-      "revenue": "£5/0",
-      "description": "When acquired, place the Mill token on a city. A basic city with the Mill token is worth an additional £10 for each of your routes."
-    },
-    {
-      "name": "Chester Village",
-      "price": "£40",
-      "revenue": "£10/0",
-      "description": "When acquired, gain the Chester Village token. When upgrading a tile that contains a town, you may place the Chester Village token on a vacant track segment on that tile. Chester Village counts as a town with value £10/20/30. Your trains may make an additional stop after visiting Chester Village."
-    },
-    {
-      "name": "Swindon Works",
-      "price": "£50",
-      "revenue": "£10/X",
-      "description": "Company revenue of £10/20/40/80."
-    },
-    {
-      "name": "Royal Mail Contracting",
-      "price": "£50",
-      "revenue": "£10/0",
-      "description": "After Running Trains, pay your treasury £10 for each termini and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.)"
-    },
-    {
-      "name": "Swinford Toll Bridge",
-      "price": "£20",
-      "revenue": "£5/5",
-      "description": "Receive a discount of £20 whenever you build a bridge."
-    },
-    {
-      "name": "Horspath Tunneling",
-      "price": "£20",
-      "revenue": "£5/5",
-      "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
-    },
-    {
-      "name": "Sonning Excavations",
-      "price": "£20",
-      "revenue": "£5/5",
-      "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn."
-    },
-    {
-      "name": "Stafford Road Works",
-      "price": "£20",
-      "revenue": "£5/5",
-      "description": "Retire this company to receive a discount of £40 when you next upgrade a train this turn."
-    },
-    {
-      "name": "Fox Architecture",
-      "price": "£40",
-      "revenue": "£10/5",
-      "description": "Retire this company to take an additional Build or Upgrade Track action this round. (This may be before or after any other build actions.)"
-    },
-    {
-      "name": "Beeching Accountancy",
-      "price": "£40",
-      "revenue": "£10/5",
-      "description": "Retire this company to remove a town from a track segment to which you can trace a route. You may not select the home town of a Minor Railway nor the Chester Village token."
-    }
-  ],
-
-  "phases": [
-    {
-      "name": "3",
-      "limit": "4",
-      "number": "7",
-      "tiles": "green",
-      "notes": "L-train revenue halved"
-    },
-    {
-      "name": "4",
-      "rust": "L/2",
-      "limit": "3",
-      "number": "4",
-      "tiles": "green",
-      "notes": "May split shares"
-    },
-    {
-      "name": "5",
-      "limit": "2",
-      "number": "2",
-      "tiles": "brown"
-    },
-    {
-      "name": "6",
-      "limit": "2",
-      "number": "2",
-      "rust": "3",
-      "tiles": "brown"
-    },
-    {
-      "name": "7",
-      "limit": "2",
-      "number": "∞",
-      "rust": "4",
-      "tiles": "gray"
-    }
-  ],
-
-  "minorPhases": [
-    {
-      "name": "1",
-      "limit": "2",
-      "number": "13",
-      "tiles": "yellow",
-      "notes": "Initial share price = £50"
-    },
-    {
-      "name": "2",
-      "limit": "2",
-      "number": "13",
-      "tiles": "yellow",
-      "notes": "May acquire private companies"
-    },
-    {
-      "name": "3",
-      "limit": "2",
-      "number": "7",
-      "tiles": "green",
-      "notes": "May merge or be incorporated"
-    },
-    {
-      "name": "4",
-      "rust": "L/2",
-      "limit": "1",
-      "number": "4",
-      "tiles": "green"
-    },
-    {
-      "name": "5",
-      "limit": "1",
-      "number": "2",
-      "tiles": "brown"
-    },
-    {
-      "name": "6",
-      "limit": "1",
-      "number": "2",
-      "rust": "3",
-      "tiles": "brown"
-    },
-    {
-      "name": "7/E",
-      "limit": "1",
-      "number": "∞",
-      "rust": "4",
-      "tiles": "gray"
-    }
-  ],
-  "pools": [
-    {
-      "name": "Bank",
-      "notes": [
-        {
-          "color": "brown",
-          "icon": "exclamation",
-          "note":
-          "No more than 50% of a corporation's shares may be in the market at any time"
-        }
-      ]
-    }
-  ],
-  "rounds": [
-    {
-      "name": "SR",
-      "color": "gray"
-    },
-    {
-      "name": "OR1",
-      "color": "yellow"
-    },
-    {
-      "name": "OR2",
-      "color": "yellow"
-    }
-  ],
-  "turns": [
-    {
-      "name": "Stock Round",
-      "steps": [
-        "Sell any number of shares",
-        "Buy one certificate"
-      ],
-      "ordered": true
-    },
-    {
-      "name": "Operating Round",
-      "steps": [
-        "Buy, sell, or issue shares",
-        "Acquire private companies",
-        "Opening ceremony",
-        "Build or upgrade track",
-        "Place one station token",
-        "Run trains",
-        "Pay or withhold dividends",
-        "Buy rolling stock",
-        "Merge or incorporate"
-      ],
-      "ordered": true
-    }
-  ],
-  "stock": {
-    "type": "1Diag",
-    "movement": {
-      "up": ["Fully owned"],
-      "down": ["Share sold"],
-      "left": ["Withheld revenue"],
-      "right": ["Paid dividends"]
-    },
-    "market": [
-      { "label": "0", "legend": 0 },
-      10,
-      20,
-      30,
-      40,
-      50,
-      60,
-      65,
-      { "label": 70, "legend": 1 },
-      { "label": 75, "legend": 1 },
-      { "label": 80, "legend": 1 },
-      { "label": 85, "legend": 1 },
-      { "label": 90, "legend": 1 },
-      { "label": 95, "legend": 1 },
-      { "label": 100, "legend": 1 },
-      { "label": 105, "legend": 1 },
-      { "label": 110, "legend": 1 },
-      { "label": 115, "legend": 2 },
-      { "label": 120, "legend": 2 },
-      { "label": 125, "legend": 2 },
-      { "label": 130, "legend": 2 },
-      { "label": 140, "legend": 2 },
-      { "label": 150, "legend": 2 },
-      { "label": 160, "legend": 3 },
-      { "label": 170, "legend": 3 },
-      { "label": 180, "legend": 3 },
-      { "label": 195, "legend": 3 },
-      { "label": 210, "legend": 3 },
-      { "label": 225, "legend": 3 },
-      240,
-      260,
-      280,
-      300,
-      325,
-      350,
-      380,
-      415,
-      455,
-      { "label": 500, "legend": 4 }
+    "info": {
+        "title": "18Ox",
+        "subtitle": "The Railways of Oxfordshire",
+        "designer": "Adam Povey",
+        "background": "gray",
+        "width": 150,
+        "titleX": 50,
+        "marketTokens": 1,
+        "extraStationTokens": 2,
+        "hexCoords": true,
+        "extraMinors": 0,
+        "currency": "£#"
+    },
+    "colors": {
+        "berks": "#f3de6c",
+        "bucks": "#d1e2c2",
+        "oxon": "#fcefde",
+        "greenTwo": "#99cc67"
+    },
+    "ipo": false,
+    "tokens": [
+        {"label": "£10", "color": "black"},
+        {"icon": "river", "color": "water"},
+        {"icon": "mountain", "color": "mountain"},
+        {"label": "Sale", "inverse": "No sale"},
+        {"label": "Village", "color": "brown"},
+        {"label": "Mill", "color": "gray"}
     ],
-    "legend": [
-      {
-        "color": "black",
-        "description": "Close company",
-        "icon": "certificate"
-      },
-      {
-        "color": "green",
-        "description": "Initial price",
-        "icon": "money-bill-wave"
-      },
-      {
-        "color": "olive",
-        "description": "Initial price",
-        "icon": "money-bill-wave"
-      },
-      {
-        "color": "brown",
-        "description": "Initial price",
-        "icon": "money-bill-wave"
-      },
-      {
-        "color": "water",
-        "description": "Game end",
-        "icon": "flag-checkered"
-      }
-    ]
-  },
-  "tiles": {
-    "5": 6,
-    "6": 6,
-    "57": 6,
-    "7": 10,
-    "8": 30,
-    "9": 30,
-    "14": 4,
-    "15": 4,
-    "619": 4,
-    "80": 3,
-    "81": 3,
-    "82": 6,
-    "83": 6,
-    "H14": 1,
-    "H15": 1,
-    "H619": 1,
-    "544": 2,
-    "545": 2,
-    "546": 2,
-    "611": 6,
-    "H611": 2,
-    "455": 2,
-    "H455": 1,
-    "60": 2,
-    "O1": 1,
-    "O2": 1,
-    "O3": 1,
-    "O4": 1,
-    "O5": 1,
-    "O6": 1,
-    "O7": 1,
-    "O8": 1,
-    "O9": 1,
-    "O10": 1,
-    "B1": 2
-  },
-  "map": {
-    "hexes": [
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": {
-            "name": "LEAMINGTON SPA"
-          },
-          "revenues": [
-            { "color": "yellow", "cost": "20" },
-            { "color": "green", "cost": "30" },
-            { "color": "brown", "cost": "40" },
-            { "color": "gray", "cost": "50" }
-          ]
+    "bank": "£8,000",
+    "players": [
+        {
+            "number": 3,
+            "certLimit": 18,
+            "capital": 420
         },
-        "offBoardTrack": [
-          { "side": 5 }
-        ],
-        "cities": [
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "ChR", "color": "cyan" }
-            ]
-          }
-        ],
-        "hexes": ["A9"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "RUGBY" },
-          "revenues": [
-            { "color": "yellow", "cost": "30" },
-            { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "50" },
-            { "color": "gray", "cost": "50" }
-          ]
+        {
+            "number": 4,
+            "certLimit": 14,
+            "capital": 320
         },
-        "offBoardTrack": [
-          { "side": 5 }
+        {
+            "number": 5,
+            "certLimit": 11,
+            "capital": 270
+        }
+    ],
+    "shareTypes": {
+        "default": [
+            {
+                "quantity": 1,
+                "label": "Director's certificate",
+                "percent": 40,
+                "shares": 2
+            },
+            {
+                "quantity": 1,
+                "label": "Provisional directorship",
+                "percent": 20,
+                "shares": 1
+            },
+            {
+                "quantity": 1,
+                "label": "Director's certificate",
+                "percent": 20,
+                "shares": 2
+            },
+            {
+                "quantity": 3,
+                "percent": 20,
+                "shares": 1
+            },
+            {
+                "quantity": 8,
+                "percent": 10,
+                "shares": 1
+            }
         ],
-        "cities": [
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "GCR", "color": "blue" }
-            ]
-          }
-        ],
-        "hexes": ["A17"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "WORCESTER" },
-          "revenues": [
-            { "color": "yellow", "cost": "30" },
-            { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "50" },
-            { "color": "gray", "cost": "50" }
-          ]
+        "minor": [
+            {
+                "quantity": 1,
+                "label": "Director's certificate",
+                "percent": 100,
+                "shares": 1
+            }
+        ]
+    },
+    "tokenTypes": {
+        "some": ["£50", "£50", "£50"],
+        "many": ["£50", "£50", "£50", "£50", "£50", "£50"],
+        "minor": ["Home"]
+    },
+    "companies": [
+        {
+            "name": "Chiltern Railway",
+            "abbrev": "ChR",
+            "tokens": "some",
+            "color": "cyan"
         },
-        "offBoardTrack": [
-          { "side": 5 }
-        ],
-        "cities": [
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "MR", "color": "red" }
-            ]
-          }
-        ],
-        "hexes": ["C3"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "CAMBRIDGE" },
-          "revenues": [
-            { "color": "yellow", "cost": "30" },
-            { "color": "green", "cost": "40" },
-            { "color": "brown", "cost": "50" },
-            { "color": "gray", "cost": "50" }
-          ]
+        {
+            "name": "Great Central Railway",
+            "abbrev": "GCR",
+            "tokens": "some",
+            "color": "lime"
         },
-        "offBoardTrack": [
-          { "side": 1 }
-        ],
-        "cities": [
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "LNWR", "color": "black" }
-            ]
-          }
-        ],
-        "hexes": ["C23"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "GLOUCESTER" },
-          "revenues": [
-            { "color": "yellow", "cost": "20" },
-            { "color": "green", "cost": "30" },
-            { "color": "brown", "cost": "40" },
-            { "color": "gray", "cost": "50" }
-          ]
+        {
+            "name": "Great Western Railway",
+            "abbrev": "GWR",
+            "tokens": "many",
+            "color": "green"
         },
-        "offBoardTrack": [
-          { "side": 5 }
-        ],
-        "cities": [
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "SWR", "color": "gray" }
-            ]
-          }
-        ],
-        "hexes": ["E1"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "BRISTOL" },
-          "revenues": [
-            { "color": "yellow", "cost": "40" },
-            { "color": "green", "cost": "50" },
-            { "color": "brown", "cost": "60" },
-            { "color": "gray", "cost": "70" }
-          ]
+        {
+            "name": "London and South Western Railway",
+            "abbrev": "LSWR",
+            "tokens": "some",
+            "color": "orange"
         },
-        "offBoardTrack": [
-          { "side": 3 }, { "side": 4 }
-        ],
-        "cities": [
-          {
-            "angle": 0,
-            "percent": 0.8,
-            "companies": [
-              { "label": "GWR", "color": "green" }
-            ]
-          }
-        ],
-        "hexes": ["L2"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "BOURNEMOUTH" },
-          "revenues": [
-            { "color": "yellow", "cost": "20" },
-            { "color": "green", "cost": "30" },
-            { "color": "brown", "cost": "40" },
-            { "color": "gray", "cost": "50" }
-          ]
+        {
+            "name": "London and North Western Railway",
+            "abbrev": "LNWR",
+            "tokens": "some",
+            "color": "black"
         },
-        "offBoardTrack": [
-          { "side": 3 }
-        ],
-        "cities": [
-          {
-            "angle": 0,
-            "percent": 0.8,
-            "companies": [
-              { "label": "MR", "color": "red" }
-            ]
-          }
-        ],
-        "hexes": ["O5"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "SOUTHAMPTON" },
-          "revenues": [
-            { "color": "yellow", "cost": "20" },
-            { "color": "green", "cost": "30" },
-            { "color": "brown", "cost": "40" },
-            { "color": "gray", "cost": "50" }
-          ]
+        {
+            "name": "Metropolitan Railway",
+            "abbrev": "Met",
+            "tokens": "some",
+            "color": "purple"
         },
-        "offBoardTrack": [
-          { "side": 2 }
-        ],
-        "border": [
-          { "side": 2, "color": "black" }
-        ],
-        "cities": [
-          {
-            "angle": 0,
-            "percent": 0.8,
-            "companies": [
-              { "label": "LSWR", "color": "orange" }
-            ]
-          }
-        ],
-        "hexes": ["O15"]
-      },
-      {
-        "color": "offboard",
-        "labels": [
-          { "label": "L", "angle": 120, "percent": 0.75 }
-        ],
-        "offBoardRevenue": {
-          "name": { "name": "LONDON" },
-          "revenues": [
-            { "color": "yellow", "cost": "40" },
-            { "color": "green", "cost": "50" },
-            { "color": "brown", "cost": "60" },
-            { "color": "gray", "cost": "80" }
-          ]
+        {
+            "name": "Midland Railway",
+            "abbrev": "MR",
+            "tokens": "some",
+            "color": "red"
         },
-        "cities": [
-          {
-            "angle": 300,
-            "percent": 0.8,
-            "companies": [
-              { "label": "GWR", "color": "green" }
-            ]
-          },
-          {
-            "angle": 240,
-            "percent": 0.8,
-            "companies": [
-              { "label": "GCR", "color": "blue" }
-            ]
-          },
-          {
-            "angle": 180,
-            "percent": 0.8,
-            "companies": [
-              { "label": "ChR", "color": "cyan" }
-            ]
-          },
-          {
-            "angle": 0,
-            "percent": 0.8,
-            "companies": [
-              { "label": "MetR", "color": "purple" }
-            ]
-          }
-        ],
-        "hexes": ["L28"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "Marylebone"},
-          "revenues": []
+        {
+            "name": "South Wales Railway",
+            "abbrev": "SWR",
+            "tokens": "some",
+            "color": "gray"
         },
-        "offBoardTrack": [
-          { "side": 1 },
-          { "side": 2 }
-        ],
-        "hexes": ["K27"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "Paddington"},
-          "revenues": []
+        {
+            "name": "Buckinghamshire Railway",
+            "minor": true,
+            "abbrev": "B1",
+            "tokens": [],
+            "color": "bucks"
         },
-        "offBoardTrack": [
-          { "side": 1 },
-          { "side": 2 },
-          { "side": 6 }
-        ],
-        "hexes": ["L26"]
-      },
-      {
-        "color": "offboard",
-        "offBoardRevenue": {
-          "name": { "name": "Waterloo"},
-          "revenues": []
+        {
+            "name": "London and Birmingham Railway",
+            "minor": true,
+            "abbrev": "B2",
+            "tokens": [],
+            "color": "bucks"
         },
-        "offBoardTrack": [
-          { "side": 1 }
-        ],
-        "hexes": ["M27"]
-      },
-      {
-        "color": "oxon",
-        "labels": [
-          { "label": "O", "percent": 0.75 }
-        ],
-        "cities": [
-          {
-            "name": { "name": "Oxford" }
-          },
-          {
-            "angle": 240,
-            "percent": 0.8,
-            "companies": [
-              { "label": "LNWR", "color": "black" }
+        {
+            "name": "Aylesbury and Buckingham Railway",
+            "minor": true,
+            "abbrev": "B3",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Aylesbury Railway",
+            "minor": true,
+            "abbrev": "B4",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Chinor and Princes Risborough Railway",
+            "minor": true,
+            "abbrev": "B5",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Wycombe Railway",
+            "minor": true,
+            "abbrev": "B6",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Chesham Metropolitan Railway",
+            "minor": true,
+            "abbrev": "B7",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Great Marlow Railway",
+            "minor": true,
+            "abbrev": "B8",
+            "tokens": [],
+            "color": "bucks"
+        },
+        {
+            "name": "Didcot, Newbury and Southampton Railway",
+            "minor": true,
+            "abbrev": "K1",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Western Railway",
+            "minor": true,
+            "abbrev": "K2",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Wantage Tramway",
+            "minor": true,
+            "abbrev": "K3",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Lambourne Valley Railway",
+            "minor": true,
+            "abbrev": "K4",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Marlborough Railway",
+            "minor": true,
+            "abbrev": "K5",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Berks and Hants Railway",
+            "minor": true,
+            "abbrev": "K6",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Reading, Guilford and Reigate Railway",
+            "minor": true,
+            "abbrev": "K7",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Staines, Wokingham and Woking Railway",
+            "minor": true,
+            "abbrev": "K8",
+            "tokens": [],
+            "color": "berks"
+        },
+        {
+            "name": "Oxford and Rugby Railway",
+            "minor": true,
+            "abbrev": "O1",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Chipping Norton Railway",
+            "minor": true,
+            "abbrev": "O2",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Banbury and Cheltenham Direct Railway",
+            "minor": true,
+            "abbrev": "O3",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Woodstock Railway",
+            "minor": true,
+            "abbrev": "O4",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Bicester Military Railway",
+            "minor": true,
+            "abbrev": "O5",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Witney Railway",
+            "minor": true,
+            "abbrev": "O6",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "East Gloucestershire Railway",
+            "minor": true,
+            "abbrev": "O7",
+            "tokens": [],
+            "color": "oxon"
+        },
+        {
+            "name": "Wallingford and Watlington Railway",
+            "minor": true,
+            "abbrev": "O8",
+            "tokens": [],
+            "color": "oxon"
+        }
+    ],
+    "trains": [
+        {
+            "name": "L",
+            "quantity": 13,
+            "price": 60,
+            "color": "yellow",
+            "rust": ["4", "4/5"],
+            "description": "Upgrade for £60; Pays half at 3"
+        },
+        {
+            "name": "2",
+            "quantity": 13,
+            "price": "£100",
+            "color": "yellow",
+            "rust": ["4", "4/5"]
+        },
+        {
+            "name": "3",
+            "quantity": 7,
+            "price": "£160",
+            "color": "green",
+            "rust": ["6", "6P"],
+            "description": "Upgrade for £60"
+        },
+        {
+            "name": "3/4",
+            "quantity": 7,
+            "price": "£200",
+            "color": "green",
+            "phase": false,
+            "rust": ["6", "6P"]
+        },
+        {
+            "name": "4",
+            "quantity": 4,
+            "price": "£300",
+            "color": "green",
+            "rust": ["E", "4/5D"],
+            "description": "Upgrade for £60"
+        },
+        {
+            "name": "4/5",
+            "quantity": 4,
+            "price": "£340",
+            "color": "green",
+            "phase": false,
+            "rust": ["E", "4/5D"]
+        },
+        {
+            "name": "5",
+            "quantity": 2,
+            "price": "£480",
+            "color": "brown",
+            "permanent": true,
+            "description": "Upgrade for £150"
+        },
+        {
+            "name": "5P",
+            "quantity": 2,
+            "price": "£580",
+            "color": "brown",
+            "phase": false,
+            "permanent": true,
+            "description": "Stop at any # towns"
+        },
+        {
+            "name": "6",
+            "quantity": 2,
+            "price": "£600",
+            "color": "brown",
+            "permanent": true,
+            "description": "Upgrade for £150"
+        },
+        {
+            "name": "6P",
+            "quantity": 2,
+            "price": "£700",
+            "color": "brown",
+            "phase": false,
+            "permanent": true,
+            "description": "Stop at any # towns"
+        },
+        {
+            "name": "E",
+            "quantity": "∞",
+            "print": 4,
+            "price": "£750",
+            "color": "gray",
+            "permanent": true,
+            "available": "6"
+        },
+        {
+            "name": "4/6D",
+            "quantity": "∞",
+            "print": 4,
+            "price": "£900",
+            "color": "gray",
+            "phase": false,
+            "permanent": true,
+            "available": "6",
+            "description": "Double revenue"
+        }
+    ],
+    "privates": [
+        {
+            "name": "Brunel Civil Engineering",
+            "price": "£70",
+            "revenue": 10,
+            "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level. Company revenue £10."
+        },
+        {
+            "name": "Scott Civil Engineering",
+            "price": "£70",
+            "revenue": 10,
+            "description": "Retire this company as part of an Upgrade Track action to replace a basic city tile with a major city tile of the next level. Company revenue £10."
+        },
+        {
+            "name": "Charles Early Mills",
+            "price": "£50",
+            "revenue": 5,
+            "description": "When acquired, place the Mill token on a city. A basic city with the Mill token is worth an additional £10 for each of your routes. Company revenue £0."
+        },
+        {
+            "name": "Chester Village",
+            "price": "£40",
+            "revenue": 10,
+            "description": "When acquired, gain the Chester Village token. When upgrading a tile that contains a town, you may place the Chester Village token on a vacant track segment on that tile. Chester Village counts as a town with value £10/20/30. Your trains may make an additional stop after visiting Chester Village. Company revenue £0."
+        },
+        {
+            "name": "Swindon Works",
+            "price": "£50",
+            "revenue": 10,
+            "description": "Company revenue £10/20/40/80."
+        },
+        {
+            "name": "Royal Mail Contracting",
+            "price": "£50",
+            "revenue": 10,
+            "description": "After Running Trains, pay your treasury £10 for each termini and county visited by your trains this turn. (Each counts only once, even if visited multiple times. A county is visited if a route visits a town or city within it, as denoted by the background colour of the hex.) Company revenue £0."
+        },
+        {
+            "name": "Swinford Toll Bridge",
+            "price": "£20",
+            "revenue": 5,
+            "maxPlayers": 4,
+            "description": "Receive a discount of £20 whenever you build a bridge. Company revenue £5."
+        },
+        {
+            "name": "Horspath Tunneling",
+            "price": "£20",
+            "revenue": 5,
+            "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn. Company revenue £5."
+        },
+        {
+            "name": "Sonning Excavations",
+            "price": "£20",
+            "revenue": 5,
+            "description": "Retire this company to receive a discount of £40 when you next build a cutting this turn. Company revenue £5."
+        },
+        {
+            "name": "Stafford Road Works",
+            "price": "£20",
+            "revenue": 5,
+            "maxPlayers": 4,
+            "description": "Retire this company to receive a discount of £40 when you next upgrade a train this turn. Company revenue £5."
+        },
+        {
+            "name": "Fox Architecture",
+            "price": "£40",
+            "revenue": 10,
+            "description": "Retire this company to take an additional Build or Upgrade Track action this round. (This may be before or after any other build actions.) Company revenue £5."
+        },
+        {
+            "name": "Beeching Accountancy",
+            "price": "£40",
+            "revenue": 10,
+            "description": "Retire this company to remove a town from a track segment to which you can trace a route. You may not select the home town of a Minor Railway nor the Chester Village token. Company revenue £5."
+        }
+    ],
+    "phases": [
+        {
+            "name": "1",
+            "train": "L",
+            "limit": 2,
+            "number": 13,
+            "tiles": "yellow",
+            "minor": true,
+            "notes": "Only IP is £50"
+        },
+        {
+            "name": "2",
+            "limit": 2,
+            "number": 7,
+            "tiles": "green",
+            "buy_companies": true,
+            "minor": true
+        },
+        {
+            "name": "3",
+            "limit": 4,
+            "tiles": "green",
+            "buy_companies": true,
+            "notes": "L-train revenue halved"
+        },
+        {
+            "name": "4",
+            "rust": "L,2",
+            "limit": 3,
+            "tiles": "green",
+            "buy_companies": true,
+            "notes": "May split shares"
+        },
+        {
+            "name": "5",
+            "limit": 2,
+            "buy_companies": true,
+            "tiles": "brown"
+        },
+        {
+            "name": "6",
+            "limit": 2,
+            "rust": "3",
+            "buy_companies": true,
+            "tiles": "brown"
+        },
+        {
+            "name": "7",
+            "train": "E",
+            "limit": 2,
+            "number": "∞",
+            "rust": "4",
+            "buy_companies": true,
+            "tiles": "gray"
+        }
+    ],
+    "pools": [
+        {
+            "name": "Bank",
+            "notes": [
+                {
+                    "color": "brown",
+                    "icon": "exclamation",
+                    "note":
+                    "No more than 50% of a corporation's shares may be in the market at any time"
+                }
             ]
-          },
-          {
-            "angle": 120,
-            "percent": 0.8,
-            "companies": [
-              { "label": "SWR", "color": "gray" }
-            ]
-          },
-          {
-            "angle": 60,
-            "percent": 0.8,
-            "companies": [
-              { "label": "MetR", "color": "purple" }
-            ]
-          },
-          {
-            "angle": 300,
-            "percent": 0.8,
-            "companies": [
-              { "label": "LSWR", "color": "orange" }
-            ]
-          }
-        ],
-        "borders": [
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["H12"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Swindon" } }
-        ],
-        "labels": [
-          { "label": "K2", "percent": 0.75 }
-        ],
-        "hexes": ["K5"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Fairford" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "water" },
-          { "side": 5, "color": "water" },
-          { "side": 6, "color": "water" }
-        ],
-        "labels": [
-          { "label": "O7", "percent": 0.75 }
-        ],
-        "hexes": ["I5"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Bourton-on-the-Water" } }
-        ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "O3", "percent": 0.75 }
-        ],
-        "hexes": ["F4"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Marlborough" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "labels": [
-          { "label": "K5", "percent": 0.75 }
-        ],
-        "hexes": ["M7"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Chipping Norton" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "labels": [
-          { "label": "O2", "percent": 0.75 }
-        ],
-        "hexes": ["E7"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Witney" } }
-        ],
-        "borders": [
-          { "side": 4, "color": "water" },
-          { "side": 5, "color": "water" }
-        ],
-        "labels": [
-          { "label": "O6", "percent": 0.75 }
-        ],
-        "hexes": ["H8"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Lambourne" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "K4", "percent": 0.75 }
-        ],
-        "hexes": ["L8"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Wantage" } }
-        ],
-        "borders": [
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "K3", "percent": 0.75 }
-        ],
-        "hexes": ["K9"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Blenheim" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "O4", "percent": 0.75 }
-        ],
-        "hexes": ["F10"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Newbury" } }
-        ],
-        "labels": [
-          { "label": "K6", "percent": 0.75 }
-        ],
-        "hexes": ["N10"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Didcot" } }
-        ],
-        "labels": [
-          { "label": "K1", "percent": 0.75 }
-        ],
-        "hexes": ["J12"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Banbury" } }
-        ],
-        "labels": [
-          { "label": "O1", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["C11"]
-      },
-     {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Bicester" } }
-        ],
-        "labels": [
-          { "label": "O5", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 1, "color": "water" }
-        ],
-        "hexes": ["F14"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Watlington" } }
-        ],
-         "borders": [
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "O8", "percent": 0.75 }
-        ],
-        "hexes": ["J16"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Princes Risborough" } }
-        ],
-        "borders": [
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "labels": [
-          { "label": "B5", "percent": 0.75 }
-        ],
-        "hexes": ["I19"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Buckingham" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "labels": [
-          { "label": "B1", "percent": 0.75 }
-        ],
-        "hexes": ["D16"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Aylesbury" } }
-        ],
-        "labels": [
-          { "label": "B3", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G19"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Reading" } }
-        ],
-        "labels": [
-          { "label": "K7", "percent": 0.75 }
-        ],
-        "hexes": ["M17"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Marlow" } }
-        ],
-        "labels": [
-          { "label": "B8", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "water" },
-          { "side": 6, "color": "water" }
-        ],
-        "hexes": ["K21"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Bletchley" } }
-        ],
-        "labels": [
-          { "label": "B2", "percent": 0.75 }
-        ],
-        "hexes": ["D20"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "High Wycombe" } }
-        ],
-        "labels": [
-          { "label": "B6", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["J22"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Cheddington" } }
-        ],
-        "labels": [
-          { "label": "B4", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G23"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Chesham" } }
-        ],
-        "labels": [
-          { "label": "B7", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["J24"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Bracknell" } }
-        ],
-        "labels": [
-          { "label": "K8", "percent": 0.75 }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["N22"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Andoversford" } }
-        ],
-        "hexes": ["F2"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Cirencester" } }
-        ],
-        "borders": [
-          { "side": 4, "color": "water" }
-        ],
-        "hexes": ["I3"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Faringdon" } }
-        ],
-        "borders": [
-          { "side": 2, "color": "water"},
-          { "side": 3, "color": "water"}
-        ],
-        "hexes": ["J6"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Carterton" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["H6"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Hungerford" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["N8"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Charlbury" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["F8"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          {
-            "name": { "name": "Yarnton" }
-          }
-        ],
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 6, "color": "water" }
-        ],
-        "hexes": ["G11"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Heyford" } }
-        ],
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 4, "color": "water" }
-        ],
-        "hexes": ["E11"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Islip" } }
-        ],
-        "borders": [
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["G13"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Abingdon" } }
-        ],
-        "hexes": ["I11"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Compton" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["L12"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["D12"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Brackley" } }
-        ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["C13"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Wheatley" } }
-        ],
-         "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["H14"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [ { "type": "river", "cost": "£30" } ],
-        "hexes": ["I13"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Wallingford" } }
-        ],
-        "borders": [
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["J14"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Goring" } }
-        ],
-         "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["L14"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Henley-upon-Thames" } }
-        ],
-         "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 4, "color": "water" }
-        ],
-        "hexes": ["L18"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Wokingham" } }
-        ],
-        "borders": [
-          { "side": 2, "color": "land" }
-        ],
-        "hexes": ["N20"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Windsor" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "water" },
-          { "side": 1, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["M23"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Staines" } }
-        ],
-         "borders": [
-          { "side": 2, "color": "water" }
-        ],
-       "hexes": ["M25"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 1, "color": "water" },
-          { "side": 5, "color": "water" },
-          { "side": 6, "color": "water" }
-        ],
-       "hexes": ["L24"]
-      },
-      {
-        "color": "berks",
-        "centerTowns": [
-          { "name": { "name": "Maidenhead" } }
-        ],
-        "borders": [
-          { "side": 2, "color": "water" },
-          { "side": 3, "color": "water" },
-          { "side": 4, "color": "water" }
-        ],
-        "hexes": ["L22"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Beaconsfield" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "water" }
-        ],
-        "hexes": ["K23"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["K25"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Tring" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["H24"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Watford" } }
-        ],
-        "hexes": ["J26"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Wendover" } }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["H22"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Thame" } }
-        ],
-        "borders": [
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["H18"]
-      },
-      {
-        "color": "oxon",
-        "centerTowns": [
-          { "name": { "name": "Chinor" } }
-        ],
-        "borders": [
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["I17"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Leighton Buzzard" } }
-        ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["E21"]
-      },
-      {
-        "color": "bucks",
-        "centerTowns": [
-          { "name": { "name": "Verney Junction" } }
-        ],
-        "hexes": ["E17"]
-      },
-      {
-        "color": "bucks",
-        "terrain": [{ "type": "track", "cost": "£40" }],
-        "hexes": ["B18", "C21"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [{ "type": "track", "cost": "£40" }],
-        "hexes": ["D4"]
-      },
-      {
-        "color": "berks",
-        "terrain": [{ "type": "track", "cost": "£80" }],
-        "hexes": ["L4", "K3"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 1, "color": "land" }
-        ],
-        "hexes": ["E15"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 1, "color": "land" }
-        ],
-        "hexes": ["D18"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 2, "color": "land" }
-        ],
-        "hexes": ["N6", "N14"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["C15", "F16"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["E5"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["M21"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["C17", "D14", "F22", "I25"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 1, "color": "water" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "water" }
-        ],
-        "hexes": ["E13"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["N12"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 3, "color": "water" },
-          { "side": 4, "color": "water" }
-        ],
-        "hexes": ["F12"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["D8"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["G17"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["G3", "H4"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["M19"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["K11"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["E19"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["C9", "F6"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["K7"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" }
-        ],
-        "hexes": ["M15"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["M9"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["K13"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G21"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["M11"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["H20"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" }
-        ],
-        "hexes": ["M5"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" }
-        ],
-        "hexes": ["L6"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["F18", "I23"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["E9"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "water" }
-        ],
-        "hexes": ["K19"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["D10"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G7"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G5"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["L16"]
-      },
-      {
-        "color": "bucks",
-        "borders": [
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["J20"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["J18"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [
-          { "type": "mountain", "cost": "" }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["K15", "K17"]
-      },
-      {
-        "color": "bucks",
-        "terrain": [
-          { "type": "mountain", "cost": "" }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["F20", "I21"]
-      },
-      {
-        "color": "berks",
-        "terrain": [
-          { "type": "mountain", "cost": "" }
-        ],
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 2, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 4, "color": "land" },
-          { "side": 5, "color": "land" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["L10", "M13"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 2, "color": "water" }
-        ],
-        "hexes": ["J8"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 1, "color": "water" },
-          { "side": 2, "color": "water" },
-          { "side": 3, "color": "water" },
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["L20"]
-      },
-      {
-        "color": "berks",
-        "terrain": [
-          { "type": "river", "cost": "£30" }
-        ],
-        "borders": [
-          { "side": 1,  "color": "water" },
-          { "side": 2,  "color": "water" }
-        ],
-        "hexes": ["I9"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [ { "type": "river", "cost": "£30" } ],
-        "borders": [
-          { "side": 4,  "color": "water" },
-          { "side": 5,  "color": "water" },
-          { "side": 6,  "color": "water" }
-        ],
-        "hexes": ["I7"]
-      },
-      {
-        "color": "oxon",
-        "borders": [
-          { "side": 1, "color": "land" },
-          { "side": 3, "color": "land" },
-          { "side": 5, "color": "water" }
-        ],
-        "hexes": ["G9"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [ { "type": "river", "cost": "£30" } ],
-        "borders": [
-          { "side": 6, "color": "land" }
-        ],
-        "hexes": ["G15"]
-      },
-      {
-        "color": "berks",
-        "terrain": [ { "type": "river", "cost": "£30" } ],
-        "hexes": ["N16"]
-      },
-      {
-        "color": "berks",
-        "terrain": [
-          { "type": "river", "cost": "£60" }
-        ],
-        "borders": [
-          { "side": 1,  "color": "water" },
-          { "side": 2,  "color": "water" },
-          { "side": 3,  "color": "water" }
-        ],
-        "hexes": ["H10"]
-      },
-      {
-        "color": "oxon",
-        "terrain": [ { "type": "river", "cost": "£30" } ],
-        "hexes": ["I15"]
-      },
-      {
-        "color": "berks",
-        "borders": [
-          { "side": 3,  "color": "water" }
-        ],
-        "hexes": ["J4"]
-      },
-      {
-        "color": "gray",
-        "hexes": ["D6", "D22", "E3", "E23", "F24", "G25",
-                  "O9", "O11", "O21", "O23"]
-      },
-      {
-        "color": "oxon",
-        "hexes": ["B10", "H16"]
-      },
-      {
-        "color": "berks",
-        "hexes": ["J10", "N18", "N24"]
-      },
-      {
-        "color": "bucks",
-        "hexes": ["B12", "C19"]
-      }
-    ]
-  }
+        }
+    ],
+    "rounds": [
+        {
+            "name": "SR",
+            "color": "gray"
+        },
+        {
+            "name": "OR1",
+            "color": "yellow"
+        },
+        {
+            "name": "OR2",
+            "color": "yellow"
+        }
+    ],
+    "turns": [
+        {
+            "name": "Stock Round",
+            "steps": [
+                "Sell any number of shares",
+                "Buy one certificate"
+            ],
+            "ordered": true
+        },
+        {
+            "name": "Operating Round",
+            "steps": [
+                "Buy, sell, or issue shares",
+                "Acquire private companies",
+                "Opening ceremony",
+                "Build or upgrade track",
+                "Place one station token",
+                "Run trains",
+                "Pay or withhold dividends",
+                "Buy rolling stock",
+                "Merge or incorporate"
+            ],
+            "ordered": true
+        }
+    ],
+    "stock": {
+        "type": "2D",
+        "movement": {
+            "up": [""],
+            "down": [""],
+            "left": ["Withheld revenue"],
+            "right": ["Paid dividends"]
+        },
+        "market": [[
+            { "label": "0", "legend": 0 },
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            65,
+            { "label": 70, "legend": 3 },
+            { "label": 75, "legend": 3 },
+            { "label": 80, "legend": 3 },
+            { "label": 85, "legend": 3 },
+            { "label": 90, "legend": 3 },
+            { "label": 95, "legend": 3 },
+            { "label": 100, "legend": 3 },
+            { "label": 105, "legend": 3 },
+            { "label": 110, "legend": 3 },
+            { "label": 115, "legend": 4 },
+            { "label": 120, "legend": 4 },
+            { "label": 125, "legend": 4 },
+            { "label": 130, "legend": 4 },
+            { "label": 140, "legend": 4 },
+            { "label": 150, "legend": 4 },
+            { "label": 160, "legend": 5 },
+            { "label": 170, "legend": 5 },
+            { "label": 180, "legend": 5 },
+            { "label": 195, "legend": 5 },
+            { "label": 210, "legend": 5 },
+            { "label": 225, "legend": 5 },
+            240,
+            260,
+            280,
+            300,
+            325,
+            350,
+            380,
+            415,
+            455,
+            { "label": 500, "legend": 6 }],
+                   [
+                       { "label": "0", "legend": 0 },
+                       30,
+                       55,
+                       75,
+                       90,
+                       { "label": 100, "legend": 1 },
+                       { "label": 105, "legend": 2 },
+                       { "label": 110, "legend": 2 },
+                       { "label": 115, "legend": 2 },
+                       { "label": 120, "legend": 2 },
+                       { "label": 125, "legend": 2 },
+                       { "label": 130, "legend": 2 },
+                       { "label": 140, "legend": 2 },
+                       { "label": 150, "legend": 2 },
+                       { "label": 160, "legend": 2 },
+                       { "label": 170, "legend": 3 },
+                       { "label": 180, "legend": 3 },
+                       { "label": 195, "legend": 3 },
+                       { "label": 210, "legend": 3 },
+                       { "label": 225, "legend": 3 },
+                       { "label": 240, "legend": 3 },
+                       { "label": 260, "legend": 3 },
+                       { "label": 280, "legend": 3 },
+                       { "label": 300, "legend": 3 },
+                       325,
+                       350,
+                       375,
+                       400,
+                       425,
+                       450,
+                       475,
+                       { "label": 500, "legend": 6 }]
+                  ],
+        "legend": [
+            {
+                "color": "black",
+                "description": "Close company",
+                "icon": "certificate"
+            },
+            {
+                "color": "gray",
+                "description": "Initial from 1",
+                "icon": "money-bill-wave"
+            },
+            {
+                "color": "yellow",
+                "description": "Initial from 2",
+                "icon": "money-bill-wave"
+            },
+            {
+                "color": "green",
+                "description": "Initial from 3",
+                "icon": "money-bill-wave"
+            },
+            {
+                "color": "greenTwo",
+                "description": "Initial from 4",
+                "icon": "money-bill-wave"
+            },
+            {
+                "color": "brown",
+                "description": "Initial from 5",
+                "icon": "money-bill-wave"
+            },
+            {
+                "color": "water",
+                "description": "Game end",
+                "icon": "flag-checkered"
+            }
+        ]
+    },
+    "tiles": {
+        "5": 6,
+        "6": 6,
+        "57": 6,
+        "7": 10,
+        "8": 30,
+        "9": 30,
+        "14": 4,
+        "15": 4,
+        "619": 4,
+        "80": 3,
+        "81": 3,
+        "82": 6,
+        "83": 6,
+        "O14": {
+            "color": "green",
+            "rotations": 3,
+            "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
+            "labels": { "label": "H", "angle": 155, "percent": 0.75 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 4 }, { "side": 5 }]
+        },
+        "O15": {
+            "color": "green",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
+            "labels": { "label": "H", "angle": 155, "percent": 0.75 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 3 }, { "side": 6 }]
+        },
+        "O619": {
+            "color": "green",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 50 }],
+            "labels": { "label": "H", "angle": 155, "percent": 0.75 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 4 }, { "side": 6 }]
+        },
+        "544": 2,
+        "545": 2,
+        "546": 2,
+        "611": 6,
+        "O611": {
+            "color": "brown",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 60 }],
+            "labels": { "label": "H", "angle": 155, "percent": 0.75 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 3 }, { "side": 4 }, { "side": 5 }]
+        },
+        "455": 2,
+        "O455": {
+            "color": "gray",
+            "quantity": 2,
+            "rotations": 1,
+            "cities": [{ "size": 2, "rotate": 180 }],
+            "labels": { "label": "H", "angle": 155, "percent": 0.75 },
+            "values": [{ "angle": 210, "percent": 0.75, "value": 70 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 3 },
+                      { "side": 4 }, { "side": 5 }, { "side": 6 }]
+        },
+        "60": 2,
+        "O1": {
+            "color": "yellow",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 20 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.75 },
+            "cities": [{ "size": 1 }],
+            "track": [{ "side": 1 }]
+        },
+        "O2": {
+            "color": "green",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 1, "angle": 0, "percent": 0.5 }],
+            "track": [{ "type": "mid", "side": 1 }, { "side": 3 }, { "side": 4 }]
+        },
+        "O3": {
+            "color": "green",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 1, "angle": 0, "percent": 0.5 }],
+            "track": [{ "type": "mid", "side": 1 }, { "side": 3 }, { "side": 5 }]
+        },
+        "O4": {
+            "color": "green",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 40 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 1, "angle": 0, "percent": 0.6 }],
+            "track": [{ "type": "mid", "side": 1 }, { "side": 3 }, { "side": 6 }]
+        },
+        "O5": {
+            "color": "brown",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 60 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 3 }, { "side": 5 }, { "side": 6 }]
+        },
+        "O6": {
+            "color": "brown",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 60 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 3 }, { "side": 6 }]
+        },
+        "O7": {
+            "color": "brown",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 60 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 3 }, { "side": 5 }]
+        },
+        "O8": {
+            "color": "gray",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 80 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 4 }, { "side": 6 }]
+        },
+        "O9": {
+            "color": "gray",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 80 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 1 }, { "side": 2 }, { "side": 5 }, { "side": 6 }]
+        },
+        "O10": {
+            "color": "gray",
+            "values": [{ "angle": 210, "percent": 0.8, "value": 80 }],
+            "labels": { "label": "O", "angle": 155, "percent": 0.8 },
+            "cities": [{ "size": 2 }],
+            "track": [{ "side": 2 }, { "side": 3 }, { "side": 5 }, { "side": 6 }]
+        },
+        "O0": {
+            "color": "gray",
+            "quantity": 2
+        }
+    },
+    "map": {
+        "hexes": [
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": {
+                        "name": "LEAMINGTON SPA"
+                    },
+                    "revenues": [
+                        { "color": "yellow", "cost": "20" },
+                        { "color": "green", "cost": "30" },
+                        { "color": "brown", "cost": "40" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 5 }
+                ],
+                "cities": [
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "ChR", "color": "cyan" }
+                        ]
+                    }
+                ],
+                "hexes": ["A9"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "RUGBY" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "30" },
+                        { "color": "green", "cost": "40" },
+                        { "color": "brown", "cost": "50" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 5 }
+                ],
+                "cities": [
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "GCR", "color": "lime" }
+                        ]
+                    }
+                ],
+                "hexes": ["A17"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "WORCESTER" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "30" },
+                        { "color": "green", "cost": "40" },
+                        { "color": "brown", "cost": "50" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 5 }
+                ],
+                "cities": [
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "MR", "color": "red" }
+                        ]
+                    }
+                ],
+                "hexes": ["C3"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "CAMBRIDGE" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "30" },
+                        { "color": "green", "cost": "40" },
+                        { "color": "brown", "cost": "50" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 1 }
+                ],
+                "cities": [
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "LNWR", "color": "black" }
+                        ]
+                    }
+                ],
+                "hexes": ["C23"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "GLOUCESTER" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "20" },
+                        { "color": "green", "cost": "30" },
+                        { "color": "brown", "cost": "40" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 5 }
+                ],
+                "cities": [
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "SWR", "color": "gray" }
+                        ]
+                    }
+                ],
+                "hexes": ["E1"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "BRISTOL" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "40" },
+                        { "color": "green", "cost": "50" },
+                        { "color": "brown", "cost": "60" },
+                        { "color": "gray", "cost": "70" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 3 }, { "side": 4 }
+                ],
+                "cities": [
+                    {
+                        "angle": 0,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "GWR", "color": "green" }
+                        ]
+                    }
+                ],
+                "hexes": ["L2"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "BOURNEMOUTH" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "20" },
+                        { "color": "green", "cost": "30" },
+                        { "color": "brown", "cost": "40" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 3 }
+                ],
+                "cities": [
+                    {
+                        "angle": 0,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "MR", "color": "red" }
+                        ]
+                    }
+                ],
+                "hexes": ["O5"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "SOUTHAMPTON" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "20" },
+                        { "color": "green", "cost": "30" },
+                        { "color": "brown", "cost": "40" },
+                        { "color": "gray", "cost": "50" }
+                    ]
+                },
+                "offBoardTrack": [
+                    { "side": 2 }
+                ],
+                "border": [
+                    { "side": 2, "color": "black" }
+                ],
+                "cities": [
+                    {
+                        "angle": 0,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "LSWR", "color": "orange" }
+                        ]
+                    }
+                ],
+                "hexes": ["O15"]
+            },
+            {
+                "color": "offboard",
+                "labels": [
+                    { "label": "L", "angle": 120, "percent": 0.75 }
+                ],
+                "offBoardRevenue": {
+                    "name": { "name": "LONDON" },
+                    "revenues": [
+                        { "color": "yellow", "cost": "40" },
+                        { "color": "green", "cost": "50" },
+                        { "color": "brown", "cost": "60" },
+                        { "color": "gray", "cost": "80" }
+                    ]
+                },
+                "cities": [
+                    {
+                        "angle": 300,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "GWR", "color": "green" }
+                        ]
+                    },
+                    {
+                        "angle": 240,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "GCR", "color": "lime" }
+                        ]
+                    },
+                    {
+                        "angle": 180,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "ChR", "color": "cyan" }
+                        ]
+                    },
+                    {
+                        "angle": 0,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "Met", "color": "purple" }
+                        ]
+                    }
+                ],
+                "hexes": ["L28"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "Marylebone"},
+                    "revenues": []
+                },
+                "offBoardTrack": [
+                    { "side": 1 },
+                    { "side": 2 }
+                ],
+                "hexes": ["K27"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "Paddington"},
+                    "revenues": []
+                },
+                "offBoardTrack": [
+                    { "side": 1 },
+                    { "side": 2 },
+                    { "side": 6 }
+                ],
+                "hexes": ["L26"]
+            },
+            {
+                "color": "offboard",
+                "offBoardRevenue": {
+                    "name": { "name": "Waterloo"},
+                    "revenues": []
+                },
+                "offBoardTrack": [
+                    { "side": 1 }
+                ],
+                "hexes": ["M27"]
+            },
+            {
+                "color": "oxon",
+                "labels": [
+                    { "label": "O", "percent": 0.75 }
+                ],
+                "cities": [
+                    {
+                        "name": { "name": "Oxford" }
+                    },
+                    {
+                        "angle": 240,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "LNWR", "color": "black" }
+                        ]
+                    },
+                    {
+                        "angle": 120,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "SWR", "color": "gray" }
+                        ]
+                    },
+                    {
+                        "angle": 60,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "Met", "color": "purple" }
+                        ]
+                    },
+                    {
+                        "angle": 300,
+                        "percent": 0.8,
+                        "companies": [
+                            { "label": "LSWR", "color": "orange" }
+                        ]
+                    }
+                ],
+                "borders": [
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["H12"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Swindon" } }
+                ],
+                "labels": [
+                    { "label": "K2", "percent": 0.75 }
+                ],
+                "hexes": ["K5"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Fairford" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "water" },
+                    { "side": 5, "color": "water" },
+                    { "side": 6, "color": "water" }
+                ],
+                "labels": [
+                    { "label": "O7", "percent": 0.75 }
+                ],
+                "hexes": ["I5"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Bourton-on-the-Water" } }
+                ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "O3", "percent": 0.75 }
+                ],
+                "hexes": ["F4"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Marlborough" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "K5", "percent": 0.75 }
+                ],
+                "hexes": ["M7"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Chipping Norton" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "O2", "percent": 0.75 }
+                ],
+                "hexes": ["E7"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Witney" } }
+                ],
+                "borders": [
+                    { "side": 4, "color": "water" },
+                    { "side": 5, "color": "water" }
+                ],
+                "labels": [
+                    { "label": "O6", "percent": 0.75 }
+                ],
+                "hexes": ["H8"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Lambourne" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "K4", "percent": 0.75 }
+                ],
+                "hexes": ["L8"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Wantage" } }
+                ],
+                "borders": [
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "K3", "percent": 0.75 }
+                ],
+                "hexes": ["K9"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Blenheim" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "O4", "percent": 0.75 }
+                ],
+                "hexes": ["F10"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Newbury" } }
+                ],
+                "labels": [
+                    { "label": "K6", "percent": 0.75 }
+                ],
+                "hexes": ["N10"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Didcot" } }
+                ],
+                "labels": [
+                    { "label": "K1", "percent": 0.75 }
+                ],
+                "hexes": ["J12"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Banbury" } }
+                ],
+                "labels": [
+                    { "label": "O1", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["C11"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Bicester" } }
+                ],
+                "labels": [
+                    { "label": "O5", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 1, "color": "water" }
+                ],
+                "hexes": ["F14"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Watlington" } }
+                ],
+                "borders": [
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "O8", "percent": 0.75 }
+                ],
+                "hexes": ["J16"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Princes Risborough" } }
+                ],
+                "borders": [
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "B5", "percent": 0.75 }
+                ],
+                "hexes": ["I19"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Buckingham" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "labels": [
+                    { "label": "B1", "percent": 0.75 }
+                ],
+                "hexes": ["D16"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Aylesbury" } }
+                ],
+                "labels": [
+                    { "label": "B3", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G19"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Reading" } }
+                ],
+                "labels": [
+                    { "label": "K7", "percent": 0.75 }
+                ],
+                "hexes": ["M17"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Marlow" } }
+                ],
+                "labels": [
+                    { "label": "B8", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "water" },
+                    { "side": 6, "color": "water" }
+                ],
+                "hexes": ["K21"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Bletchley" } }
+                ],
+                "labels": [
+                    { "label": "B2", "percent": 0.75 }
+                ],
+                "hexes": ["D20"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "High Wycombe" } }
+                ],
+                "labels": [
+                    { "label": "B6", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["J22"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Cheddington" } }
+                ],
+                "labels": [
+                    { "label": "B4", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G23"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Chesham" } }
+                ],
+                "labels": [
+                    { "label": "B7", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["J24"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Bracknell" } }
+                ],
+                "labels": [
+                    { "label": "K8", "percent": 0.75 }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["N22"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Andoversford" } }
+                ],
+                "hexes": ["F2"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Cirencester" } }
+                ],
+                "borders": [
+                    { "side": 4, "color": "water" }
+                ],
+                "hexes": ["I3"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Faringdon" } }
+                ],
+                "borders": [
+                    { "side": 2, "color": "water"},
+                    { "side": 3, "color": "water"}
+                ],
+                "hexes": ["J6"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Carterton" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["H6"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Hungerford" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["N8"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Charlbury" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["F8"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    {
+                        "name": { "name": "Yarnton" }
+                    }
+                ],
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 6, "color": "water" }
+                ],
+                "hexes": ["G11"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Heyford" } }
+                ],
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 4, "color": "water" }
+                ],
+                "hexes": ["E11"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Islip" } }
+                ],
+                "borders": [
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["G13"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Abingdon" } }
+                ],
+                "hexes": ["I11"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Compton" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["L12"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["D12"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Brackley" } }
+                ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["C13"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Wheatley" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["H14"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [ { "type": "river", "cost": "£30" } ],
+                "hexes": ["I13"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Wallingford" } }
+                ],
+                "borders": [
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["J14"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Goring" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["L14"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Henley-upon-Thames" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 4, "color": "water" }
+                ],
+                "hexes": ["L18"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Wokingham" } }
+                ],
+                "borders": [
+                    { "side": 2, "color": "land" }
+                ],
+                "hexes": ["N20"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Windsor" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "water" },
+                    { "side": 1, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["M23"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Staines" } }
+                ],
+                "borders": [
+                    { "side": 2, "color": "water" }
+                ],
+                "hexes": ["M25"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 1, "color": "water" },
+                    { "side": 5, "color": "water" },
+                    { "side": 6, "color": "water" }
+                ],
+                "hexes": ["L24"]
+            },
+            {
+                "color": "berks",
+                "centerTowns": [
+                    { "name": { "name": "Maidenhead" } }
+                ],
+                "borders": [
+                    { "side": 2, "color": "water" },
+                    { "side": 3, "color": "water" },
+                    { "side": 4, "color": "water" }
+                ],
+                "hexes": ["L22"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Beaconsfield" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "water" }
+                ],
+                "hexes": ["K23"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["K25"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Tring" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["H24"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Watford" } }
+                ],
+                "hexes": ["J26"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Wendover" } }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["H22"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Thame" } }
+                ],
+                "borders": [
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["H18"]
+            },
+            {
+                "color": "oxon",
+                "centerTowns": [
+                    { "name": { "name": "Chinor" } }
+                ],
+                "borders": [
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["I17"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Leighton Buzzard" } }
+                ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["E21"]
+            },
+            {
+                "color": "bucks",
+                "centerTowns": [
+                    { "name": { "name": "Verney Junction" } }
+                ],
+                "hexes": ["E17"]
+            },
+            {
+                "color": "bucks",
+                "terrain": [{ "type": "tracks", "cost": "£40" }],
+                "hexes": ["B18", "C21"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [{ "type": "tracks", "cost": "£40" }],
+                "hexes": ["D4"]
+            },
+            {
+                "color": "berks",
+                "terrain": [{ "type": "tracks", "cost": "£80" }],
+                "hexes": ["L4", "K3"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 1, "color": "land" }
+                ],
+                "hexes": ["E15"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 1, "color": "land" }
+                ],
+                "hexes": ["D18"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 2, "color": "land" }
+                ],
+                "hexes": ["N6", "N14"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["C15", "F16"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["E5"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["M21"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["C17", "D14", "F22", "I25"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 1, "color": "water" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "water" }
+                ],
+                "hexes": ["E13"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["N12"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 3, "color": "water" },
+                    { "side": 4, "color": "water" }
+                ],
+                "hexes": ["F12"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["D8"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["G17"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["G3", "H4"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["M19"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["K11"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["E19"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["C9", "F6"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["K7"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" }
+                ],
+                "hexes": ["M15"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["M9"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["K13"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G21"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["M11"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["H20"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" }
+                ],
+                "hexes": ["M5"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" }
+                ],
+                "hexes": ["L6"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["F18", "I23"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["E9"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "water" }
+                ],
+                "hexes": ["K19"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["D10"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G7"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G5"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["L16"]
+            },
+            {
+                "color": "bucks",
+                "borders": [
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["J20"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["J18"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [
+                    { "type": "mountain", "cost": "" }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["K15", "K17"]
+            },
+            {
+                "color": "bucks",
+                "terrain": [
+                    { "type": "mountain", "cost": "" }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["F20", "I21"]
+            },
+            {
+                "color": "berks",
+                "terrain": [
+                    { "type": "mountain", "cost": "" }
+                ],
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 2, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 4, "color": "land" },
+                    { "side": 5, "color": "land" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["L10", "M13"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 2, "color": "water" }
+                ],
+                "hexes": ["J8"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 1, "color": "water" },
+                    { "side": 2, "color": "water" },
+                    { "side": 3, "color": "water" },
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["L20"]
+            },
+            {
+                "color": "berks",
+                "terrain": [
+                    { "type": "river", "cost": "£30" }
+                ],
+                "borders": [
+                    { "side": 1,  "color": "water" },
+                    { "side": 2,  "color": "water" }
+                ],
+                "hexes": ["I9"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [ { "type": "river", "cost": "£30" } ],
+                "borders": [
+                    { "side": 4,  "color": "water" },
+                    { "side": 5,  "color": "water" },
+                    { "side": 6,  "color": "water" }
+                ],
+                "hexes": ["I7"]
+            },
+            {
+                "color": "oxon",
+                "borders": [
+                    { "side": 1, "color": "land" },
+                    { "side": 3, "color": "land" },
+                    { "side": 5, "color": "water" }
+                ],
+                "hexes": ["G9"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [ { "type": "river", "cost": "£30" } ],
+                "borders": [
+                    { "side": 6, "color": "land" }
+                ],
+                "hexes": ["G15"]
+            },
+            {
+                "color": "berks",
+                "terrain": [ { "type": "river", "cost": "£30" } ],
+                "hexes": ["N16"]
+            },
+            {
+                "color": "berks",
+                "terrain": [
+                    { "type": "river", "cost": "£60" }
+                ],
+                "borders": [
+                    { "side": 1,  "color": "water" },
+                    { "side": 2,  "color": "water" },
+                    { "side": 3,  "color": "water" }
+                ],
+                "hexes": ["H10"]
+            },
+            {
+                "color": "oxon",
+                "terrain": [ { "type": "river", "cost": "£30" } ],
+                "hexes": ["I15"]
+            },
+            {
+                "color": "berks",
+                "borders": [
+                    { "side": 3,  "color": "water" }
+                ],
+                "hexes": ["J4"]
+            },
+            {
+                "color": "gray",
+                "hexes": ["D6", "D22", "E3", "E23", "F24", "G25",
+                          "O9", "O11", "O21", "O23"]
+            },
+            {
+                "color": "oxon",
+                "hexes": ["B10", "H16"]
+            },
+            {
+                "color": "berks",
+                "hexes": ["J10", "N18", "N24"]
+            },
+            {
+                "color": "bucks",
+                "hexes": ["B12", "C19"]
+            }
+        ]
+    }
 }
