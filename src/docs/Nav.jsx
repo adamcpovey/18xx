@@ -15,13 +15,28 @@ const Nav = () => {
           <NavLink to="/docs/schema">JSON Schemas</NavLink>
         </li>
         <li>
+          <NavLink to="/docs/types">Share and Token Types</NavLink>
+        </li>
+        <li>
+          <NavLink to="/docs/phases">Phases and Trains</NavLink>
+        </li>
+        <li>
+          <NavLink to="/docs/borders">Map Lines and Borders</NavLink>
+        </li>
+        <li>
           <NavLink to="/docs/logos">Company Logos</NavLink>
+        </li>
+        <li>
+          <NavLink to="/docs/overrides">Company Overrides</NavLink>
         </li>
         <li>
           <NavLink to="/docs/pdf">PDF Output</NavLink>
         </li>
         <li>
           <NavLink to="/docs/b18">Board18 Output</NavLink>
+        </li>
+        <li>
+          <NavLink to="/docs/tokens">Tokens</NavLink>
         </li>
         <li>
           <NavLink to="/docs/ellison">Ellison Die Cutter</NavLink>

@@ -14,11 +14,14 @@ import min from "ramda/src/min";
 import nth from "ramda/src/nth";
 import prop from "ramda/src/prop";
 import reduce from "ramda/src/reduce";
+import reject from "ramda/src/reject";
 import splitEvery from "ramda/src/splitEvery";
 import zipWith from "ramda/src/zipWith";
 
 export const HEX_RATIO = 0.57735;
 export const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const radians = degrees => degrees * (Math.PI / 180);
 
 // Get amount of space needed for coordinates
 export const getCoordSpace = coords => {
@@ -195,6 +198,143 @@ const rightCoord = curry((hexes, hexWidth, y) => {
   return x;
 });
 
+// Takes in a string in one of these forms:
+// * A1a30p0.4 - Angle 30, percent 0.4 of hex A1
+// * A1a30 - Angle 30, percent 1.0 of hex A1
+// * A1s1 - Middle of side 1 on the border of hex A1
+// * A1p1 - Point 1 on the border of hex A1
+// * A1x0y0 - At coordinate (0,0) from the middle of hex A1
+const RE_mapCoordxy = /^([A-Z]+[0-9]+)x([0-9.-]+)y([0-9.-]+)$/;
+const RE_mapCoordap = /^([A-Z]+[0-9]+)a([0-9.-]+)p([0-9.-]+)$/;
+const RE_mapCoorda = /^([A-Z]+[0-9]+)a([0-9.-]+)$/;
+const RE_mapCoords = /^([A-Z]+[0-9]+)s([0-9.-]+)$/;
+const RE_mapCoordp = /^([A-Z]+[0-9]+)p([0-9.-]+)$/;
+export const mapCoord = (string, data) => {
+  // First attempt x/y coordinates
+  let xyTest = string.match(RE_mapCoordxy);
+
+  if (xyTest) {
+    let [i, j] = toCoords(xyTest[1]);
+    let x = data.hexX(i, j);
+    let y = data.hexY(i, j);
+
+    x += Number(xyTest[2]) * data.scale;
+    y += Number(xyTest[3]) * data.scale;
+
+    return `${x} ${y}`;
+  }
+
+  let apTest = string.match(RE_mapCoordap);
+
+  if (apTest) {
+    let [i, j] = toCoords(apTest[1]);
+    let x = data.hexX(i, j);
+    let y = data.hexY(i, j);
+
+    let angle = Number(apTest[2]);
+    let length = Number(apTest[3] * 75) * data.scale;
+
+    let angleFromFlat = (angle % 60) - (data.horizontal ? 0 : 30);
+    length = length / Math.cos(radians(angleFromFlat));
+
+    x += length * Math.sin(radians(-angle));
+    y += length * Math.cos(radians(-angle));
+
+    return `${x} ${y}`;
+  }
+
+  let aTest = string.match(RE_mapCoorda);
+
+  if (aTest) {
+    let [i, j] = toCoords(aTest[1]);
+    let x = data.hexX(i, j);
+    let y = data.hexY(i, j);
+
+    let angle = Number(aTest[2]);
+    let length = 75 * data.scale;
+
+    let angleFromFlat = (angle % 60) - (data.horizontal ? 0 : 30);
+    length = length / Math.cos(radians(angleFromFlat));
+
+    x += length * Math.sin(radians(-angle));
+    y += length * Math.cos(radians(-angle));
+
+    return `${x} ${y}`;
+  }
+
+  let sTest = string.match(RE_mapCoords);
+  if (sTest) {
+    let [i, j] = toCoords(sTest[1]);
+    let x = data.hexX(i, j);
+    let y = data.hexY(i, j);
+
+    let side = sTest[2];
+    let angle = 60 * (side - 1) + 90;
+    let length = 75 * data.scale;
+
+    let angleFromFlat = (angle % 60) - 30;
+    length = length / Math.cos(radians(angleFromFlat));
+
+    x += length * Math.sin(radians(-(angle + (data.horizontal ? -90 : 0))));
+    y += length * Math.cos(radians(-(angle + (data.horizontal ? -90 : 0))));
+
+    return `${x} ${y}`;
+  }
+
+  let pTest = string.match(RE_mapCoordp);
+  if (pTest) {
+    let [i, j] = toCoords(pTest[1]);
+    let x = data.hexX(i, j);
+    let y = data.hexY(i, j);
+
+    let point = pTest[2];
+    let angle = (60 * (point - 1));
+    let length = 75 * data.scale;
+
+    let angleFromFlat = (angle % 60) - 30;
+    length = length / Math.cos(radians(angleFromFlat));
+
+    x += length * Math.sin(radians(-(angle + (data.horizontal ? 90 : 0))));
+    y += length * Math.cos(radians(-(angle + (data.horizontal ? 90 : 0))));
+
+    return `${x} ${y}`;
+  }
+
+  return string
+}
+
+export const getMapHexes = (game, variation) => {
+  variation = variation || 0;
+
+  // Get the relevant map
+  let gameMap = Array.isArray(game.map) ? game.map[variation] : game.map;
+
+  // If the game is map-less, just return an empty object
+  if (!gameMap) {
+    return [];
+  }
+
+  let hexes = map(assoc("variation", variation), gameMap.hexes || []);
+  if (gameMap.copy !== undefined) {
+    hexes = concat(
+      map(assoc("variation", gameMap.copy), game.map[gameMap.copy].hexes),
+      hexes
+    );
+  }
+  hexes = map(resolveHex(hexes), hexes);
+
+  return hexes;
+}
+
+export const getMapHex = (game, hex, variation) => {
+  let hexes = getMapHexes(game, variation);
+
+  return find(h => h.hexes.includes(hex),
+         hexes);
+}
+
+const squashRatio = 87/86.6025;
+
 export const getMapData = (game, coords, hexWidth, variation) => {
   variation = variation || 0;
 
@@ -225,10 +365,38 @@ export const getMapData = (game, coords, hexWidth, variation) => {
 
   // Find all hexes
   let hexes = map(assoc("variation", variation), gameMap.hexes || []);
+  let borders = gameMap.borders || [];
+  let borderTexts = gameMap.borderTexts || [];
+  let lines = gameMap.lines || [];
   if (gameMap.copy !== undefined) {
     hexes = concat(
       map(assoc("variation", gameMap.copy), game.map[gameMap.copy].hexes),
       hexes
+    );
+
+    // Remove any hexes set to be removed
+    if (gameMap.remove !== undefined) {
+      hexes = map(hex => {
+        return assoc("hexes",
+                reject(coord => (gameMap.remove || []).includes(coord),
+                       hex.hexes),
+                hex);
+      }, hexes);
+    }
+
+    borderTexts = concat(
+      game.map[gameMap.copy].borderTexts || [],
+      borderTexts
+    );
+
+    borders = concat(
+      game.map[gameMap.copy].borders || [],
+      borders
+    );
+
+    lines = concat(
+      game.map[gameMap.copy].lines || [],
+      lines
     );
   }
   hexes = map(resolveHex(hexes), hexes);
@@ -238,10 +406,26 @@ export const getMapData = (game, coords, hexWidth, variation) => {
 
   let totalWidth = getTotalWidth(maxX, hexWidth, game.info.extraTotalWidth, coordSpace);
   let totalHeight = getTotalHeight(maxY, hexWidth, game.info.extraTotalHeight, coordSpace);
+  let b18TotalHeight = totalHeight * squashRatio;
   let printWidth = `${(50 + totalWidth) / 100.0}in`;
   let printHeight = `${(50 + totalHeight) / 100.0}in`;
+  let b18PrintHeight = `${(50 + b18TotalHeight) / 100.0}in`;
+  let humanWidth = `${Math.ceil((50 + totalWidth) / 100.0)}in`;
+  let humanHeight = `${Math.ceil((50 + totalHeight) / 100.0)}in`;
 
   let horizontal = game.info.orientation === "horizontal";
+
+  let a1Valid = true;
+  let expCoord = toCoords(hexes[0].hexes[0]);
+  if (expCoord[0] % 2 === 0) {
+    if (expCoord[1] % 2 !== 0) {
+      a1Valid = false;
+    }
+  } else {
+    if (expCoord[1] % 2 === 0) {
+      a1Valid = false;
+    }
+  }
 
   return {
     // Is this map in horizontal layout?
@@ -249,7 +433,13 @@ export const getMapData = (game, coords, hexWidth, variation) => {
 
     // Hex width flat to flat
     hexWidth,
+    halfHexWidth,
+    edge,
     scale,
+    a1Valid,
+
+    // Title options
+    title: gameMap.title,
 
     // Coords choice
     coords,
@@ -265,10 +455,18 @@ export const getMapData = (game, coords, hexWidth, variation) => {
     // Total height and width in svg units
     totalWidth: horizontal ? totalHeight : totalWidth,
     totalHeight: horizontal ? totalWidth : totalHeight,
+    b18TotalWidth : horizontal ? b18TotalHeight : totalWidth,
+    b18TotalHeight : horizontal ? totalWidth : b18TotalHeight,
 
     // Print height and width in CSS units
     printWidth: horizontal ? printHeight : printWidth,
     printHeight: horizontal ? printWidth : printHeight,
+    b18PrintWidth: horizontal ? b18PrintHeight : printWidth,
+    b18PrintHeight: horizontal ? printWidth : b18PrintHeight,
+
+    // Human readable width and height
+    humanWidth: horizontal ? humanHeight : humanWidth,
+    humanHeight: horizontal ? humanWidth : humanHeight,
 
     // Function to computer coordinates of a hex
     hexX: horizontal ? hexY : hexX,
@@ -284,6 +482,11 @@ export const getMapData = (game, coords, hexWidth, variation) => {
     map: gameMap,
 
     // The resolved hexes
-    hexes: hexes
+    hexes,
+
+    // Borders and Lines
+    borderTexts,
+    borders,
+    lines
   };
 };

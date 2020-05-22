@@ -1,5 +1,6 @@
 import React from "react";
-import tileDefs from "../data/tiles";
+import { useParams } from "react-router-dom";
+import { tiles as tileDefs } from "@18xx-maker/games";
 
 import Svg from "../Svg";
 import Tile from "../Tile";
@@ -16,29 +17,24 @@ import uniq from "ramda/src/uniq";
 import ColorContext from "../context/ColorContext";
 import RotateContext from "../context/RotateContext";
 
+import { getTile } from "../util";
+
 import "./b18.scss";
 
 import games from "../data/games";
 
-const getTile = id => {
-  if(!tileDefs[id]) {
-    id = id.split("|")[0];
-  }
-
-  let tile = tileDefs[id];
-  tile.id = id;
-  return tile;
-};
-
 const ROTATIONS = [0,60,120,180,240,300];
 
-const Tiles = ({match}) => {
-  let color = match.params.color;
-  let game = games[match.params.game];
+const Tiles = () => {
+  let params = useParams();
+  let color = params.color;
+  let game = games[params.game];
+
+  let getGameTile = getTile(tileDefs, game.tiles || {});
 
   let tiles = compose(uniq,
                       filter(propEq("color", color)),
-                      map(getTile))(keys(game.tiles));
+                      map(getGameTile))(keys(game.tiles));
 
   let height = game.info.orientation === "horizontal" ? 100 : 116;
   let width = game.info.orientation === "horizontal" ? 116 : 100;
@@ -52,11 +48,6 @@ const Tiles = ({match}) => {
       "-76 -87.6025 152 175.205";
 
   let tileNodes = map(tile => {
-    // Merge tile with game tile
-    if(is(Object,game.tiles[tile.id])) {
-      tile = {...tile, ...game.tiles[tile.id]};
-    }
-
     // Figure out rotations
     let rotations = ROTATIONS;
     if(is(Number, tile.rotations)) {
@@ -73,12 +64,13 @@ const Tiles = ({match}) => {
         {map(rotation => (
           <div key={`tile-${tile.id}-${rotation}`} className="tile-rotation">
             <Svg
+              preserveAspectRatio="none"
               style={{width: `${width}px`,
                       height: `${height}px`}}
               viewBox={viewBox}>
               <g transform={`rotate(${rotation})`}>
                 <RotateContext.Provider value={rotation}>
-                  <Tile id={tile.id} border={true} />
+                  <Tile id={tile.id} border={true} gameTiles={game.tiles} />
                 </RotateContext.Provider>
               </g>
             </Svg>

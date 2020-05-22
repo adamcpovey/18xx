@@ -4,13 +4,16 @@ import Color from "../data/Color";
 import HexContext from "../context/HexContext";
 
 const Id = ({ id, extra }) => {
+  let fontSize = (id && id.length > 4) ? "9" : (id && id.length > 3) ? "10" : "12";
+  let extraFontSize = (extra && extra.length > 4) ? "9" : (extra && extra.length > 3) ? "10" : "12";
+
   return (
     <HexContext.Consumer>
       {hx => (
         <Color>
           {(c,t,s,p) => (
             <React.Fragment>
-              <g transform={`rotate(${hx.rotation}) translate(-40 70)`}>
+              <g transform={`rotate(${hx.rotation}) translate(40 70)`}>
                 <text
                   fontFamily="sans-serif"
                   fill={p("black")}
@@ -18,8 +21,8 @@ const Id = ({ id, extra }) => {
                   strokeLinecap="round"
                   strokeLinejoin="bevel"
                   dominantBaseline="baseline"
-                  textAnchor="start"
-                  fontSize="12"
+                  textAnchor="end"
+                  fontSize={fontSize}
                   fontWeight="normal"
                   x="0"
                   y="0"
@@ -28,7 +31,7 @@ const Id = ({ id, extra }) => {
                 </text>
               </g>
               {extra && (
-                <g transform={`rotate(${hx.rotation}) translate(40 70)`}>
+                <g transform={`rotate(${hx.rotation}) translate(-40 70)`}>
                   <text
                     fontFamily="sans-serif"
                     fill={c("black")}
@@ -36,8 +39,8 @@ const Id = ({ id, extra }) => {
                     strokeLinecap="round"
                     strokeLinejoin="bevel"
                     dominantBaseline="baseline"
-                    textAnchor="end"
-                    fontSize="12"
+                    textAnchor="start"
+                    fontSize={extraFontSize}
                     x="0"
                     y="0"
                   >

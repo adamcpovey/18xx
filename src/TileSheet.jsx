@@ -1,14 +1,15 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import { connect } from "react-redux";
 
 import "./TileSheet.scss";
 
-import { sortTiles, tileColors } from "./util";
+import { getTile, sortTiles } from "./util";
 import { getTileSheetContext } from "./tilesheet/util";
-import tileDefs from "./data/tiles";
+import { tiles as tileDefs } from "@18xx-maker/games";
 import { sidesFromTile } from "./atoms/Track";
 import Svg from "./Svg";
+import Page from "./util/Page";
 import PageSetup from "./PageSetup";
 import Hex from "./Hex";
 
@@ -23,7 +24,6 @@ import append from "ramda/src/append";
 import clone from "ramda/src/clone";
 import compose from "ramda/src/compose";
 import concat from "ramda/src/concat";
-import curry from "ramda/src/curry";
 import drop from "ramda/src/drop";
 import filter from "ramda/src/filter";
 import groupBy from "ramda/src/groupBy";
@@ -31,39 +31,62 @@ import includes from "ramda/src/includes";
 import is from "ramda/src/is";
 import keys from "ramda/src/keys";
 import map from "ramda/src/map";
+import pipe from "ramda/src/pipe";
 import prop from "ramda/src/prop";
-import propOr from "ramda/src/propOr";
+import defaultTo from "ramda/src/defaultTo";
 import reduce from "ramda/src/reduce";
 import repeat from "ramda/src/repeat";
-import split from "ramda/src/split";
 import take from "ramda/src/take";
 import unnest from "ramda/src/unnest";
-
-const getTile = curry((tiles, id) => ({
-  ...(tiles[id] || tiles[split("|", id)[0]]),
-  id
-}));
 
 const gatherIds = tiles => {
   return compose(unnest,
             map(id => Array((is(Object, tiles[id]) ?
-                            propOr(1, "quantity", tiles[id]) :
+              // like a three-part propOR of "print" || "quantity" || 1
+              pipe(prop("print"), defaultTo(pipe(prop("quantity"),
+                defaultTo(1))(tiles[id])))(tiles[id]) :
                             tiles[id])).fill(id)))(keys(tiles));
 }
 
-const gatherTiles = compose(sortTiles,
-                            map(getTile(tileDefs)),
-                            gatherIds);
+const gatherTiles = tiles => compose(sortTiles,
+                                    map(getTile(tileDefs, tiles)),
+                                    gatherIds)(tiles);
 
 const rotate = sides => map(s => (s % 6) + 1, sides);
 
+const tileAboveSmall = (page, i) => {
+  let offset = i % 60;
+  if ([0,9,17,26,34,43,51].includes(offset)) {
+    return null;
+  }
+
+  let target = i - 1;
+  return target >= 0 && page[target];
+};
 const tileAbove = (page, i) => {
-  let target = i - 4;
+  if (i % 6 === 0) {
+    return null;
+  }
+
+  let target = i - 1;
   return target >= 0 && page[target];
 };
 
+const tileBelowSmall = (page, i) => {
+  let offset = (i + 1) % 60;
+  if ([0,9,17,26,34,43,51].includes(offset)) {
+    return null;
+  }
+
+  let target = i + 1;
+  return target < page.length && page[target];
+};
 const tileBelow = (page, i) => {
-  let target = i + 4;
+  if ((i + 1) % 6 === 0) {
+    return null;
+  }
+
+  let target = i + 1;
   return target < page.length && page[target];
 };
 
@@ -80,21 +103,35 @@ const pageTiles = (perPage, pages, tiles) => {
   return pageTiles(perPage, append(current, pages), rest);
 };
 
-const TileSheet = ({ match, paper, layout, hexWidth }) => {
-  let game = games[match.params.game];
+const TileSheet = ({ paper, layout, hexWidth, gaps }) => {
+  let params = useParams();
+  let game = games[params.game];
 
   if (!game.tiles) {
-    return <Redirect to={`/${match.params.game}/background`} />;
+    return <Redirect to={`/${params.game}/background`} />;
   }
 
   let c = getTileSheetContext(layout, paper, hexWidth);
 
   let tiles = gatherTiles(game.tiles);
-  let groupedByColor = groupBy(prop("color"), tiles);
+
+  // Let's group by color OR a group field you can provide
+  let groupedByColor = addIndex(groupBy)((tile, i) => {
+    if (tile.group === "individual") {
+      return `z-${i}`;
+    }
+
+    return tile.group || tile.color;
+  }, tiles);
 
   let separatedTiles = compose(
     reduce((tiles, color) => {
       if (tiles.length === 0) return color;
+
+      // If people don't want gaps... let them do it!
+      if (gaps === false) {
+        return concat(tiles, color);
+      }
 
       switch(layout) {
       case "offset":
@@ -105,16 +142,31 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
         } else {
           return concat(tiles, concat(repeat(null, c.perRow + 1), color));
         }
+      case "smallDie":
+        let offset = tiles.length % 60;
+        if ([0,9,17,26,34,43,51].includes(offset)) {
+          return concat(tiles, color);
+        } else {
+          return concat(tiles, concat([null], color));
+        }
       case "die":
-        return concat(tiles, concat(repeat(null, c.perRow), color));
+        // If we are using transparent tiles, add enough for a new page
+        if (color[0].color === "none") {
+          return concat(tiles, concat(repeat(null, c.perPage - (tiles.length % c.perPage)), color));
+        }
+
+        if (tiles.length % 6 === 0) {
+          return concat(tiles, color);
+        } else {
+          return concat(tiles, concat([null], color));
+        }
       default:
         return concat(tiles, color);
       }
     }, []),
-    // intersperse(repeat(null, layout === "offset" ? 5 : 4)),
     filter(x => x && x.length > 0),
     map(color => groupedByColor[color])
-  )(tileColors);
+  )(keys(groupedByColor));
 
   let pagedTiles = pageTiles(c.perPage, [], separatedTiles);
 
@@ -130,11 +182,25 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
         let rotation = 0;
         let mask = c.mask;
 
-        if (layout === "die" || layout === "individual") {
+        if (layout === "smallDie" || layout === "die" || layout === "individual") {
           let currentSides = sidesFromTile(hex);
           let pastSides = [];
-          if (i - c.perRow >= 0) {
+          if ((layout === "smallDie" || layout === "die") && i - 1 >= 0) {
+            pastSides = sides[i - 1];
+          } else if (layout === "individual" && i - c.perRow >= 0) {
             pastSides = sides[i - c.perRow];
+          }
+
+          if (layout === "smallDie") {
+            if (tileAboveSmall(page, i) && tileBelowSmall(page, i)) {
+              mask = "hexBleedMaskDie";
+            } else if (tileAboveSmall(page, i)) {
+              mask = "hexBleedMaskDieBottom";
+            } else if (tileBelowSmall(page, i)) {
+              mask = "hexBleedMaskDieTop";
+            } else {
+              mask = "hexBleedMask";
+            }
           }
 
           if (layout === "die") {
@@ -149,7 +215,9 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
             }
           }
 
-          if (pastSides.length > 0) {
+          // No need to line up track for "offset" or "individual"
+          if ((layout === "die" || layout === "smallDie") &&
+              pastSides.length > 0) {
             if (includes(1, pastSides)) {
               // Track above us has track on the bottom, if we have track on the
               // top do nothing
@@ -185,9 +253,18 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
           sides.push(clone(currentSides));
         }
 
+        // Overrides from tile definitions
+        if (hex.mask === false) {
+          mask = "hexMask";
+        }
+
+        if (hex.rotation) {
+          rotation = hex.rotation;
+        };
+
         return (
           <g mask={`url(#${mask})`}
-             transform={`translate(${c.getX(i)} ${c.getY(i)}) scale(${hexWidth/150})`}
+             transform={`translate(${c.getX(i)} ${c.getY(i)}) scale(${c.hexWidth/150})`}
              key={`${hex.id}-${i}`}>
             <g transform={`rotate(${rotation})`}>
               <Hex hex={hex} id={hex.id} mask="hexBleedMask" />
@@ -198,11 +275,12 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
       page
     );
 
-    let pins = layout === "die" ? <Pins/> : null;
+    let pins = (layout === "die" || layout === "smallDie") ? <Pins/> : null;
 
     return (
       <div className="TileSheet--Page"
            key={`page-${pageIndex}`}>
+        <Page title={game.info.title} component="Tiles" current={pageIndex + 1} total={pagedTiles.length} />
         <Svg
           style={{
             width: `${c.pageWidth * 0.01}in`,
@@ -239,7 +317,8 @@ const TileSheet = ({ match, paper, layout, hexWidth }) => {
 const mapStateToProps = state => ({
   layout: state.config.tiles.layout,
   paper: state.config.paper,
-  hexWidth: state.config.tiles.width
+  hexWidth: state.config.tiles.width,
+  gaps: state.config.tiles.gaps
 });
 
 export default connect(mapStateToProps)(TileSheet);

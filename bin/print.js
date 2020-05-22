@@ -11,9 +11,10 @@ const setup = util.setup;
 
 setup();
 
+const gameDefs = require('../src/data/games').default;
 let games = [process.argv[2] || "1830"];
 if(process.argv[2] === "all") {
-  games = R.keys(require("../src/data/games").default);
+  games = R.keys(gameDefs);
 }
 
 const app = express();
@@ -29,7 +30,7 @@ const server = app.listen(9000);
 (async () => {
   if (process.argv[2] === "debug") return;
 
-  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox']});
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox', '--force-color-profile', 'srgb', '--force-raster-color-profile', 'srgb']});
   const page = await browser.newPage();
 
   for(let g=0;g<games.length;g++) {
@@ -44,22 +45,83 @@ const server = app.listen(9000);
 
     let items = [
       'background',
+      'bankpool',
       'cards',
       'charters',
+      'ipo',
       'map',
       'map-paginated',
       'market',
       'market-paginated',
+      'par',
+      'par-paginated',
       'revenue',
+      'revenue-paginated',
       'tile-manifest',
       'tiles',
       'tokens'
     ];
 
-    let gameDef = require(`../src/data/games/${game}`);
+    let gameDef = gameDefs[game];
 
     for(let i=0;i<items.length;i++) {
       let item = items[i];
+
+      // Break if the game doesn't include certain items
+      let hasData = true;
+      switch (item) {
+      case "bankpool":
+        if (!gameDef.pools) {
+          hasData = false;
+        }
+        break;
+      case "cards":
+        if (!gameDef.companies && !gameDef.privates && !gameDef.trains && !gameDef.players) {
+          hasData = false;
+        }
+        break;
+      case "tokens":
+      case "charters":
+        if (!gameDef.companies) {
+          hasData = false;
+        }
+        break;
+      case "ipo":
+        if (!gameDef.ipo) {
+          hasData = false;
+        }
+        break;
+      case "map":
+      case "map-paginated":
+        if (!gameDef.map) {
+          hasData = false;
+        }
+        break;
+      case "market":
+      case "market-paginated":
+        if (!gameDef.stock) {
+          hasData = false;
+        }
+        break;
+      case "par":
+      case "par-paginated":
+        if (!gameDef.stock || !gameDef.stock.par || !gameDef.stock.par.values) {
+          hasData = false;
+        }
+        break;
+      case "tiles":
+      case "tile-manifest":
+        if (!gameDef.tiles) {
+          hasData = false;
+        }
+        break;
+      default:
+        break;
+      }
+
+      if (!hasData) {
+        continue;
+      }
 
       console.log("Printing " + game + "/" + item);
       await page.goto(`http://localhost:9000/${game}/${item}`, {waitUntil: 'networkidle2'});

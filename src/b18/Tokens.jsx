@@ -1,10 +1,19 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import Svg from "../Svg";
-import Token from "../Token";
+import CompanyToken from "../tokens/CompanyToken";
+import Token from "../tokens/Token";
+
+import Config from "../data/Config";
+import { compileCompanies, overrideCompanies } from "../util";
 
 import addIndex from "ramda/src/addIndex";
+import is from "ramda/src/is";
 import map from "ramda/src/map";
+import compose from "ramda/src/compose";
+import reject from "ramda/src/reject";
+import propEq from "ramda/src/propEq";
 
 import ColorContext from "../context/ColorContext";
 
@@ -12,59 +21,60 @@ import "./b18.scss";
 
 import games from "../data/games";
 
-// const BlankToken = () => (
-//   <Svg width={30} height={30} viewBox="-26 -26 52 52">
-//     <Token label="" token="black" />
-//   </Svg>
-// );
+const Tokens = () => {
+  let params = useParams();
+  let game = games[params.game];
 
-const Tokens = ({match}) => {
-  let game = games[match.params.game];
+  let companyTokenNodes = (
+    <Config>
+      {(config, game) => {
+        return map(company => {
+          return (
+            <div className="token" key={company.abbrev}>
+              <Svg width={30} height={30} viewBox="-26 -26 52 52">
+                <CompanyToken company={company} />
+              </Svg>
+              <Svg width={30} height={30} viewBox="-26 -26 52 52">
+                <CompanyToken company={company} inverse={true} />
+              </Svg>
+            </div>
+          );
+        }, overrideCompanies(compileCompanies(game), config.overrideCompanies, config.overrideSelection));
+      }}
+    </Config>
+  );
 
-  let totalHeight = 30 * ((game.companies || []).length +
-                          (game.tokens || []).length);
+  // "quantity" of 0 means remove the token entirely from the array
+  let extraTokenNodes = compose(
+    addIndex(map)((extraToken, index) => {
+      if (is(Object, extraToken)) {
+        return (
+          <div className="token" key={index}>
+            <Svg width={30} height={30} viewBox="-26 -26 52 52">
+              <Token color="white" {...extraToken} />
+            </Svg>
+            <Svg width={30} height={30} viewBox="-26 -26 52 52">
+              <Token color="black" {...extraToken} />
+            </Svg>
+          </div>
+        );
+      } else {
+        return (
+          <div className="token" key={index}>
+            <Svg width={30} height={30} viewBox="-26 -26 52 52">
+              <Token label={extraToken} color="white" />
+            </Svg>
+            <Svg width={30} height={30} viewBox="-26 -26 52 52">
+              <Token label={extraToken} color="black" />
+            </Svg>
+          </div>
+        );
+      }
+    }),
+    reject(propEq("quantity", 0))
+  )(game.tokens || []);
 
-  let companyTokenNodes = map(company => {
-    return (
-      <div className="token" key={company.abbrev}>
-        <Svg width={30} height={30} viewBox="-26 -26 52 52">
-          <Token label={company.abbrev}
-                 token={company.token || company.color} />
-        </Svg>
-        <Svg width={30} height={30} viewBox="-26 -26 52 52">
-          <Token label={company.abbrev}
-                 inverse={true}
-                 token={company.token || company.color} />
-        </Svg>
-      </div>
-    );
-  }, game.companies || []);
-
-  let extraTokenNodes = addIndex(map)((extraToken, index) => {
-    if (extraToken.match(/^#/)) {
-      return (
-        <div className="token" key={index}>
-          <Svg width={30} height={30} viewBox="-26 -26 52 52">
-            <Token icon={extraToken} token="white" />
-          </Svg>
-          <Svg width={30} height={30} viewBox="-26 -26 52 52">
-            <Token icon={extraToken} token="black" />
-          </Svg>
-        </div>
-      );
-    } else {
-      return (
-        <div className="token" key={index}>
-          <Svg width={30} height={30} viewBox="-26 -26 52 52">
-            <Token label={extraToken} token="white" />
-          </Svg>
-          <Svg width={30} height={30} viewBox="-26 -26 52 52">
-            <Token label={extraToken} token="black" />
-          </Svg>
-        </div>
-      );
-    }
-  }, game.tokens || []);
+  let totalHeight = 30 * (companyTokenNodes.length + extraTokenNodes.length);
 
   return (
     <ColorContext.Provider value="companies">

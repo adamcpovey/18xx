@@ -2,6 +2,7 @@ import React from "react";
 import * as R from "ramda";
 
 import Name from "./Name";
+import Currency from "../util/Currency";
 
 import Color from "../data/Color";
 
@@ -24,13 +25,14 @@ const height = (size) => {
 }
 
 const makeNode = (x, y, reverse, revenue, size) => {
-  let length = letter(size) * revenue.cost.length;
+  let value = revenue.value || revenue.revenue || revenue.cost || 0;
+  let length = letter(size) * `${value}`.length;
   let phaseLength = letter(size) * `${revenue.phase}`.length;
-  let width = R.max(revenue.cost.length, 2) * letter(size) + 5;
+  let width = R.max(`${value}`.length, 2) * letter(size) + 5;
 
   let nodes = [
     <Color context="map"
-           key={`rect-${revenue.cost}`}>
+           key={`rect-${value}`}>
       {c => (
         <rect
           width={width}
@@ -43,7 +45,7 @@ const makeNode = (x, y, reverse, revenue, size) => {
       )}
     </Color>,
     <Color context="map"
-           key={`text-${revenue.cost}`}>
+           key={`text-${value}`}>
       {c => (
         <text
           fill={c(revenue.textColor) || c("black")}
@@ -55,7 +57,7 @@ const makeNode = (x, y, reverse, revenue, size) => {
           x={x + 0.5 * width}
           y={y - 10 + (size / 2) + 2}
         >
-          {revenue.cost}
+          <Currency value={value} type="offboard" />
         </text>
       )}
     </Color>
@@ -67,7 +69,9 @@ const makeNode = (x, y, reverse, revenue, size) => {
              context="map">
         {c => (
           <text
-            fill={c(revenue.phaseColor) || c("white")}
+            fill={c(revenue.phaseColor) || c(revenue.color) || c("white")}
+            strokeWidth="0.5"
+            stroke={c("black")}
             fontSize={size}
             dominantBaseline="central"
             textAnchor="middle"
@@ -86,10 +90,10 @@ const makeNode = (x, y, reverse, revenue, size) => {
   return nodes;
 };
 
-const getWidth = (r, size) => R.max(r.cost.length, 2) * letter(size) + 5;
+const getWidth = (r, size) => R.max(`${r.value || r.revenue || r.cost || 0}`.length, 2) * letter(size) + 5;
 
 const makeNodes = (y, reverse, revenues, size) => {
-  let totalWidth = R.sum(R.map(r => 5 + letter(size) * R.max(r.cost.length, 2),
+  let totalWidth = R.sum(R.map(r => 5 + letter(size) * R.max(`${r.value || r.revenue || r.cost || 0}`.length, 2),
                                revenues));
   let bx = -0.5 * totalWidth; // Starting x for border box
   let x = bx;

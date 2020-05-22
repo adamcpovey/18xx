@@ -30,8 +30,7 @@ export const sidesFromTrack = track => {
   case "sharp":
     return [side, sideMod(side + 1)];
   case "gentle":
-  case "lawson":
-       return [side, sideMod(side + 2)];
+    return [side, sideMod(side + 2)];
   case "straight":
   case "bent":
           return [side, sideMod(side + 3)];
@@ -54,16 +53,19 @@ export const sidesFromTile = compose(uniq,
                                      propOr([], "track"),
                                      defaultTo([]));
 
-const Track = ({ type, gauge, border, offset, path }) => {
-  let width = border ? 16 : 12;
+const Track = ({ type, gauge, border, width, offset, path, color, borderColor, gaugeColor }) => {
+  let trackWidth = width ? width : (border ? 16 : 12);
+  color = color || "track";
+  borderColor = borderColor || "border";
+  gaugeColor = gaugeColor || "white";
 
   switch (type) {
   case "custom":
     break;
   case "offboard":
-    let end = border ? 30:40;
-    width = border ? 8 : 6;
-    path = `M${width} 75 L ${width} 85 L -${width} 85 L -${width} 75 L 0 ${end} Z`;
+    let end = border ? 40 : 48;
+    trackWidth = border ? 8 : 6;
+    path = `M${trackWidth} 75 L ${trackWidth} 85 L -${trackWidth} 85 L -${trackWidth} 75 L 0 ${end} Z`;
     break;
   case "stub":
     path = "m 0 85 L 0 56.25";
@@ -89,9 +91,6 @@ const Track = ({ type, gauge, border, offset, path }) => {
   case "gentleStopRev":
     path = `m 0 85 L 0 75 A 129.90375 129.90375 0 0 1 38.047927473438027 -16.855822526561973`;
     break;
-  case "lawson":
-    path = "m 0 85 L 0 0 L -73.612125 -42.5";
-    break;
   case "sharp":
     path = `m 0 85 L 0 75 A 43.30125 43.30125 0 0 0 -64.951875 37.5 L -73.612125 42.5`;
     break;
@@ -105,7 +104,7 @@ const Track = ({ type, gauge, border, offset, path }) => {
     path = "m 0 85 L 0 75 C 0 30, 40 40, 40 0 C 40 -40, 0 -30, 0 -75 L 0 -85";
     break;
   default:
-    path = "m 0 85 L 0 0";
+    path = `m 0 85 L 0 -${(trackWidth / 4) + 0.5}`;
     break;
   }
 
@@ -113,8 +112,8 @@ const Track = ({ type, gauge, border, offset, path }) => {
   let strokeDashArray = "none";
   let strokeDashOffset = "none";
   let narrow = null;
-  if (!border && gauge === "narrow") {
-    strokeDashArray = `${width * 0.75}`;
+  if (!border && (gauge === "narrow" || gauge === "dashed")) {
+    strokeDashArray = `${trackWidth * 0.75}`;
     if (offset) {
       strokeDashOffset = `${offset}`;
     }
@@ -124,10 +123,10 @@ const Track = ({ type, gauge, border, offset, path }) => {
           <path
             d={path}
             fill="none"
-            stroke={c("white")}
+            stroke={c(gaugeColor)}
             strokeLinecap="butt"
             strokeLinejoin="miter"
-            strokeWidth={width - 4}
+            strokeWidth={trackWidth - 4}
             strokeDasharray={strokeDashArray}
             strokeDashoffset={strokeDashOffset}
           />
@@ -137,23 +136,23 @@ const Track = ({ type, gauge, border, offset, path }) => {
   }
 
   // Line Gauge
-  if (gauge === "line") {
-    width = border ? 6 : 2;
+  if (gauge === "line" || gauge === "dashed") {
+    trackWidth = border ? 6 : 2;
   }
 
-  // Double Gauge
-  let double = null;
-  if (!border && gauge === "double") {
-    double = (
+  // Dual Gauge
+  let dual = null;
+  if (!border && gauge === "dual") {
+    dual = (
       <Color>
         {c => (
           <path
             d={path}
             fill="none"
-            stroke={c("white")}
+            stroke={c(gaugeColor)}
             strokeLinecap="butt"
             strokeLinejoin="miter"
-            strokeWidth={width - 4}
+            strokeWidth={trackWidth - 4}
           />
         )}
       </Color>
@@ -169,14 +168,14 @@ const Track = ({ type, gauge, border, offset, path }) => {
             <g transform={`rotate(${hx.rotation})`}>
               <path
                 d={path}
-                fill={type === "offboard" ? (c(border ? "border" : "track")) : "none"}
-                stroke={type === "offboard" ? "none" : (c(border ? "border" : "track"))}
+                fill={type === "offboard" ? (c(border ? borderColor : color)) : "none"}
+                stroke={type === "offboard" ? "none" : (c(border ? borderColor : color))}
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
-                strokeWidth={width}
+                strokeWidth={trackWidth}
               />
               {narrow}
-              {double}
+              {dual}
             </g>
           )}
         </HexContext.Consumer>

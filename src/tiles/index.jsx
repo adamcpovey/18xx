@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import TileNav from "../nav/Tiles";
 import Tiles from "./Tiles";
@@ -16,13 +16,15 @@ const TilesIndex = () => {
         </div>
       </div>
       <Switch>
-        <Route path="/tiles" exact render={() => <Redirect to="/tiles/yellow"/>}/>
-        <Route path="/tiles/yellow" render={() => <Tiles color="yellow"/>}/>
-        <Route path="/tiles/green" render={() => <Tiles color="green"/>}/>
-        <Route path="/tiles/brown" render={() => <Tiles color="brown"/>}/>
-        <Route path="/tiles/gray" render={() => <Tiles color="gray"/>}/>
-        <Route path="/tiles/atoms" component={Atoms}/>
-        <Route path="/tiles/positioning" component={Positioning}/>
+        <Route path="/tiles" exact>
+          <Tiles />
+        </Route>
+        <Route path="/tiles/atoms">
+          <Atoms />
+        </Route>
+        <Route path="/tiles/positioning">
+          <Positioning />
+        </Route>
       </Switch>
     </>
   );

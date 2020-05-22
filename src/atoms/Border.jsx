@@ -5,12 +5,11 @@ import HexContext from "../context/HexContext";
 
 const edge = 150 * 0.57735;
 
-const Border = ({ color, dashed, offset }) => {
+const Border = ({ color, dashed, offset, width }) => {
   let strokeDashArray = "none";
   let strokeDashOffset = "-3";
-  let width = 16;
   if (dashed) {
-    strokeDashArray = `${width}`;
+    strokeDashArray = `${width || 16}`;
     if (offset) {
       strokeDashOffset = `${offset}`;
     }
@@ -18,7 +17,7 @@ const Border = ({ color, dashed, offset }) => {
   return (
     <HexContext.Consumer>
       {hx => (
-        <Color context="map">
+        <Color context="companies">
           {c => (
             <path
               d={`m ${0.5 * edge} 75 L ${-0.5 * edge} 75`}

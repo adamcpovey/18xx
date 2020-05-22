@@ -19,6 +19,7 @@ const atoms = [{
              {color: "green"},
              {color: "brown"},
              {color: "gray"},
+             {color: "grey"},
              {color: "orange", divides: [{side:2}]},
              {color: "yellow/green"},
              {color: "green/brown"},
@@ -30,16 +31,29 @@ const atoms = [{
   group: "Values",
   examples: [{values: [{value: 20}]},
              {values: [{value: 60}]},
+             {values: [{value: 60, shape: "square"}]},
              {values: [{
-              "outerBorderColor": "green",
-              "value": 120
-             }]}
+               outerBorderColor: "green",
+               value: 120
+             }]},
+             {values: [{
+               outerBorderColor: "green",
+               shape: "square",
+               value: 120
+             }]},
+             {values: [{value: 1024}]},
+             {values: [{value: "60/60"}]},
+             {values: [{value: "Longer"}]}
             ]
 },{
   group: "Names",
   examples: [{names: [{name:"Boston"}]},
              {names: [{name: "Austin", percent: 0.6, angle: 240}]},
-             {names: [{name: "Seattle", percent: 0.6, rotate: -60, angle: 120}]}]
+             {names: [{name: "Seattle", percent: 0.6, rotate: -60, angle: 120}]},
+             {names: [{name: "Los Angeles",
+                       fontFamily: "display", fontSize: 20,
+                       color: "yellow", strokeWidth: 1}]},
+             {names: [{name: "Paris", fontFamily: "Elegante", fontSize: 16, fontWeight: "normal", fontStyle: "italic"}]}],
 },{
   group: "Industries",
   examples: [{industries: [{top:1,bottom:20}]},
@@ -57,42 +71,127 @@ const atoms = [{
              {companies: [{label: "ERR", color: "orange", radius: 8, bottom: true}]}]
 },{
   group: "Icons",
-  examples: [{icons: [{type: "meat"}]},
+  examples: [
+             {icons: [{type: "boat"}]},
+             {icons: [{type: "boat", "color": "lightBlue"}]},
+             {icons: [{type: "bridge"}]},
+             {icons: [{type: "cactus"}]},
+             {icons: [{type: "charter"}]},
+             {icons: [{type: "charter", "color": "lightBlue"}]},
              {icons: [{type: "coal"}]},
-             {icons: [{type: "steam"}]}]
+             {icons: [{type: "coalcar"}]},
+             {icons: [{type: "cylinder"}]},
+             {icons: [{type: "cylinder", "color": "lightBlue"}]},
+             {icons: [{type: "ferry"}]},
+             {icons: [{type: "fish"}]},
+             {icons: [{type: "fish", "color": "lightBlue"}]},
+             {icons: [{type: "home"}]},
+             {icons: [{type: "home", "color": "orange"}]},
+             {icons: [{type: "mail"}]},
+             {icons: [{type: "mail", "color": "orange"}]},
+             {icons: [{type: "meat"}]},
+             {icons: [{type: "meat", "color": "orange"}]},
+             {icons: [{type: "medium-city"}]},
+             {icons: [{type: "mining"}]},
+             {icons: [{type: "mountain"}]},
+             {icons: [{type: "oil-derrick"}]},
+             {icons: [{type: "oilbarrel"}]},
+             {icons: [{type: "port"}]},
+             {icons: [{type: "port", "color": "orange"}]},
+             {icons: [{type: "refinery"}]},
+             {icons: [{type: "river"}]},
+             {icons: [{type: "share"}]},
+             {icons: [{type: "share", color: "orange"}]},
+             {icons: [{type: "steamboat"}]},
+             {icons: [{type: "swamp"}]},
+             {icons: [{type: "token"}]},
+             {icons: [{type: "token", "color": "lightBlue"}]},
+             {icons: [{type: "tracks"}]},
+             {icons: [{type: "train"}]},
+             {icons: [{type: "train", "color": "lightBlue"}]},
+             {icons: [{type: "tree"}]},
+             {icons: [{type: "tunnel"}]},
+             {icons: [{type: "tunnel", "color": "gray"}]},
+             {icons: [{type: "water"}]}
+            ]
 },{
   group: "Tokens",
   examples: [
-    {tokens: [{label:"AA", token:"orange"}]},
-    {tokens: [{label:"BB", token:{type:"square", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"CC", token:{type:"quarters", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"DD", token:{type:"halves", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"EE", token:{type:"stripes", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"FF", token:{type:"bar", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"GG", token:{type:"stripe", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"HH", token:{type:"target", colors:["blue", "orange"]}}]},
-    {tokens: [{label:"Longer", token:"blue"}]},
-    {tokens: [{label:"KO", token:"purple"}]}
+    {tokens: [{label:"AA", color:"orange"}]},
+    {tokens: [{label:"AA2", bar:true, color:"orange"}]},
+    {tokens: [{label:"AA3", bar:true, barHeight:30, color:"orange"}]},
+    {tokens: [{label:"BB", color:"orange", "square": "blue"}]},
+    {tokens: [{label:"BB2", color:"orange", "square": "blue", shapeAngle: 45}]},
+    {tokens: [{label:"CC", bar: true, quarters: ["blue", "orange", "orange", "blue"]}]},
+    {tokens: [{label:"CC2", shapeAngle: 120, bar: true, quarters: ["blue", "orange", "orange", "blue"]}]},
+    {tokens: [{label:"DD", halves: ["blue", "orange"], bar: true}]},
+    {tokens: [{label:"EE", bar: true, color: "blue", stripes: "orange"}]},
+    {tokens: [{label:"EE2", stripesWidth: 10, stripesDistance: 6, shapeAngle: -15, color: "blue", stripes: "orange"}]},
+    {tokens: [{label:"FF", color: "orange", bar: "blue"}]},
+    {tokens: [{label:"GG", bar: true, stripe: "orange", color: "blue"}]},
+    {tokens: [{label:"GG2", bar: true, stripe: "orange", color: "blue", shapeAngle: 45}]},
+    {tokens: [{label:"HH", target: "orange", color: "blue", bar: true}]},
+    {tokens: [{label:"II", target: "orange", halves: ["purple", "blue"], bar: true}]},
+    {tokens: [{label:"JJ", bar: true, color: "blue", curvedStripes: "orange"}]},
+    {tokens: [{label:"JJ2", curvedStripesWidth: 12, curvedStripesDistance: 16, shapeAngle: -15, color: "blue", curvedStripes: "orange"}]},
+    {tokens: [{label:"KK", bar:true, curvedStripes: "black", curvedStripesDistance: 19, stripe: "black", stripeWidth: "6.25", color: "orange"}]},
+    {tokens: [{label:"LL", spiral: "orange", "color": "blue"}]},
+    {tokens: [{label:"LL2", spiralWidth: 2, spiralDistance: 4, spiral: "orange", "color": "blue"}]},
+    {tokens: [{label:"MM", circle: true, "color": "blue"}]},
+    {tokens: [{label:"MM2", circleRadius: 20, circle: "orange", "color": "blue"}]},
+    {tokens: [{label:"XYZ", shield: true}]},
+    {tokens: [{label:"xyzzy", shield: "yellow", shieldTop: "orange"}]},
+    {tokens: [{label:"USA", shield3: true}]},
+    {tokens: [{label:"CFR", shield3: "white", shield3TopLeft: "red", shield3TopCenter: "yellow", shield3TopRight: "blue"}]},
+    {tokens: [{label:"KO", color: "purple"}]},
+    {tokens: [{company:"CPR"}]},
+    {tokens: [{company:"PRR", destination: true}]},
+    {tokens: [{company:"C&O", reserved: true}]},
+    {tokens: [{logo:"dev/emacs"}]},
+    {tokens: [{icon:"coal"}]},
+    {tokens: [{icon:"port", iconColor:"red"}]},
+    {tokens: [{icon:"mail"}]},
+    {tokens: [{icon:"mail", iconColor:"orange"}]},
+    {tokens: [{icon:"tracks", label: "$100"}]},
+    {tokens: [{icon:"boat", iconColor:"red", label: "Free"}]}
   ]
 },{
   group: "Cities",
   examples: [{cities: [{}]},
              {cities: [{name:{offset: 75, name: "Boston"}}]},
-             {cities: [{companies:[{label:"GT",color:"orange"}],
-                        name:{reverse:true, name: "Boston"}}]},
+             {cities: [{companies:["NYNH"],
+                        name:{reverse:true, name: "New York"}}]},
              {cities: [{size:2,
-                        companies: [{},{label:"B&O",color:"blue"}],
+                        companies: [{},"B&O"],
                         name: {name: "Baltimore"}
                        }]},
              {cities: [{size:3,
-                        companies: [{label:"NYC",color:"black"}]
+                        name: {name: "New York"},
+                        companies: ["NYC"]
                        }]},
              {cities: [{size:4,
-                        companies: [{},
-                                    {label:"BM",color:"brown"},
-                                    {label:"PRR",color:"green"}]
-                       }]
-             }]
+                        icons: ["mail", null, null, "boat"],
+                        name: {name: "Boston"},
+                        companies: [null,
+                                    "B&M",
+                                    { abbrev:"PRR", reserved: true }]
+                       }]},
+             {cities: [{size:5,
+                        icons: [null, "share", null, "charter"],
+                        companies: ["C&O", null, "B&M", null, "NYC"]}]},
+             {cities: [{size:6,
+                        icons: [null, "water", null, "port", null, "train"],
+                        companies: ["C&O", null, "B&M", null, "NYC"]}]},
+             {cities: [{size:1,
+                        pass:true
+                       }]},
+             {cities: [{size:2,
+                        pass:true
+                       }]},
+             {cities: [{size:3,
+                        icons: ["meat", null, "share"]
+                       }]}
+            ]
 },{
   group: "Towns",
   examples: [{towns: [{}]},
@@ -122,19 +221,23 @@ const atoms = [{
     {track: [{side:3,type:"gentle",gauge:"narrow"}]},
     {track: [{side:5,type:"gentleStop"},
              {side:5,type:"gentleStopRev"}]},
-    {track: [{side:1,type:"sharp",gauge:"double"},
+    {track: [{side:1,type:"sharp",gauge:"dual"},
              {side:3,type:"sharpStop"},
              {side:5,type:"sharpStopRev"}]},
     {track: [{side:1,type:"straight",cross:"under"},
              {side:3,type:"gentle",cross:"over"}]},
-    {track: [{side:4,type:"straightStop",gauge:"line"}]},
-    {track: [{side:1,type:"lawson"}]},
+    {track: [{side:4,type:"straightStop",gauge:"line"},
+             {side:5,type:"straight",gauge:"dashed"}]},
     {track: [{side:2,type:"stub"},
              {side:3,type:"stop"},
              {side:4.5,type:"mid"}]},
     {track: [{side:1,type:"bent"}]},
     {track: [{path:"m 0 85 L 0 50 C 75 0, -75 0, 0 -50 L 0 -85", type:"custom"}]},
-    {track: [{side:1,type:"offboard"},{side:6,type:"offboard"}]}
+    {track: [{side:1,type:"offboard"},{side:6,type:"offboard"}]},
+    {track: [{side:1,type:"gentle",cross:"under",color:"water"},
+             {side:2,type:"gentle",cross:"over",color:"mountain"}]},
+    {track: [{side:3,type:"gentle",gauge:"narrow",color:"mountain",borderColor:"black",gaugeColor:"yellow"},
+             {side:4,type:"gentle",gauge:"dual",color:"water",borderColor:"black",gaugeColor:"green"}]}
   ]
 },{
   group: "Offboard Revenues",
@@ -143,10 +246,10 @@ const atoms = [{
       name: {name: "Boston"},
       revenues: [{
         color: "yellow",
-        cost: "20"
+        cost: 20
       },{
         color: "brown",
-        cost: "40"
+        cost: 40
       }]
     }
   },{
@@ -156,11 +259,11 @@ const atoms = [{
       name: {name: "Boston"},
       revenues: [{
         color: "yellow",
-        cost: "20",
+        cost: 20,
         phase: 2
       },{
         color: "brown",
-        cost: "40",
+        cost: 40,
         phase: 5,
         phaseColor: "brown"
       }]
@@ -172,16 +275,16 @@ const atoms = [{
       rows: 2,
       revenues: [{
         color: "yellow",
-        cost: "20"
+        cost: 20
       },{
         color: "green",
-        cost: "30"
+        cost: 30
       },{
         color: "brown",
-        cost: "40"
+        cost: 40
       },{
         color: "gray",
-        cost: "120"
+        cost: 120
       }]
     }
   }]
@@ -198,39 +301,47 @@ const atoms = [{
   group: "Terrain",
   examples: [
     {terrain: [{}]},
-    {terrain: [{size:"medium",cost:"$60"}]},
-    {terrain: [{type:"water",cost:"$40"}]},
-    {terrain: [{type:"stream",cost:"$20"}]},
-    {terrain: [{size:"tiny",type:"river",cost:"$10"}]},
-    {terrain: [{type:"cactus",cost:"$20"}]},
-    {terrain: [{size:"large",type:"swamp",cost:"$120"}]}
+    {terrain: [{size:"medium",cost:60}]},
+    {terrain: [{type:"mountain",cost:100}]},
+    {terrain: [{type:"water",cost:40}]},
+    {terrain: [{type:"river",cost:20}]},
+    {terrain: [{type:"cactus",cost:20}]},
+    {terrain: [{type:"tree",cost:20,color:"green"}]},
+    {terrain: [{size:"tiny",type:"river",cost:10}]},
+    {terrain: [{size:"large",type:"swamp",cost:120}]}
   ]
 },{
   group: "Tunnels and Bridges",
   examples: [
-    {tunnels: [{cost:"$40"}]},
-    {bridges: [{cost:"$40"}]}]
+    {tunnels: [{cost:40}]},
+    {bridges: [{cost:40}]},
+    {diamonds: [{cost:"+20"}]},
+    {tunnelEntrances: [{percent:1}]},
+    {tunnelEntrances: [{angle:120,percent:1,rotation:-60,color:"red"},
+                       {angle:180,percent:1,color:"orange"},
+                       {angle:240,percent:1,rotation:60,color:"yellow"}
+                      ]}]
 },{
   group: "Route Bonuses",
   examples: [
     {routeBonus: [{value:"$40"}]},
-    {routeBonus: [{value:"+$120"}]}]
+    {routeBonus: [{value:"+$120",fillColor:"black",strokeColor:"red",textColor:"white"}]}]
 }];
 
 const examples = R.addIndex(R.chain)((h,id) => {
   return <dd key={`example-${id}`}>
-           <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
-             <Hex hex={h} id={`${id}`} border={true} bleed={true} />
-           </Svg>
-           <pre>{JSON.stringify(h, null, 2)}</pre>
-         </dd>;
+      <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
+        <Hex hex={h} id={`${id}`} border={true} bleed={true} />
+      </Svg>
+      <pre>{JSON.stringify(h, null, 2)}</pre>
+    </dd>;
 });
 
 const groups = R.addIndex(R.chain)((g,id) => {
   return <dl key={`group-${id}`}>
-           <dt>{g.group}</dt>
-           {examples(g.examples)}
-         </dl>;
+      <dt>{g.group}</dt>
+      {examples(g.examples)}
+    </dl>;
 });
 
 const Atoms = () => {

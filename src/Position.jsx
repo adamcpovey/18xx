@@ -1,5 +1,5 @@
 import React from "react";
-import * as R from "ramda";
+import chain from "ramda/src/chain";
 
 const Position = ({ data, children }) => {
   if (!data) {
@@ -8,7 +8,12 @@ const Position = ({ data, children }) => {
     data = [data];
   }
 
-  return R.map(d => {
+  return chain(d => {
+    // If this element is hidden, then don't need to render anything
+    if (d.hidden) {
+      return [];
+    }
+
     // Set everything to defaults of 0
     let angle = d.angle || 0;
     let rotation = d.rotate || d.rotation || 0;
@@ -23,14 +28,16 @@ const Position = ({ data, children }) => {
     let translate = 75 * (d.percent || 0);
     let rotate = -(d.angle || 0) + (rotation || 0);
 
-    return (
+    let passing = {...d};
+
+    return [
       <g
         key={`position-${angle}-${rotate}-${translate}-${x}-${y}`}
         transform={`rotate(${angle} ${x} ${y}) translate(0 ${translate}) rotate(${rotate} ${x} ${y}) translate(${x} ${y})`}
       >
-        {children(d)}
+        {children(passing)}
       </g>
-    );
+    ];
   }, data);
 };
 

@@ -35,18 +35,18 @@ const Home = () => {
       <Color>
         {(c,t) => (
           <React.Fragment>
-            <h1>18xx <span>Print and Play Tool</span></h1>
+            <h1>18xx Maker</h1>
             <p>This site is a react client-side application which can take 18xx game
               definitions written in json display them in a browser ready for
               printing. The original purpose of this site was for personal pnp projects. <NavLink to="/docs">Read more</NavLink> on our docs page.</p>
             <p>If you are a designer and/or publisher and would like your design
               to be available on this site please <a href="mailto:kelsin@valefor.com">let me know</a>!</p>
-            <p>In case printing games yourself isn't feasible (or if you are looking for a specific game) please check out <a target="_blank" rel="noopener noreferrer" href="http://www.all-aboardgames.com/">All-Aboard Games</a>, <a target="_blank" rel="noopener noreferrer" href="http://www.goldenspikegames.com/">Golden Spike Games</a>, <a href="http://18xx-marflow-games.de/english-new/index.html">Marflow Games</a>, and <a href="https://www.gmtgames.com/">GMT Games</a> as places where you can buy full 18xx games ready to play.</p>
-            <p className="note" style={{backgroundColor:c("offboard"),color:t(c("offboard"))}}>
-              <strong>Important:</strong> Please only use this site to print games for which you have a license by owning the game.
+            <p>If you are looking for places to buy 18xx games please check out <a target="_blank" rel="noopener noreferrer" href="http://www.all-aboardgames.com/">All-Aboard Games</a>, <a target="_blank" rel="noopener noreferrer" href="http://www.goldenspikegames.com/">Golden Spike Games</a>, <a href="http://18xx-marflow-games.de/english-new/index.html">Marflow Games</a>, and <a href="https://www.gmtgames.com/">GMT Games</a> as places where you can buy full 18xx games ready to play.</p>
+            <p className="note warning">
+              <strong>Important:</strong> Please do not use this site to print games that you don't have a license to print. This tool is not meant to enable piracy. Please support our 18xx designers, developers and publishers.
             </p>
-            <p className="note" style={{backgroundColor:c("yellow"),color:t(c("yellow"))}}>
-              <strong>Note:</strong> Some games are still works in progress and in general the rendering of stock markets is not in a good place. Work will continue on this stuff.
+            <p className="note wip">
+              <strong>Note:</strong> Some games are still works in progress. Please submit any bugs found as <a href="https://github.com/kelsin/18xx/issues">issues on github</a>!
             </p>
           </React.Fragment>
         )}
@@ -74,8 +74,8 @@ const Home = () => {
         All tiles for games are available on each game's page.</p>
       <Tiles/>
       <h2>Donations</h2>
-      <p>I've been asked about donation buttons, if you find this software
-        usefull to you and would like to donate money towards it's development
+      <p>I've been asked about donation buttons; if you find this software
+        useful to you and would like to donate money towards its development
         you can do so via <a href="https://paypal.me/kelsin">paypal</a> or <a href="https://cash.me/$kelsin">square cash</a>.</p>
     </div>
   );
